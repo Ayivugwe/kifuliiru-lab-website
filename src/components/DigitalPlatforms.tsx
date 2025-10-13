@@ -4,63 +4,63 @@ export default function DigitalPlatforms() {
     {
       name: 'Kifuliiru.net',
       subtitle: 'Tusome i Kifuliiru (Let\'s learn Kifuliiru)',
-      description: 'Purely in Kifuliiru - our first platform where we started writing numbers one by one. Numbers from here were used to generate formulas. 100% content written by Ayivugwe Kabemba Mukome.',
+      description: 'Purely in Kifuliiru - our first platform where we started writing numbers one by one. Numbers from here were used to generate formulas. 100% content created by Ayivugwe Kabemba Mukome without AI assistance.',
       status: 'Active',
       type: 'Learning Platform'
     },
     {
       name: 'dictionary.kifuliiru.net',
-      description: 'Kifuliiru dictionary and language reference.',
+      description: 'Kifuliiru dictionary and language reference. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Dictionary'
     },
     {
       name: 'kifuliiru.com',
-      description: 'Main Kifuliiru language website.',
+      description: 'Main Kifuliiru language website. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Website'
     },
     {
       name: 'tabula.kifuliiru.com',
-      description: 'Web portal/web app for admins and contributors.',
+      description: 'Web portal/web app for admins and contributors. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Web App'
     },
     {
       name: 'lola.kifuliiru.com',
-      description: 'Social media platform for Kifuliiru community.',
+      description: 'Social media platform for Kifuliiru community. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Social Media'
     },
     {
       name: 'imyazi.com',
-      description: 'News website in Kifuliiru (under development).',
+      description: 'News website in Kifuliiru (under development). All content created by Ayivugwe Kabemba Mukome.',
       status: 'Development',
       type: 'News Platform'
     },
     {
       name: 'Kifuliiru Ndeto ngale',
       subtitle: 'https://ibufuliiru.wixstudio.com/kifuliiru',
-      description: '100% content in Kifuliiru. Designed and content written by Ayivugwe Kabemba Mukome.',
+      description: '100% content in Kifuliiru. Designed and content created by Ayivugwe Kabemba Mukome without AI assistance.',
       status: 'Active',
       type: 'Educational Site'
     },
     {
       name: 'Ibufuliiru / Tumenye Ibufuliiru',
       subtitle: 'https://ibufuliiru.wixstudio.com/ibufuliiru',
-      description: '100% content in Kifuliiru. Designed and content written by Ayivugwe Kabemba Mukome.',
+      description: '100% content in Kifuliiru. Designed and content created by Ayivugwe Kabemba Mukome without AI assistance.',
       status: 'Active',
       type: 'Cultural Site'
     },
     {
       name: 'Radio Ibufuliiru',
-      description: 'Available on multiple platforms: Substack, Spotify, Amazon Music, Audible.com, and more.',
+      description: 'Available on multiple platforms: Substack, Spotify, Amazon Music, Audible.com, and more. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Audio Platform'
     },
     {
       name: 'Imyazi mu Kifuliiru',
-      description: 'News and content in Kifuliiru on Substack.',
+      description: 'News and content in Kifuliiru on Substack. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Newsletter'
     },
@@ -72,7 +72,7 @@ export default function DigitalPlatforms() {
     },
     {
       name: 'Kifuliiru App',
-      description: 'Mobile application built with Flutter for Android and iOS. Currently in development and testing phase.',
+      description: 'Mobile application built with Flutter for Android and iOS. Currently in development and testing phase. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Development',
       type: 'Mobile App'
     }

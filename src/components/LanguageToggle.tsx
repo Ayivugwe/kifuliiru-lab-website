@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useState } from 'react'
+import { ChevronDown, Check, Globe } from 'lucide-react'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -29,13 +30,22 @@ export default function LanguageToggle() {
         aria-label={`Current language: ${currentLanguage.name}. Click to change language.`}
         title={`Current language: ${currentLanguage.name}`}
       >
-        <span className="language-flag">{currentLanguage.flag}</span>
-        <span className="language-name">{currentLanguage.name}</span>
-        <span className="language-arrow">{isOpen ? '▲' : '▼'}</span>
+        <div className="language-content">
+          <span className="language-flag">{currentLanguage.flag}</span>
+          <span className="language-name">{currentLanguage.name}</span>
+        </div>
+        <ChevronDown 
+          size={16} 
+          className={`language-arrow ${isOpen ? 'rotated' : ''}`}
+        />
       </button>
       
       {isOpen && (
         <div className="language-dropdown">
+          <div className="language-dropdown-header">
+            <Globe size={16} />
+            <span>Select Language</span>
+          </div>
           {languages.map((lang) => (
             <button
               key={lang.code}
@@ -43,9 +53,13 @@ export default function LanguageToggle() {
               className={`language-option ${language === lang.code ? 'active' : ''}`}
               aria-label={`Switch to ${lang.name}`}
             >
-              <span className="language-flag">{lang.flag}</span>
-              <span className="language-name">{lang.name}</span>
-              {language === lang.code && <span className="checkmark">✓</span>}
+              <div className="language-option-content">
+                <span className="language-flag">{lang.flag}</span>
+                <span className="language-name">{lang.name}</span>
+              </div>
+              {language === lang.code && (
+                <Check size={16} className="checkmark" />
+              )}
             </button>
           ))}
         </div>

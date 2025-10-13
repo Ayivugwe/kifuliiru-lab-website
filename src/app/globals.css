@@ -653,23 +653,154 @@ section h2 {
             line-height: 1.5;
         }
 
-/* Publications */
-.publication {
-  margin-bottom: 20px;
-  padding-left: 20px;
-  border-left: 1px solid var(--border-color);
+/* Resources & Documentation */
+.resources-intro {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-        .publication-title {
-            color: var(--accent-color);
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
 
-        .publication-meta {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
+.resource-card {
+  padding: 25px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent-color);
+}
+
+.resource-card:hover {
+  background: var(--bg-tertiary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.resource-card.available {
+  border-left-color: #4ade80;
+}
+
+.resource-card.in-development {
+  border-left-color: #60a5fa;
+}
+
+.resource-card.planned {
+  border-left-color: #fb923c;
+}
+
+.resource-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.resource-title {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+}
+
+.resource-type {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.resource-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.resource-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.resource-status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-available {
+  background: #0a4d0a;
+  color: #4ade80;
+}
+
+.status-in-development {
+  background: #1e3a8a;
+  color: #60a5fa;
+}
+
+.status-planned {
+  background: #431407;
+  color: #fb923c;
+}
+
+.resource-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Mobile resources grid */
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .resource-card {
+    padding: 20px;
+  }
+  
+  .resource-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .resource-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resource-card {
+    padding: 15px;
+  }
+}
 
 /* Founder */
 .founder-intro {

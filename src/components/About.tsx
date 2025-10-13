@@ -21,8 +21,8 @@ export default function About() {
         <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
         from minimal documentation to a comprehensive <strong>digital language ecosystem</strong> including 
         <strong>websites, web applications, mobile apps, voice recordings, and connected resources</strong>. 
-        All content across these platforms has been <strong>created by native speakers</strong>, with some platforms 
-        utilizing AI assistance under native speaker guidance while ensuring authentic cultural and linguistic preservation. This <strong>Kifuliiru Lab methodology</strong> 
+        All platforms and content have been <strong>created by Ayivugwe Kabemba Mukome</strong>, with some utilizing 
+        AI assistance as a development tool while ensuring authentic cultural and linguistic preservation through native speaker expertise. This <strong>Kifuliiru Lab methodology</strong> 
         will be replicated across other <strong>language laboratories</strong> as Wekify expands to serve additional 
         <strong>endangered languages</strong> and their communities.
       </p>

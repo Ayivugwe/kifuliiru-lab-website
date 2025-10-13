@@ -3,37 +3,42 @@ export default function DigitalPlatforms() {
   const platforms = [
     {
       name: 'Kifuliiru.net',
-      subtitle: 'Tusome i Kifuliiru (Let\'s learn Kifuliiru)',
+      subtitle: 'https://kifuliiru.net',
       description: 'Purely in Kifuliiru - our first platform where we started writing numbers one by one. Numbers from here were used to generate formulas. 100% content created by Ayivugwe Kabemba Mukome without AI assistance.',
       status: 'Active',
       type: 'Learning Platform'
     },
     {
       name: 'dictionary.kifuliiru.net',
+      subtitle: 'https://dictionary.kifuliiru.net',
       description: 'Kifuliiru dictionary and language reference. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Dictionary'
     },
     {
       name: 'kifuliiru.com',
-      description: 'Main Kifuliiru language website. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
+      subtitle: 'https://kifuliiru.com',
+      description: 'Main Kifuliiru language website. Created by Ayivugwe Kabemba Mukome with AI assistance for development, including Kifuliiru translations.',
       status: 'Active',
       type: 'Website'
     },
     {
       name: 'tabula.kifuliiru.com',
-      description: 'Web portal/web app for admins and contributors. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
+      subtitle: 'https://tabula.kifuliiru.com',
+      description: 'Web portal/web app for admins and contributors. Created by Ayivugwe Kabemba Mukome with AI assistance for development, including Kifuliiru translations.',
       status: 'Active',
       type: 'Web App'
     },
     {
       name: 'lola.kifuliiru.com',
-      description: 'Social media platform for Kifuliiru community. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
+      subtitle: 'https://lola.kifuliiru.com',
+      description: 'Social media platform for Kifuliiru community. Created by Ayivugwe Kabemba Mukome with AI assistance for development, including Kifuliiru translations.',
       status: 'Active',
       type: 'Social Media'
     },
     {
       name: 'imyazi.com',
+      subtitle: 'https://imyazi.com',
       description: 'News website in Kifuliiru (under development). All content created by Ayivugwe Kabemba Mukome.',
       status: 'Development',
       type: 'News Platform'
@@ -54,18 +59,21 @@ export default function DigitalPlatforms() {
     },
     {
       name: 'Radio Ibufuliiru',
+      subtitle: 'https://radioibufuliiru.substack.com',
       description: 'Available on multiple platforms: Substack, Spotify, Amazon Music, Audible.com, and more. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Audio Platform'
     },
     {
       name: 'Imyazi mu Kifuliiru',
+      subtitle: 'https://imyazi.substack.com',
       description: 'News and content in Kifuliiru on Substack. All content created by Ayivugwe Kabemba Mukome.',
       status: 'Active',
       type: 'Newsletter'
     },
     {
       name: 'Kifuliiru.org',
+      subtitle: 'https://kifuliiru.org',
       description: 'Official website for Kifuliiru Lab - this website.',
       status: 'Active',
       type: 'Lab Website'

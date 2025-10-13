@@ -52,7 +52,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 180px 20px 40px 20px; /* Extra top padding for fixed header */
+  padding: 220px 20px 40px 20px; /* Extra top padding for fixed header */
 }
 
 /* Theme Toggle */
@@ -240,6 +240,10 @@ body {
   font-size: 0.9rem;
   border-top: 1px solid var(--border-light);
   transition: all 0.3s ease;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav a {

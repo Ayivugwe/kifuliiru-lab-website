@@ -23,9 +23,15 @@ body {
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #333;
-  padding-bottom: 20px;
+  padding: 20px 0;
   margin-bottom: 40px;
+  transition: all 0.3s ease;
 }
 
 .header h1 {
@@ -44,8 +50,15 @@ body {
 
 /* Navigation */
 .nav {
+  position: sticky;
+  top: 80px;
+  z-index: 99;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
   margin-bottom: 50px;
   font-size: 0.9rem;
+  border-bottom: 1px solid #222;
 }
 
 .nav a {

@@ -6,7 +6,7 @@ export type Language = 'en' | 'fr' | 'sw' | 'flr'
 
 type TranslationKey = 
   | 'header.title' | 'header.tagline'
-  | 'nav.about' | 'nav.cultural' | 'nav.vision' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.founder' | 'nav.team' | 'nav.contact'
+  | 'nav.about' | 'nav.cultural' | 'nav.vision' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.blog' | 'nav.founder' | 'nav.team' | 'nav.contact'
   | 'about.title' | 'about.description1' | 'about.description2'
   | 'stats.books' | 'stats.data' | 'stats.validated' | 'stats.platforms' | 'stats.voice' | 'stats.founded'
   | 'cultural.title' | 'cultural.language_people' | 'cultural.geographical' | 'cultural.situation' | 'cultural.significance' | 'cultural.saying'
@@ -14,6 +14,7 @@ type TranslationKey =
   | 'research.title' | 'research.question' | 'research.methodology' | 'research.validation' | 'research.hypothesis'
   | 'projects.title' | 'projects.web_apps' | 'projects.mobile_app' | 'projects.voice_recording' | 'projects.connected' | 'projects.template_generation' | 'projects.community_platform' | 'projects.quality_assurance' | 'projects.scalability'
   | 'publications.title' | 'publications.template_methodology' | 'publications.meta'
+  | 'blog.title' | 'blog.description' | 'blog.read_more' | 'blog.published_on' | 'blog.author' | 'blog.tags' | 'blog.back_to_blog'
   | 'founder.title' | 'founder.intro' | 'founder.background' | 'founder.background_content' | 'founder.expertise' | 'founder.expertise_content' | 'founder.vision' | 'founder.vision_content' | 'founder.achievements' | 'founder.achievements_content'
   | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.community_description' | 'team.community_contributors' | 'team.contributors_role' | 'team.contributors_description' | 'team.future_directors' | 'team.future_role' | 'team.future_description' | 'team.technical_teams' | 'team.technical_role' | 'team.technical_description' | 'team.research_partners' | 'team.research_role' | 'team.research_description'
   | 'contact.title' | 'contact.description' | 'contact.website' | 'contact.email' | 'contact.partnerships' | 'contact.parent' | 'contact.research_interests'
@@ -44,6 +45,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Research',
     'nav.projects': 'Projects',
     'nav.publications': 'Publications',
+    'nav.blog': 'Blog',
     'nav.founder': 'Founder',
     'nav.team': 'Team',
     'nav.contact': 'Contact',
@@ -98,6 +100,15 @@ const translations: Record<Language, Translations> = {
     'publications.title': 'Publications',
     'publications.template_methodology': 'Template-Based Generation for Under-Resourced Languages: A Case Study of Kifuliiru',
     'publications.meta': 'Technical Report • October 2025 • Kifuliiru Lab',
+    
+    // Blog
+    'blog.title': 'Blog',
+    'blog.description': 'Insights, updates, and research findings from the Kifuliiru Language Laboratory',
+    'blog.read_more': 'Read More',
+    'blog.published_on': 'Published on',
+    'blog.author': 'Author',
+    'blog.tags': 'Tags',
+    'blog.back_to_blog': '← Back to Blog',
     
     // Team
     'team.title': 'Team',
@@ -165,6 +176,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Recherche',
     'nav.projects': 'Projets',
     'nav.publications': 'Publications',
+    'nav.blog': 'Blog',
     'nav.founder': 'Fondateur',
     'nav.team': 'Équipe',
     'nav.contact': 'Contact',
@@ -219,6 +231,15 @@ const translations: Record<Language, Translations> = {
     'publications.title': 'Publications',
     'publications.template_methodology': 'Génération Basée sur des Modèles pour les Langues Sous-Représentées : Une Étude de Cas du Kifuliiru',
     'publications.meta': 'Rapport Technique • Octobre 2025 • Laboratoire Kifuliiru',
+    
+    // Blog
+    'blog.title': 'Blog',
+    'blog.description': 'Aperçus, mises à jour et résultats de recherche du Laboratoire de Langue Kifuliiru',
+    'blog.read_more': 'Lire Plus',
+    'blog.published_on': 'Publié le',
+    'blog.author': 'Auteur',
+    'blog.tags': 'Étiquettes',
+    'blog.back_to_blog': '← Retour au Blog',
     
     // Team
     'team.title': 'Équipe',
@@ -286,6 +307,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Utafiti',
     'nav.projects': 'Miradi',
     'nav.publications': 'Machapisho',
+    'nav.blog': 'Blogu',
     'nav.founder': 'Mwanzilishi',
     'nav.team': 'Timu',
     'nav.contact': 'Mawasiliano',
@@ -340,6 +362,15 @@ const translations: Record<Language, Translations> = {
     'publications.title': 'Machapisho',
     'publications.template_methodology': 'Uzalishaji wa Kiolezo kwa Lugha Zisizo na Rasilimali: Uchunguzi wa Kifuliiru',
     'publications.meta': 'Ripoti ya Kiufundi • Oktoba 2025 • Laboratori ya Kifuliiru',
+    
+    // Blog
+    'blog.title': 'Blogu',
+    'blog.description': 'Ufahamu, masasisho, na matokeo ya utafiti kutoka Laboratori ya Lugha ya Kifuliiru',
+    'blog.read_more': 'Soma Zaidi',
+    'blog.published_on': 'Imechapishwa',
+    'blog.author': 'Mwandishi',
+    'blog.tags': 'Vitambulisho',
+    'blog.back_to_blog': '← Rudi kwenye Blogu',
     
     // Team
     'team.title': 'Timu',
@@ -407,6 +438,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Utafiti', // Research
     'nav.projects': 'Miradi', // Projects
     'nav.publications': 'Machapisho', // Publications
+    'nav.blog': 'Blogu', // Blog
     'nav.founder': 'Mwanzilishi', // Founder
     'nav.team': 'Timu', // Team
     'nav.contact': 'Mawasiliano', // Contact
@@ -461,6 +493,15 @@ const translations: Record<Language, Translations> = {
     'publications.title': 'Machapisho', // Publications
     'publications.template_methodology': 'Uzalishaji wa Kiolezo kwa Lugha Zisizo na Rasilimali: Uchunguzi wa Kifuliiru', // Template-Based Generation for Under-Resourced Languages: A Case Study of Kifuliiru
     'publications.meta': 'Ripoti ya Kiufundi • Oktoba 2025 • Laboratori ya Kifuliiru', // Technical Report • October 2025 • Kifuliiru Lab
+    
+    // Blog
+    'blog.title': 'Blogu', // Blog
+    'blog.description': 'Ufahamu, masasisho, na matokeo ya utafiti kutoka Laboratori ya Lugha ya Kifuliiru', // Blog description
+    'blog.read_more': 'Soma Zaidi', // Read More
+    'blog.published_on': 'Imechapishwa', // Published on
+    'blog.author': 'Mwandishi', // Author
+    'blog.tags': 'Vitambulisho', // Tags
+    'blog.back_to_blog': '← Rudi kwenye Blogu', // Back to Blog
     
     // Team
     'team.title': 'Timu', // Team

@@ -1,6 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
+import Link from 'next/link'
 
 export default function Navigation() {
   const { t } = useLanguage()
@@ -13,6 +14,7 @@ export default function Navigation() {
       <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
       <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
       <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+      <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
       <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
       <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
     </nav>

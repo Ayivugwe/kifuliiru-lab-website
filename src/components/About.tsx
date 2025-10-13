@@ -35,8 +35,8 @@ export default function About() {
           <span className="stat-label">Community Validated</span>
         </div>
         <div className="stat">
-          <span className="stat-number">3 Years</span>
-          <span className="stat-label">Zero to Complete</span>
+          <span className="stat-number">2025</span>
+          <span className="stat-label">Founded</span>
         </div>
       </div>
     </section>

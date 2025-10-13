@@ -15,7 +15,7 @@ export default function StructuredData() {
           "height": 300
         },
         "description": "Specialized research laboratory preserving the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo, through computational methods and community engagement.",
-        "foundingDate": "2021",
+        "foundingDate": "2025-10",
         "parentOrganization": {
           "@type": "Organization",
           "name": "Wekify LLC",
@@ -91,7 +91,7 @@ export default function StructuredData() {
           "Bafuliiru Community Engagement",
           "Bantu Language Documentation"
         ],
-        "foundingDate": "2021",
+        "foundingDate": "2025-10",
         "description": "Research laboratory developing scalable methodologies for indigenous language documentation and preservation through computational methods, specifically focused on the Kifuliiru language and Bafuliiru community in Uvira, South Kivu, DRC."
       },
       {

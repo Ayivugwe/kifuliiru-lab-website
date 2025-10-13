@@ -49,6 +49,17 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Text Selection */
+::selection {
+  background: var(--accent-color);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--accent-color);
+  color: white;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;

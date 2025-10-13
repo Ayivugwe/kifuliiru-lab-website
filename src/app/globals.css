@@ -82,6 +82,92 @@ body {
   transform: scale(0.95);
 }
 
+/* Language Toggle */
+.language-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.language-toggle-button {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  height: 44px;
+}
+
+.language-toggle-button:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.02);
+}
+
+.language-flag {
+  font-size: 1.1rem;
+}
+
+.language-name {
+  font-weight: 500;
+  flex: 1;
+  text-align: left;
+}
+
+.language-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px var(--shadow);
+  z-index: 1000;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.language-option {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+
+.language-option:hover {
+  background: var(--bg-secondary);
+}
+
+.language-option.active {
+  background: var(--accent-color);
+  color: white;
+}
+
+.language-option .checkmark {
+  margin-left: auto;
+  font-weight: bold;
+}
+
 /* Header */
 .header {
   position: sticky;
@@ -104,6 +190,12 @@ body {
 
 .header-main {
   flex: 1;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header h1 {

@@ -11,9 +11,9 @@ const nextConfig: NextConfig = {
   // Compression
   compress: true,
   
-  // Disable static export for theme functionality
-  // output: 'export',
-  // trailingSlash: true,
+  // Generate static pages for better SEO
+  output: 'export',
+  trailingSlash: true,
 }
 
 export default nextConfig

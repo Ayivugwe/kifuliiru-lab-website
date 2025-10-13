@@ -1,7 +1,13 @@
+'use client'
+
+import { useLanguage } from '@/contexts/LanguageContext'
+
 export default function Footer() {
+  const { t } = useLanguage()
+  
   return (
     <footer className="footer">
-      <p>KIFULIIRU LAB • A specialized language laboratory of <a href="https://wekify.com">Wekify LLC</a></p>
+      <p>{t('footer.text')} • <a href="https://wekify.com">Wekify LLC</a></p>
       <p style={{ marginTop: '10px', fontStyle: 'italic' }}>
         "Kifuliiru kigayamaho" — Kifuliiru will shine
       </p>

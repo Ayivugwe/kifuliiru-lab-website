@@ -3,6 +3,7 @@ import './globals.css'
 import StructuredData from '@/components/StructuredData'
 import Analytics from '@/components/Analytics'
 import ClientThemeProvider from '@/components/ClientThemeProvider'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 
 export const metadata: Metadata = {
   title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
@@ -123,11 +124,13 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
-        <ClientThemeProvider>
-          <StructuredData />
-          <Analytics />
-          {children}
-        </ClientThemeProvider>
+        <LanguageProvider>
+          <ClientThemeProvider>
+            <StructuredData />
+            <Analytics />
+            {children}
+          </ClientThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )

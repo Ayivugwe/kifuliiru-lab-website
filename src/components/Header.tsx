@@ -11,21 +11,33 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
+    let ticking = false
+
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      
-      if (currentScrollY < 10) {
-        // Always show when at the top
-        setIsVisible(true)
-      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down and past 100px - hide header
-        setIsVisible(false)
-      } else {
-        // Scrolling up - show header
-        setIsVisible(true)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY
+          const scrollDifference = Math.abs(currentScrollY - lastScrollY)
+          
+          // Only update if there's significant scroll movement (prevents jittery behavior)
+          if (scrollDifference > 5) {
+            if (currentScrollY < 10) {
+              // Always show when at the top
+              setIsVisible(true)
+            } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+              // Scrolling down and past 80px - hide header
+              setIsVisible(false)
+            } else if (currentScrollY < lastScrollY) {
+              // Scrolling up - show header
+              setIsVisible(true)
+            }
+            
+            setLastScrollY(currentScrollY)
+          }
+          ticking = false
+        })
+        ticking = true
       }
-      
-      setLastScrollY(currentScrollY)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })

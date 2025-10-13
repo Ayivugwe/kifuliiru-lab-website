@@ -3,15 +3,18 @@ export default function About() {
     <section id="about">
       <h2>About</h2>
       <p>
-        Kifuliiru Lab is a research subsidiary of Wekify LLC developing scalable methodologies 
-        for indigenous language documentation and preservation. We combine computational 
-        linguistics, template-based generation, and community engagement to create 
-        comprehensive educational resources for under-resourced languages.
+        Kifuliiru Lab is a specialized research laboratory under Wekify LLC, dedicated to 
+        preserving and revitalizing the Kifuliiru language through computational methods. 
+        As part of Wekify's broader mission to preserve endangered languages worldwide, 
+        we develop scalable methodologies that combine computational linguistics, 
+        template-based generation, and community engagement.
       </p>
       <p>
         Our work demonstrates that systematic content generation, when paired with native 
         speaker validation, can produce educational materials at unprecedented scale—transforming 
-        languages from minimal documentation to comprehensive digital ecosystems.
+        languages from minimal documentation to comprehensive digital ecosystems. This 
+        methodology will be replicated across other language laboratories as Wekify 
+        expands to serve additional endangered languages.
       </p>
 
       {/* Stats */}

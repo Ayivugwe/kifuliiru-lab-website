@@ -2,6 +2,7 @@ export default function Navigation() {
   return (
     <nav className="nav">
       <a href="#about">About</a>
+      <a href="#wekify-vision">Wekify Vision</a>
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>

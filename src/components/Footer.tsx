@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>KIFULIIRU LAB • A subsidiary of <a href="https://wekify.com">Wekify LLC</a></p>
+      <p>KIFULIIRU LAB • A specialized language laboratory of <a href="https://wekify.com">Wekify LLC</a></p>
       <p style={{ marginTop: '10px', fontStyle: 'italic' }}>
         "Kifuliiru kigayamaho" — Kifuliiru will shine
       </p>

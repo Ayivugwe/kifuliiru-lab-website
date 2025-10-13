@@ -18,7 +18,9 @@ export default function Research() {
       </p>
       <p>
         <strong>Hypothesis:</strong> This methodology is language-agnostic and can scale to the 
-        3,000+ endangered languages globally.
+        3,000+ endangered languages globally. Each language will have its own dedicated 
+        laboratory under the Wekify LLC umbrella, applying our proven methodologies 
+        to preserve and revitalize their unique linguistic heritage.
       </p>
     </section>
   )

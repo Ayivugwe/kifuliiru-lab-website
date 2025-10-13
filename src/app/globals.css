@@ -63,7 +63,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 220px 20px 40px 20px; /* Extra top padding for fixed header */
+  padding: 260px 20px 40px 20px; /* Extra top padding for fixed header */
 }
 
 /* Theme Toggle */

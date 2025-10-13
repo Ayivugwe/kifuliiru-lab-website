@@ -5,7 +5,7 @@ export default function Contact() {
           <p>
             We welcome collaboration with researchers, institutions, and language communities 
             interested in establishing their own language laboratories under the Wekify LLC 
-            framework. Our proven Kifuliiru laboratory methodology can be adapted for any endangered language.
+            framework. Our proven Kifuliiru Lab methodology can be adapted for any endangered language.
           </p>
 
       <div className="contact-links">

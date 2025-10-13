@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     'cultural knowledge documentation',
     'Kifuliiru language preservation laboratory',
     'Kifuliiru Language Laboratory',
+    'Kifuliiru Lab methodology',
     'language laboratory methodology',
     'Wekify LLC',
     'African languages',
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
-    description: 'Kifuliiru Language Laboratory - Specialized research laboratory preserving the Kifuliiru language through computational methods. Part of Wekify LLC\'s global mission to revitalize endangered languages.',
+    description: 'Kifuliiru Lab - Kifuliiru Language Laboratory preserving the Kifuliiru language through computational methods. Part of Wekify LLC\'s global mission to revitalize endangered languages.',
     url: 'https://kifuliiru.org',
     siteName: 'Kifuliiru Lab',
     images: [
@@ -80,7 +81,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
-    description: 'Kifuliiru Language Laboratory - Preserving the Kifuliiru language through computational linguistics and community engagement. Part of Wekify LLC\'s global language preservation mission.',
+    description: 'Kifuliiru Lab - Kifuliiru Language Laboratory preserving the Kifuliiru language through computational linguistics and community engagement. Part of Wekify LLC\'s global language preservation mission.',
     images: ['/og-image.jpg'],
     creator: '@kifuliirulab',
     site: '@wekifyllc',

@@ -3,7 +3,7 @@ export default function Research() {
     <section id="research">
       <h2>Research Focus</h2>
           <p>
-            <strong>Primary Question:</strong> Can our Kifuliiru language laboratory's template-based computational generation produce 
+            <strong>Primary Question:</strong> Can our Kifuliiru Lab's template-based computational generation produce 
             authentic, pedagogically-sound educational content for the Kifuliiru language with minimal existing 
             written materials?
           </p>
@@ -18,9 +18,9 @@ export default function Research() {
         including native speaker verification and elder cultural validation.
       </p>
           <p>
-            <strong>Hypothesis:</strong> This Kifuliiru language preservation laboratory methodology is language-agnostic and can scale to the 
+            <strong>Hypothesis:</strong> This Kifuliiru Lab methodology is language-agnostic and can scale to the 
             3,000+ endangered languages globally. Each language will have its own dedicated 
-            language laboratory under the Wekify LLC umbrella, applying our proven Kifuliiru laboratory methodologies 
+            language laboratory under the Wekify LLC umbrella, applying our proven Kifuliiru Lab methodologies 
             to preserve and revitalize their unique linguistic heritage.
           </p>
     </section>

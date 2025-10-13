@@ -22,6 +22,14 @@
     <priority>0.9</priority>
   </url>
   
+  <!-- Cultural Context Section -->
+  <url>
+    <loc>https://kifuliiru.org/#cultural-context</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
   <!-- Wekify Vision Section -->
   <url>
     <loc>https://kifuliiru.org/#wekify-vision</loc>

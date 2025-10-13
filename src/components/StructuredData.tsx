@@ -14,7 +14,7 @@ export default function StructuredData() {
           "width": 300,
           "height": 300
         },
-        "description": "Specialized research laboratory preserving the Kifuliiru language through computational methods and community engagement.",
+        "description": "Specialized research laboratory preserving the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru, Democratic Republic of Congo, through computational methods and community engagement.",
         "foundingDate": "2021",
         "parentOrganization": {
           "@type": "Organization",
@@ -62,6 +62,10 @@ export default function StructuredData() {
           "Template-based Content Generation",
           "Community Language Engagement",
           "Kifuliiru Language",
+          "Bafuliiru People",
+          "Ibufuliiru",
+          "Democratic Republic of Congo",
+          "Bantu Languages",
           "Endangered Language Documentation",
           "AI for Under-resourced Languages"
         ]
@@ -79,10 +83,13 @@ export default function StructuredData() {
           "Indigenous Language Preservation",
           "Template-based Content Generation",
           "Community-centered Technology",
-          "AI for Under-resourced Languages"
+          "AI for Under-resourced Languages",
+          "Kifuliiru Language Studies",
+          "Bafuliiru Community Engagement",
+          "Bantu Language Documentation"
         ],
         "foundingDate": "2021",
-        "description": "Research laboratory developing scalable methodologies for indigenous language documentation and preservation through computational methods."
+        "description": "Research laboratory developing scalable methodologies for indigenous language documentation and preservation through computational methods, specifically focused on the Kifuliiru language and Bafuliiru community."
       },
       {
         "@type": "WebSite",
@@ -136,9 +143,11 @@ export default function StructuredData() {
         "worksFor": {
           "@id": "https://kifuliiru.org/#organization"
         },
-        "description": "Native Speaker and Research Lead at Kifuliiru Lab",
+        "description": "Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru",
         "knowsAbout": [
           "Kifuliiru Language",
+          "Bafuliiru Culture",
+          "Ibufuliiru",
           "Indigenous Language Preservation",
           "Computational Linguistics",
           "Community Engagement"
@@ -147,7 +156,7 @@ export default function StructuredData() {
       {
         "@type": "ResearchProject",
         "name": "Kifuliiru Language Preservation Project",
-        "description": "Comprehensive project to preserve and revitalize the Kifuliiru language through computational methods and community engagement.",
+        "description": "Comprehensive project to preserve and revitalize the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru, Democratic Republic of Congo, through computational methods and community engagement.",
         "funder": {
           "@type": "Organization",
           "name": "Wekify LLC"

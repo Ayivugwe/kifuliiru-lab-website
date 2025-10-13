@@ -5,19 +5,19 @@ export default function About() {
       <p>
         <strong>Kifuliiru Lab</strong> is a specialized <strong>indigenous language preservation</strong> 
         research laboratory under <strong>Wekify LLC</strong>, dedicated to preserving and 
-        revitalizing the <strong>Kifuliiru language</strong> through <strong>computational linguistics</strong> 
-        and <strong>template-based generation</strong> methods. As part of Wekify's broader mission 
-        to preserve <strong>endangered languages worldwide</strong>, we develop scalable methodologies 
-        that combine <strong>computational linguistics</strong>, <strong>template-based content generation</strong>, 
-        and <strong>community engagement</strong>.
+        revitalizing the <strong>Kifuliiru language</strong> spoken by the <strong>Bafuliiru people</strong> 
+        of <strong>Ibufuliiru</strong> in the Democratic Republic of Congo. Through <strong>computational linguistics</strong> 
+        and <strong>template-based generation</strong> methods, we work directly with the Bafuliiru community 
+        to create comprehensive educational resources in their native language.
       </p>
       <p>
         Our work demonstrates that <strong>systematic content generation</strong>, when paired with 
-        <strong>native speaker validation</strong>, can produce <strong>educational materials</strong> 
-        at unprecedented scale—transforming languages from minimal documentation to comprehensive 
-        <strong>digital language ecosystems</strong>. This <strong>language preservation methodology</strong> 
-        will be replicated across other <strong>language laboratories</strong> as Wekify expands 
-        to serve additional <strong>endangered languages</strong>.
+        <strong>native speaker validation</strong> from the Bafuliiru community, can produce 
+        <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
+        from minimal documentation to a comprehensive <strong>digital language ecosystem</strong>. 
+        This <strong>language preservation methodology</strong> will be replicated across other 
+        <strong>language laboratories</strong> as Wekify expands to serve additional 
+        <strong>endangered languages</strong> and their communities.
       </p>
 
       {/* Stats */}

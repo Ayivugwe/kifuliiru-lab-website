@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import About from '@/components/About'
+import CulturalContext from '@/components/CulturalContext'
 import WekifyVision from '@/components/WekifyVision'
 import Research from '@/components/Research'
 import Projects from '@/components/Projects'
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Navigation />
       <About />
+      <CulturalContext />
       <WekifyVision />
       <Research />
       <Projects />

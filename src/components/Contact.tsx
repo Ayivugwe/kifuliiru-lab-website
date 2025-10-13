@@ -5,7 +5,7 @@ export default function Contact() {
       <p>
         We welcome collaboration with researchers, institutions, and language communities 
         interested in establishing their own language laboratories under the Wekify LLC 
-        framework. Our proven methodology can be adapted for any endangered language.
+        framework. Our proven Kifuliiru methodology can be adapted for any endangered language.
       </p>
 
       <div className="contact-links">
@@ -17,7 +17,7 @@ export default function Contact() {
 
       <p style={{ marginTop: '30px', fontSize: '0.9rem', color: '#666' }}>
         <strong>Research Interests:</strong> Template-based generation • Computational linguistics • 
-        Indigenous language preservation • Community-centered technology • AI for under-resourced 
+        Kifuliiru language preservation • Community-centered technology • AI for under-resourced 
         languages • Cultural knowledge documentation
       </p>
     </section>

@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Kifuliiru Lab</h2>
       <p>
-        <strong>Kifuliiru Lab</strong> is a specialized <strong>indigenous language preservation</strong> 
+        <strong>Kifuliiru Lab</strong> is a specialized <strong>Kifuliiru language preservation</strong> 
         research laboratory under <strong>Wekify LLC</strong>, dedicated to preserving and 
         revitalizing the <strong>Kifuliiru language</strong> spoken by the <strong>Bafuliiru people</strong> 
         of <strong>Ibufuliiru in Uvira, South Kivu</strong>, Democratic Republic of Congo. Through <strong>computational linguistics</strong> 
@@ -16,7 +16,7 @@ export default function About() {
         <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
         from minimal documentation to a comprehensive <strong>digital language ecosystem</strong> including 
         <strong>websites, web applications, mobile apps, voice recordings, and connected resources</strong>. 
-        This <strong>language preservation methodology</strong> will be replicated across other 
+        This <strong>Kifuliiru language preservation methodology</strong> will be replicated across other 
         <strong>language laboratories</strong> as Wekify expands to serve additional 
         <strong>endangered languages</strong> and their communities.
       </p>

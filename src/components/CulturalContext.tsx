@@ -4,7 +4,7 @@ export default function CulturalContext() {
       <h2 id="cultural-heading">The Kifuliiru Language & People</h2>
       
       <div style={{ marginBottom: '30px' }}>
-        <h3 style={{ fontSize: '1.1rem', color: '#4a9eff', marginBottom: '15px' }}>
+        <h3 style={{ fontSize: '1.3rem', color: '#4a9eff', marginBottom: '15px' }}>
           Language & People
         </h3>
         <p>
@@ -20,7 +20,7 @@ export default function CulturalContext() {
       </div>
 
       <div style={{ marginBottom: '30px' }}>
-        <h3 style={{ fontSize: '1.1rem', color: '#4a9eff', marginBottom: '15px' }}>
+        <h3 style={{ fontSize: '1.3rem', color: '#4a9eff', marginBottom: '15px' }}>
           Geographical & Political Hierarchy
         </h3>
         <div style={{ 
@@ -46,7 +46,7 @@ export default function CulturalContext() {
       </div>
 
       <div style={{ marginBottom: '30px' }}>
-        <h3 style={{ fontSize: '1.1rem', color: '#4a9eff', marginBottom: '15px' }}>
+        <h3 style={{ fontSize: '1.3rem', color: '#4a9eff', marginBottom: '15px' }}>
           Current Situation of Kifuliiru
         </h3>
         <p>
@@ -78,10 +78,10 @@ export default function CulturalContext() {
         borderRadius: '5px',
         marginTop: '20px'
       }}>
-        <h4 style={{ color: '#4a9eff', marginBottom: '10px', fontSize: '1rem' }}>
+        <h4 style={{ color: '#4a9eff', marginBottom: '10px', fontSize: '1.2rem' }}>
           Cultural Significance
         </h4>
-        <p style={{ fontSize: '0.9rem', color: '#b0b0b0', margin: 0 }}>
+        <p style={{ fontSize: '1rem', color: '#b0b0b0', margin: 0 }}>
           "Kifuliiru kigayamaho" — "Kifuliiru will shine" — This traditional saying reflects the 
           Bafuliiru people's hope and determination to preserve their language and cultural identity 
           for future generations.

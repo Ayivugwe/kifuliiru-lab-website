@@ -77,11 +77,11 @@ section h2 {
   padding-left: 15px;
 }
 
-section p {
-  margin-bottom: 15px;
-  color: #b0b0b0;
-  font-size: 0.95rem;
-}
+        section p {
+            margin-bottom: 15px;
+            color: #b0b0b0;
+            font-size: 1.1rem;
+        }
 
 /* Stats Grid */
 .stats {
@@ -160,11 +160,11 @@ section p {
   color: #fb923c;
 }
 
-.project-desc {
-  font-size: 0.85rem;
-  color: #888;
-  line-height: 1.5;
-}
+        .project-desc {
+            font-size: 1rem;
+            color: #888;
+            line-height: 1.5;
+        }
 
 /* Publications */
 .publication {
@@ -173,16 +173,16 @@ section p {
   border-left: 1px solid #333;
 }
 
-.publication-title {
-  color: #4a9eff;
-  font-size: 0.95rem;
-  margin-bottom: 5px;
-}
+        .publication-title {
+            color: #4a9eff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
 
-.publication-meta {
-  font-size: 0.8rem;
-  color: #666;
-}
+        .publication-meta {
+            font-size: 0.95rem;
+            color: #666;
+        }
 
 /* Team */
 .team-grid {
@@ -198,29 +198,29 @@ section p {
   border: 1px solid #222;
 }
 
-.team-name {
-  color: #fff;
-  font-size: 0.95rem;
-  margin-bottom: 5px;
-}
+        .team-name {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
 
-.team-role {
-  color: #666;
-  font-size: 0.8rem;
-}
+        .team-role {
+            color: #666;
+            font-size: 0.95rem;
+        }
 
 /* Contact */
 .contact-links {
   margin-top: 20px;
 }
 
-.contact-links a {
-  color: #4a9eff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-}
+        .contact-links a {
+            color: #4a9eff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
 
 .contact-links a:hover {
   text-decoration: underline;
@@ -260,11 +260,12 @@ a {
 }
 
 /* Terminal-like aesthetic */
-.terminal-line {
-  font-family: 'Courier New', monospace;
-  color: #00ff00;
-  margin-bottom: 5px;
-}
+        .terminal-line {
+            font-family: 'Courier New', monospace;
+            color: #00ff00;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
 
 .terminal-line::before {
   content: '> ';

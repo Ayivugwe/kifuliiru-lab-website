@@ -4,8 +4,8 @@ export default function WekifyVision() {
       <h2>Wekify LLC Vision</h2>
       <p>
         <strong>Our Mission:</strong> Wekify LLC is dedicated to preserving and revitalizing 
-        endangered languages worldwide through specialized language laboratories. Each 
-        endangered language receives its own dedicated research facility, ensuring 
+        endangered languages worldwide through specialized language laboratories, starting with 
+        the Kifuliiru language. Each endangered language receives its own dedicated research facility, ensuring 
         culturally-appropriate and linguistically-accurate preservation efforts.
       </p>
       <p>
@@ -19,7 +19,7 @@ export default function WekifyVision() {
         own dedicated team, community partnerships, and specialized research focus.
       </p>
       <p>
-        <strong>Scalable Framework:</strong> Our proven methodology—combining computational 
+        <strong>Scalable Framework:</strong> Our proven Kifuliiru methodology—combining computational 
         linguistics, template-based generation, and community engagement—provides a 
         replicable framework that can be adapted for any language community.
       </p>

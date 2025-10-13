@@ -14,7 +14,7 @@ export default function StructuredData() {
           "width": 300,
           "height": 300
         },
-        "description": "Specialized research laboratory preserving the Kifuliiru language through a comprehensive digital ecosystem including websites, web apps, mobile apps, voice recordings, and educational materials for the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo.",
+        "description": "Specialized Kifuliiru language preservation laboratory developing comprehensive digital ecosystem including websites, web apps, mobile apps, voice recordings, and educational materials for the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo.",
         "foundingDate": "2025-10",
         "parentOrganization": {
           "@type": "Organization",
@@ -58,7 +58,7 @@ export default function StructuredData() {
           "name": "Global"
         },
         "knowsAbout": [
-          "Indigenous Language Preservation",
+          "Kifuliiru Language Preservation",
           "Computational Linguistics",
           "Template-based Content Generation",
           "Community Language Engagement",
@@ -88,7 +88,7 @@ export default function StructuredData() {
         },
         "researchArea": [
           "Computational Linguistics",
-          "Indigenous Language Preservation",
+          "Kifuliiru Language Preservation",
           "Template-based Content Generation",
           "Community-centered Technology",
           "AI for Under-resourced Languages",
@@ -102,7 +102,7 @@ export default function StructuredData() {
           "Multimedia Language Learning Systems"
         ],
         "foundingDate": "2025-10",
-        "description": "Research laboratory developing comprehensive digital ecosystems for indigenous language preservation including websites, web apps, mobile apps, voice recordings, and educational materials, specifically focused on the Kifuliiru language and Bafuliiru community in Uvira, South Kivu, DRC."
+        "description": "Research laboratory developing comprehensive digital ecosystems for Kifuliiru language preservation including websites, web apps, mobile apps, voice recordings, and educational materials, specifically focused on the Kifuliiru language and Bafuliiru community in Uvira, South Kivu, DRC."
       },
       {
         "@type": "WebSite",
@@ -156,12 +156,12 @@ export default function StructuredData() {
         "worksFor": {
           "@id": "https://kifuliiru.org/#organization"
         },
-        "description": "Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu",
+        "description": "Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, specializing in Kifuliiru language preservation",
         "knowsAbout": [
           "Kifuliiru Language",
           "Bafuliiru Culture",
           "Ibufuliiru",
-          "Indigenous Language Preservation",
+          "Kifuliiru Language Preservation",
           "Computational Linguistics",
           "Community Engagement"
         ]

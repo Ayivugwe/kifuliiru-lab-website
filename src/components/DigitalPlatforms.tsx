@@ -87,31 +87,42 @@ export default function DigitalPlatforms() {
       </p>
       
       <div className="platforms-grid">
-        {platforms.map((platform, index) => (
-          <div key={index} className="platform-card">
-            <div className="platform-header">
-              <h3 className="platform-name">{platform.name}</h3>
-              {platform.subtitle && (
-                <p className="platform-subtitle">
-                  {platform.subtitle.startsWith('http') ? (
-                    <a href={platform.subtitle} target="_blank" rel="noopener noreferrer">
-                      {platform.subtitle}
-                    </a>
-                  ) : (
-                    platform.subtitle
-                  )}
-                </p>
-              )}
-              <div className="platform-meta">
-                <span className={`platform-status status-${platform.status.toLowerCase()}`}>
-                  {platform.status}
-                </span>
-                <span className="platform-type">{platform.type}</span>
+        {platforms.map((platform, index) => {
+          const hasLink = platform.subtitle && platform.subtitle.startsWith('http')
+          const cardContent = (
+            <div className="platform-card">
+              <div className="platform-header">
+                <h3 className="platform-name">{platform.name}</h3>
+                {platform.subtitle && !hasLink && (
+                  <p className="platform-subtitle">{platform.subtitle}</p>
+                )}
+                <div className="platform-meta">
+                  <span className={`platform-status status-${platform.status.toLowerCase()}`}>
+                    {platform.status}
+                  </span>
+                  <span className="platform-type">{platform.type}</span>
+                </div>
               </div>
+              <p className="platform-description">{platform.description}</p>
             </div>
-            <p className="platform-description">{platform.description}</p>
-          </div>
-        ))}
+          )
+
+          return hasLink ? (
+            <a
+              key={index}
+              href={platform.subtitle}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="platform-card-link"
+            >
+              {cardContent}
+            </a>
+          ) : (
+            <div key={index}>
+              {cardContent}
+            </div>
+          )
+        })}
       </div>
     </section>
   )

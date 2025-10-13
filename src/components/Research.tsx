@@ -8,9 +8,10 @@ export default function Research() {
         written materials?
       </p>
       <p>
-        <strong>Methodology:</strong> Dual-track approach combining (1) systematic generation 
-        via mathematical formulas and linguistic templates, and (2) community-powered content 
-        creation through digital platforms.
+        <strong>Methodology:</strong> Multi-platform approach combining (1) systematic generation 
+        via mathematical formulas and linguistic templates, (2) community-powered content 
+        creation through digital platforms, (3) voice recording and audio preservation, 
+        and (4) integrated web and mobile applications for comprehensive language access.
       </p>
       <p>
         <strong>Validation:</strong> All generated content undergoes multi-stage community review 

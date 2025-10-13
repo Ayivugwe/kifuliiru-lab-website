@@ -14,7 +14,8 @@ export default function About() {
         Our work demonstrates that <strong>systematic content generation</strong>, when paired with 
         <strong>native speaker validation</strong> from the Bafuliiru community, can produce 
         <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
-        from minimal documentation to a comprehensive <strong>digital language ecosystem</strong>. 
+        from minimal documentation to a comprehensive <strong>digital language ecosystem</strong> including 
+        <strong>websites, web applications, mobile apps, voice recordings, and connected resources</strong>. 
         This <strong>language preservation methodology</strong> will be replicated across other 
         <strong>language laboratories</strong> as Wekify expands to serve additional 
         <strong>endangered languages</strong> and their communities.
@@ -33,6 +34,14 @@ export default function About() {
         <div className="stat">
           <span className="stat-number">100%</span>
           <span className="stat-label">Community Validated</span>
+        </div>
+        <div className="stat">
+          <span className="stat-number">4+</span>
+          <span className="stat-label">Digital Platforms</span>
+        </div>
+        <div className="stat">
+          <span className="stat-number">Voice</span>
+          <span className="stat-label">Recordings Available</span>
         </div>
         <div className="stat">
           <span className="stat-number">2025</span>

@@ -31,6 +31,30 @@ const projects: Project[] = [
     code: '11,000+ books | Growing daily'
   },
   {
+    name: 'Web Applications Suite',
+    status: 'active',
+    description: 'Comprehensive web applications for Kifuliiru language learning and practice. Interactive exercises, pronunciation guides, and cultural content. Currently in development/testing phase.',
+    code: 'Multi-platform | Voice integration'
+  },
+  {
+    name: 'Mobile Application',
+    status: 'active',
+    description: 'Native mobile app for iOS and Android providing offline access to Kifuliiru resources, voice recordings, and interactive learning modules. Currently in testing phase.',
+    code: 'Cross-platform | Offline capable'
+  },
+  {
+    name: 'Voice Recording System',
+    status: 'complete',
+    description: 'Comprehensive voice recording infrastructure capturing native speaker pronunciations, stories, and cultural narratives. All numbers and common phrases have voice recordings.',
+    code: 'Native speaker validated'
+  },
+  {
+    name: 'Connected Resource Network',
+    status: 'active',
+    description: 'Integrated ecosystem connecting all digital platforms, voice recordings, and educational resources. Seamless data flow between websites, apps, and community platforms.',
+    code: 'Real-time sync | Cross-platform'
+  },
+  {
     name: 'AI Language Model Training',
     status: 'planned',
     description: 'Fine-tuning large language models on Kifuliiru corpus. Applications: conversational chatbot, translation assistance, grammar checking, cultural knowledge base. First comprehensive AI for Kifuliiru language.'

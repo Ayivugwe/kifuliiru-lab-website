@@ -5,7 +5,7 @@ import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
   title: 'Kifuliiru Lab | Indigenous Language Preservation Research',
-  description: 'Kifuliiru Lab preserves the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, DRC. Using computational linguistics and community engagement to create 141,000+ educational materials for this endangered Bantu language.',
+  description: 'Kifuliiru Lab preserves the Kifuliiru language through a comprehensive digital ecosystem including websites, web apps, mobile apps, voice recordings, and 141,000+ educational materials for the Bafuliiru people of Uvira, South Kivu, DRC.',
   keywords: [
     'indigenous language preservation',
     'computational linguistics',
@@ -35,7 +35,17 @@ export const metadata: Metadata = {
     'traditional languages',
     'Uvira language preservation',
     'South Kivu languages',
-    'Congo language research'
+    'Congo language research',
+    'digital language ecosystem',
+    'language learning apps',
+    'mobile language apps',
+    'voice recordings',
+    'audio language preservation',
+    'web applications',
+    'connected resources',
+    'language technology platform',
+    'multimedia language learning',
+    'offline language resources'
   ],
   authors: [{ name: 'Ayivugwe Kabemba Mukome', url: 'https://kifuliiru.org' }],
   creator: 'Kifuliiru Lab',

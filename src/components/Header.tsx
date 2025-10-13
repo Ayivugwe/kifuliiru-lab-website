@@ -1,8 +1,12 @@
 export default function Header() {
   return (
-    <header className="header">
+    <header className="header" role="banner">
       <h1>KIFULIIRU LAB</h1>
-      <p className="tagline">Indigenous Language Preservation Through Computational Methods</p>
+      <p className="tagline">
+        <strong>Indigenous Language Preservation</strong> Through 
+        <strong> Computational Methods</strong> and 
+        <strong> Community Engagement</strong>
+      </p>
     </header>
   )
 }

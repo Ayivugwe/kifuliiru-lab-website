@@ -1,20 +1,23 @@
 export default function About() {
   return (
-    <section id="about">
-      <h2>About</h2>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Kifuliiru Lab</h2>
       <p>
-        Kifuliiru Lab is a specialized research laboratory under Wekify LLC, dedicated to 
-        preserving and revitalizing the Kifuliiru language through computational methods. 
-        As part of Wekify's broader mission to preserve endangered languages worldwide, 
-        we develop scalable methodologies that combine computational linguistics, 
-        template-based generation, and community engagement.
+        <strong>Kifuliiru Lab</strong> is a specialized <strong>indigenous language preservation</strong> 
+        research laboratory under <strong>Wekify LLC</strong>, dedicated to preserving and 
+        revitalizing the <strong>Kifuliiru language</strong> through <strong>computational linguistics</strong> 
+        and <strong>template-based generation</strong> methods. As part of Wekify's broader mission 
+        to preserve <strong>endangered languages worldwide</strong>, we develop scalable methodologies 
+        that combine <strong>computational linguistics</strong>, <strong>template-based content generation</strong>, 
+        and <strong>community engagement</strong>.
       </p>
       <p>
-        Our work demonstrates that systematic content generation, when paired with native 
-        speaker validation, can produce educational materials at unprecedented scale—transforming 
-        languages from minimal documentation to comprehensive digital ecosystems. This 
-        methodology will be replicated across other language laboratories as Wekify 
-        expands to serve additional endangered languages.
+        Our work demonstrates that <strong>systematic content generation</strong>, when paired with 
+        <strong>native speaker validation</strong>, can produce <strong>educational materials</strong> 
+        at unprecedented scale—transforming languages from minimal documentation to comprehensive 
+        <strong>digital language ecosystems</strong>. This <strong>language preservation methodology</strong> 
+        will be replicated across other <strong>language laboratories</strong> as Wekify expands 
+        to serve additional <strong>endangered languages</strong>.
       </p>
 
       {/* Stats */}

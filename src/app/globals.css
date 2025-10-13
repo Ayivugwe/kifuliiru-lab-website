@@ -668,6 +668,17 @@ a:hover {
   word-break: break-all;
 }
 
+.platform-subtitle a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.platform-subtitle a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 .platform-meta {
   display: flex;
   gap: 12px;

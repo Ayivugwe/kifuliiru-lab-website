@@ -13,10 +13,10 @@ export default function Contact() {
       </p>
 
       <div className="contact-links">
-        <div className="terminal-line">{t('contact.website')}: <a href="https://kifuliiru.org">kifuliiru.org</a></div>
+        <div className="terminal-line">{t('contact.website')}: <a href="https://kifuliiru.org" target="_blank" rel="noopener noreferrer">kifuliiru.org</a></div>
         <div className="terminal-line">{t('contact.email')}: kifuliiru@gmail.com</div>
         <div className="terminal-line">{t('contact.partnerships')}: wekify@gmail.com</div>
-        <div className="terminal-line">{t('contact.parent')}: <a href="https://wekify.com">Wekify LLC</a></div>
+        <div className="terminal-line">{t('contact.parent')}: <a href="https://wekify.com" target="_blank" rel="noopener noreferrer">Wekify LLC</a></div>
       </div>
 
       <p style={{ marginTop: '30px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>

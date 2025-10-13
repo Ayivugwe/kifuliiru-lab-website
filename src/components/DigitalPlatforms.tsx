@@ -86,7 +86,15 @@ export default function DigitalPlatforms() {
             <div className="platform-header">
               <h3 className="platform-name">{platform.name}</h3>
               {platform.subtitle && (
-                <p className="platform-subtitle">{platform.subtitle}</p>
+                <p className="platform-subtitle">
+                  {platform.subtitle.startsWith('http') ? (
+                    <a href={platform.subtitle} target="_blank" rel="noopener noreferrer">
+                      {platform.subtitle}
+                    </a>
+                  ) : (
+                    platform.subtitle
+                  )}
+                </p>
               )}
               <div className="platform-meta">
                 <span className={`platform-status status-${platform.status.toLowerCase()}`}>

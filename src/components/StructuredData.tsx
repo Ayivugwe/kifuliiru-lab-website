@@ -14,7 +14,7 @@ export default function StructuredData() {
           "width": 300,
           "height": 300
         },
-        "description": "Specialized research laboratory preserving the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru, Democratic Republic of Congo, through computational methods and community engagement.",
+        "description": "Specialized research laboratory preserving the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo, through computational methods and community engagement.",
         "foundingDate": "2021",
         "parentOrganization": {
           "@type": "Organization",
@@ -32,7 +32,8 @@ export default function StructuredData() {
             "@type": "PostalAddress",
             "addressLocality": "Uvira",
             "addressRegion": "South Kivu",
-            "addressCountry": "CD"
+            "addressCountry": "CD",
+            "description": "Primary research location - Ibufuliiru, Bafuliiru homeland"
           }
         ],
         "contactPoint": [
@@ -64,6 +65,8 @@ export default function StructuredData() {
           "Kifuliiru Language",
           "Bafuliiru People",
           "Ibufuliiru",
+          "Uvira",
+          "South Kivu",
           "Democratic Republic of Congo",
           "Bantu Languages",
           "Endangered Language Documentation",
@@ -89,7 +92,7 @@ export default function StructuredData() {
           "Bantu Language Documentation"
         ],
         "foundingDate": "2021",
-        "description": "Research laboratory developing scalable methodologies for indigenous language documentation and preservation through computational methods, specifically focused on the Kifuliiru language and Bafuliiru community."
+        "description": "Research laboratory developing scalable methodologies for indigenous language documentation and preservation through computational methods, specifically focused on the Kifuliiru language and Bafuliiru community in Uvira, South Kivu, DRC."
       },
       {
         "@type": "WebSite",
@@ -143,7 +146,7 @@ export default function StructuredData() {
         "worksFor": {
           "@id": "https://kifuliiru.org/#organization"
         },
-        "description": "Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru",
+        "description": "Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu",
         "knowsAbout": [
           "Kifuliiru Language",
           "Bafuliiru Culture",
@@ -156,7 +159,7 @@ export default function StructuredData() {
       {
         "@type": "ResearchProject",
         "name": "Kifuliiru Language Preservation Project",
-        "description": "Comprehensive project to preserve and revitalize the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru, Democratic Republic of Congo, through computational methods and community engagement.",
+        "description": "Comprehensive project to preserve and revitalize the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo, through computational methods and community engagement.",
         "funder": {
           "@type": "Organization",
           "name": "Wekify LLC"

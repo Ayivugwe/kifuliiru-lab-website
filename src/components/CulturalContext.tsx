@@ -10,11 +10,12 @@ export default function CulturalContext() {
         <p>
           <strong>Kifuliiru</strong> is the language spoken by the <strong>Bafuliiru</strong> (also known as 
           <strong> Abafuliiru</strong>) people. The Bafuliiru are the traditional inhabitants of 
-          <strong> Ibufuliiru</strong>, their ancestral homeland and kingdom in the Democratic Republic of Congo.
+          <strong> Ibufuliiru</strong>, their ancestral homeland and kingdom in <strong>Uvira, South Kivu</strong>, 
+          Democratic Republic of Congo.
         </p>
         <p>
           The Kifuliiru language is part of the Bantu language family and is spoken by approximately 
-          200,000-300,000 people in the South Kivu region of the Democratic Republic of Congo.
+          200,000-300,000 people in the <strong>Uvira region of South Kivu</strong>, Democratic Republic of Congo.
         </p>
       </div>
 
@@ -31,15 +32,16 @@ export default function CulturalContext() {
           <div style={{ fontFamily: 'Courier New, monospace', fontSize: '0.9rem', lineHeight: '1.8' }}>
             <div><strong>🇨🇩 Democratic Republic of Congo (DRC)</strong></div>
             <div style={{ marginLeft: '20px' }}>└── <strong>South Kivu Province</strong></div>
-            <div style={{ marginLeft: '40px' }}>└── <strong>Ibufuliiru</strong> (Bafuliiru Kingdom/Chiefdom)</div>
-            <div style={{ marginLeft: '60px' }}>└── <strong>Bafuliiru/Abafuliiru</strong> (The People)</div>
-            <div style={{ marginLeft: '80px' }}>└── <strong>Kifuliiru</strong> (The Language)</div>
+            <div style={{ marginLeft: '40px' }}>└── <strong>Uvira Territory</strong></div>
+            <div style={{ marginLeft: '60px' }}>└── <strong>Ibufuliiru</strong> (Bafuliiru Kingdom/Chiefdom)</div>
+            <div style={{ marginLeft: '80px' }}>└── <strong>Bafuliiru/Abafuliiru</strong> (The People)</div>
+            <div style={{ marginLeft: '100px' }}>└── <strong>Kifuliiru</strong> (The Language)</div>
           </div>
         </div>
         <p>
-          Ibufuliiru represents the traditional territory and cultural heartland of the Bafuliiru people, 
-          encompassing their historical kingdom and chiefdom structures that have existed for centuries 
-          before colonial boundaries were established.
+          Ibufuliiru represents the traditional territory and cultural heartland of the Bafuliiru people 
+          in <strong>Uvira, South Kivu</strong>, encompassing their historical kingdom and chiefdom structures 
+          that have existed for centuries before colonial boundaries were established.
         </p>
       </div>
 

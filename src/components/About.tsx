@@ -9,8 +9,7 @@ export default function About() {
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">{t('about.title')}</h2>
       <p>
-        <strong>Kifuliiru Lab</strong> is a specialized <strong>Kifuliiru language preservation laboratory</strong> 
-        under <strong>Wekify LLC</strong>, dedicated to preserving and 
+        <strong>Kifuliiru Lab</strong> is a specialized <strong> Kifuliiru language preservation laboratory </strong> under <strong>Wekify LLC</strong>, dedicated to preserving and 
         revitalizing the <strong>Kifuliiru language</strong> spoken by the <strong>Bafuliiru people</strong> 
         of <strong>Ibufuliiru in Uvira, South Kivu</strong>, Democratic Republic of Congo. Through <strong>computational linguistics</strong> 
         and <strong>template-based generation</strong> methods, our lab works directly with the Bafuliiru community 

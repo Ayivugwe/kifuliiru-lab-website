@@ -52,7 +52,7 @@ export default function Header() {
             <h1>{t('header.title')}</h1>
             <p className="tagline">
               <strong>Kifuliiru Language Laboratory</strong> - 
-              <strong>Language Preservation</strong> Through 
+              <strong> Language Preservation</strong> Through 
               <strong> Computational Methods</strong>
             </p>
           </div>

@@ -10,11 +10,15 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Community Advisors',
-    role: 'Elder Council\nCultural Validation, Content Review\n(Expanding)'
+    role: 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation'
   },
   {
-    name: 'Future Team Members',
-    role: 'Software Engineering\nPlatform Development\nAcademic Partnerships\n(Recruiting)'
+    name: 'Future Language Lab Directors',
+    role: 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)'
+  },
+  {
+    name: 'Technical & Research Teams',
+    role: 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)'
   }
 ]
 

@@ -40,9 +40,8 @@ export default function Header() {
             <h1>{t('header.title')}</h1>
             <p className="tagline">
               <strong>Kifuliiru Language Laboratory</strong> - 
-              <strong>Kifuliiru Language Preservation</strong> Through 
-              <strong> Computational Methods</strong> and 
-              <strong> Community Engagement</strong>
+              <strong>Language Preservation</strong> Through 
+              <strong> Computational Methods</strong>
             </p>
           </div>
           <div className="header-controls">

@@ -16,19 +16,19 @@ export default function DigitalPlatforms() {
     },
     {
       name: 'kifuliiru.com',
-      description: 'Main Kifuliiru language website. All content created by Ayivugwe Kabemba Mukome.',
+      description: 'Main Kifuliiru language website. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
       status: 'Active',
       type: 'Website'
     },
     {
       name: 'tabula.kifuliiru.com',
-      description: 'Web portal/web app for admins and contributors. All content created by Ayivugwe Kabemba Mukome.',
+      description: 'Web portal/web app for admins and contributors. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
       status: 'Active',
       type: 'Web App'
     },
     {
       name: 'lola.kifuliiru.com',
-      description: 'Social media platform for Kifuliiru community. All content created by Ayivugwe Kabemba Mukome.',
+      description: 'Social media platform for Kifuliiru community. Created with AI assistance under Ayivugwe Kabemba Mukome\'s guidance, with Kifuliiru translations added.',
       status: 'Active',
       type: 'Social Media'
     },

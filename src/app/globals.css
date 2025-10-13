@@ -74,11 +74,11 @@ body {
 }
 
 .theme-toggle:hover {
-  background: var(--accent-color);
-  color: white;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
   border-color: var(--accent-color);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .theme-toggle:active {
@@ -113,11 +113,11 @@ body {
 }
 
 .language-toggle-button:hover {
-  background: var(--accent-color);
-  color: white;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
   border-color: var(--accent-color);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .language-content {
@@ -201,12 +201,13 @@ body {
 }
 
 .language-option.active {
-  background: var(--accent-color);
-  color: white;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-left: 3px solid var(--accent-color);
 }
 
 .language-option.active .language-flag {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
 }
 
 .checkmark {
@@ -215,7 +216,7 @@ body {
 }
 
 .language-option.active .checkmark {
-  color: white;
+  color: var(--accent-color);
 }
 
 /* Header */

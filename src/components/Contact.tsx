@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="contact-links">
         <div className="terminal-line">Website: <a href="https://kifuliiru.org">kifuliiru.org</a></div>
         <div className="terminal-line">Email: kifuliiru@gmail.com</div>
-        <div className="terminal-line">New Language Labs: kifuliiru@gmail.com</div>
+        <div className="terminal-line">New Language Labs: wekify@gmail.com</div>
         <div className="terminal-line">Parent Company: <a href="https://wekify.com">Wekify LLC</a></div>
       </div>
 

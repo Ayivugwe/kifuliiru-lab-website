@@ -46,7 +46,7 @@ export default function StructuredData() {
           {
             "@type": "ContactPoint",
             "contactType": "partnerships",
-            "email": "kifuliiru@gmail.com"
+            "email": "wekify@gmail.com"
           }
         ],
         "sameAs": [

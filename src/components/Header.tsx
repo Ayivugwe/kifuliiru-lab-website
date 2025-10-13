@@ -34,33 +34,35 @@ export default function Header() {
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
-      <div className="header-content">
-        <div className="header-main">
-          <h1>{t('header.title')}</h1>
-          <p className="tagline">
-            <strong>Kifuliiru Language Laboratory</strong> - 
-            <strong>Kifuliiru Language Preservation</strong> Through 
-            <strong> Computational Methods</strong> and 
-            <strong> Community Engagement</strong>
-          </p>
+      <div className="header-container">
+        <div className="header-content">
+          <div className="header-main">
+            <h1>{t('header.title')}</h1>
+            <p className="tagline">
+              <strong>Kifuliiru Language Laboratory</strong> - 
+              <strong>Kifuliiru Language Preservation</strong> Through 
+              <strong> Computational Methods</strong> and 
+              <strong> Community Engagement</strong>
+            </p>
+          </div>
+          <div className="header-controls">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
         </div>
-        <div className="header-controls">
-          <LanguageToggle />
-          <ThemeToggle />
-        </div>
+        
+        {/* Navigation inside header */}
+        <nav className="nav" role="navigation" aria-label="Main navigation">
+          <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
+          <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
+          <a href="#wekify-vision" aria-label="Wekify LLC Vision for Language Preservation">{t('nav.vision')}</a>
+          <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
+          <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
+          <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+          <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
+          <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
+        </nav>
       </div>
-      
-      {/* Navigation inside header */}
-      <nav className="nav" role="navigation" aria-label="Main navigation">
-        <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
-        <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
-        <a href="#wekify-vision" aria-label="Wekify LLC Vision for Language Preservation">{t('nav.vision')}</a>
-        <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
-        <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
-        <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
-        <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
-        <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
-      </nav>
     </header>
   )
 }

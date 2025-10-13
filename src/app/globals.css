@@ -51,6 +51,7 @@ body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px; /* Increased base font size from 16px */
 }
 
 /* Text Selection */
@@ -325,7 +326,7 @@ body {
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Increased from 2.5rem */
   font-weight: 400;
   letter-spacing: -1px;
   color: var(--text-primary);
@@ -365,7 +366,7 @@ body {
 }
 
 .header .tagline {
-  font-size: 0.95rem;
+  font-size: 1.1rem; /* Increased from 0.95rem */
   color: var(--text-secondary);
   font-style: italic;
 }
@@ -389,7 +390,7 @@ body {
   background: var(--bg-primary);
   padding: 15px 0;
   margin-top: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem; /* Increased from 0.9rem */
   border-top: 1px solid var(--border-light);
   transition: all 0.3s ease;
   margin-left: -20px;
@@ -484,7 +485,7 @@ section:first-child {
 }
 
 section h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem; /* Increased from 1.3rem */
   font-weight: 400;
   color: var(--text-primary);
   margin-bottom: 20px;
@@ -497,7 +498,7 @@ section h2 {
 /* Mobile section headings */
 @media (max-width: 768px) {
   section h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Increased from 1.2rem */
     letter-spacing: 1px;
     padding-left: 12px;
     margin-bottom: 15px;
@@ -516,13 +517,13 @@ section h2 {
         section p {
             margin-bottom: 15px;
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1.25rem; /* Increased from 1.1rem */
         }
 
 /* Mobile section text */
 @media (max-width: 768px) {
   section p {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Increased from 1rem */
     line-height: 1.6;
   }
 }
@@ -631,7 +632,7 @@ section h2 {
 }
 
 .project-name {
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* Increased from 1.1rem */
   color: var(--text-primary);
 }
 
@@ -659,7 +660,7 @@ section h2 {
 }
 
         .project-desc {
-            font-size: 1rem;
+            font-size: 1.1rem; /* Increased from 1rem */
             color: var(--text-secondary);
             line-height: 1.5;
         }
@@ -903,7 +904,7 @@ section h2 {
 
 .team-name {
   color: var(--text-primary);
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Increased from 1.2rem */
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -917,7 +918,7 @@ section h2 {
 
 .team-description {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 1.1rem; /* Increased from 0.95rem */
   line-height: 1.5;
 }
 
@@ -950,7 +951,7 @@ section h2 {
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
-            font-size: 1rem;
+            font-size: 1.1rem; /* Increased from 1rem */
             transition: color 0.3s ease;
         }
 

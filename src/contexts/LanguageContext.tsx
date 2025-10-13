@@ -113,25 +113,13 @@ const translations: Record<Language, Translations> = {
     'team.community_contributors': 'Community Contributors',
     'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
     'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
-    'founder.title': 'Founder & Director',
-    'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
-    'founder.background': 'Cultural Background',
-    'founder.background_content': 'Native speaker of Kifuliiru and member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Deeply connected to the cultural and linguistic traditions that form the foundation of this preservation work.',
-    'founder.expertise': 'Technical Expertise',
-    'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
-    'founder.vision': 'Vision & Mission',
-    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
-    'founder.achievements': 'Key Achievements',
-    'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
-    'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
-    'team.community_contributors': 'Community Contributors',
-    'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
-    'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
     'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories as Wekify LLC expands globally.',
     'team.technical_description': 'Dedicated technical professionals who develop and maintain the digital infrastructure, platforms, and research tools that power each language laboratory.',
     'team.research_partners': 'Research Partners',
     'team.research_role': 'Academic Collaborations\nResearch Institutions\nLanguage Documentation Experts\nComputational Linguistics Research',
     'team.research_description': 'Academic researchers and institutions that collaborate on methodology development, research validation, and the advancement of computational linguistics for endangered languages.',
+    
+    // Founder
     'founder.title': 'Founder & Director',
     'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
     'founder.background': 'Cultural Background',
@@ -177,6 +165,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Recherche',
     'nav.projects': 'Projets',
     'nav.publications': 'Publications',
+    'nav.founder': 'Fondateur',
     'nav.team': 'Équipe',
     'nav.contact': 'Contact',
     
@@ -241,6 +230,27 @@ const translations: Record<Language, Translations> = {
     'team.future_role': 'Direction de Laboratoires Linguistiques Spécialisés\nLocuteurs Natifs d\'Autres Langues Menacées\nReprésentants des Communautés Culturelles\n(Au Fur et à Mesure de l\'Expansion de Wekify LLC)',
     'team.technical_teams': 'Équipes Techniques & de Recherche',
     'team.technical_role': 'Ingénierie Logicielle\nDéveloppement de Plateformes\nPartenariats Académiques\nLinguistique Computationnelle\n(Par Laboratoire Linguistique)',
+    'team.community_description': 'Anciens respectés de la communauté et experts culturels qui fournissent des conseils essentiels et une validation pour tout le contenu, garantissant une représentation culturelle authentique et une précision linguistique.',
+    'team.community_contributors': 'Contributeurs Communautaires',
+    'team.contributors_role': 'Créateurs de Contenu\nLocuteurs de Langue\nGardien du Savoir Culturel\nEngagement Communautaire',
+    'team.contributors_description': 'Membres actifs de la communauté qui contribuent au contenu, partagent les connaissances culturelles et participent aux activités de préservation de la langue, garantissant une représentation authentique de la langue et de la culture Kifuliiru.',
+    'team.future_description': 'Locuteurs natifs et représentants culturels d\'autres communautés de langues menacées qui dirigeront des laboratoires spécialisés alors que Wekify LLC s\'étend mondialement.',
+    'team.technical_description': 'Professionnels techniques dévoués qui développent et maintiennent l\'infrastructure numérique, les plateformes et les outils de recherche qui alimentent chaque laboratoire linguistique.',
+    'team.research_partners': 'Partenaires de Recherche',
+    'team.research_role': 'Collaborations Académiques\nInstitutions de Recherche\nExperts en Documentation Linguistique\nRecherche en Linguistique Computationnelle',
+    'team.research_description': 'Chercheurs académiques et institutions qui collaborent au développement de méthodologies, à la validation de la recherche et à l\'avancement de la linguistique computationnelle pour les langues menacées.',
+    
+    // Founder
+    'founder.title': 'Fondateur & Directeur',
+    'founder.intro': 'Ayivugwe Kabemba Mukome dirige le Laboratoire Kifuliiru en tant que fondateur et directeur, réunissant l\'expertise linguistique native, l\'innovation technique et la recherche centrée sur la communauté pour préserver la langue Kifuliiru.',
+    'founder.background': 'Contexte Culturel',
+    'founder.background_content': 'Locuteur natif du Kifuliiru et membre du peuple Bafuliiru d\'Ibufuliiru à Uvira, Sud-Kivu, République Démocratique du Congo. Profondément connecté aux traditions culturelles et linguistiques qui forment la base de ce travail de préservation.',
+    'founder.expertise': 'Expertise Technique',
+    'founder.expertise_content': 'Chef de Recherche, Chef Technique et spécialiste en Science des Données avec expertise en linguistique computationnelle, génération de contenu basée sur des modèles et développement de méthodologies évolutives pour la préservation des langues.',
+    'founder.vision': 'Vision & Mission',
+    'founder.vision_content': 'Dirige le développement de méthodologies évolutives qui peuvent être répliquées à travers d\'autres langues menacées, créant un cadre pour la préservation des langues centrée sur la communauté à travers Wekify LLC.',
+    'founder.achievements': 'Réalisations Clés',
+    'founder.achievements_content': 'A transformé avec succès le Kifuliiru d\'une documentation minimale en un écosystème numérique complet avec 12+ plateformes, 141,000+ matériels éducatifs projetés et du contenu validé par la communauté.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -276,6 +286,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Utafiti',
     'nav.projects': 'Miradi',
     'nav.publications': 'Machapisho',
+    'nav.founder': 'Mwanzilishi',
     'nav.team': 'Timu',
     'nav.contact': 'Mawasiliano',
     
@@ -340,6 +351,27 @@ const translations: Record<Language, Translations> = {
     'team.future_role': 'Uongozi wa Maabara za Lugha Maalum\nWazungumzaji wa Asili wa Lugha Zingine Zilizo Hatari\nWawakilishi wa Jamii za Kitamaduni\n(Kadiri Wekify LLC Inapanuka)',
     'team.technical_teams': 'Timu za Kiufundi & Utafiti',
     'team.technical_role': 'Uhandisi wa Programu\nUundaji wa Mfumo\nUshirikiano wa Kielelezo\nIsimu ya Hesabu\n(Kwa Maabara ya Lugha)',
+    'team.community_description': 'Wazee wa jamii wanaostahili na wataalamu wa kitamaduni ambao hutoa mwongozo muhimu na uthibitisho wa maudhui yote, kuhakikisha uwakilishi wa kitamaduni wa kweli na usahihi wa lugha.',
+    'team.community_contributors': 'Wachangiaji wa Jamii',
+    'team.contributors_role': 'Waundaji wa Maudhui\nWazungumzaji wa Lugha\nWalinzi wa Maarifa ya Kitamaduni\nUshiriki wa Jamii',
+    'team.contributors_description': 'Wanachama wa jamii wanaohusika ambao huchangia maudhui, kushiriki maarifa ya kitamaduni, na kushiriki katika shughuli za kuhifadhi lugha, kuhakikisha uwakilishi wa kweli wa lugha na tamaduni ya Kifuliiru.',
+    'team.future_description': 'Wazungumzaji wa asili na wawakilishi wa kitamaduni kutoka jamii za lugha zingine zilizo hatarini ambao wataongoza maabara maalum kadiri Wekify LLC inapanuka duniani.',
+    'team.technical_description': 'Wataalamu wa kiufundi wanaojitolea ambao huunda na kudumisha miundombinu ya kidijitali, mifumo, na vifaa vya utafiti vinavyotumika katika kila maabara ya lugha.',
+    'team.research_partners': 'Washirika wa Utafiti',
+    'team.research_role': 'Ushirikiano wa Kielelezo\nTaasisi za Utafiti\nWataalamu wa Uthibitisho wa Lugha\nUtafiti wa Isimu ya Hesabu',
+    'team.research_description': 'Watafiti wa kielelezo na taasisi ambao hushirikiana katika uundaji wa mbinu, uthibitisho wa utafiti, na maendeleo ya isimu ya hesabu kwa lugha zilizo hatarini.',
+    
+    // Founder
+    'founder.title': 'Mwanzilishi & Mkurugenzi',
+    'founder.intro': 'Ayivugwe Kabemba Mukome anaongoza Laboratori ya Kifuliiru kama mwanzilishi na mkurugenzi, akileta pamoja ujuzi wa lugha ya asili, ubunifu wa kiufundi, na utafiti unaozingatia jamii ili kuhifadhi lugha ya Kifuliiru.',
+    'founder.background': 'Mazingira ya Kitamaduni',
+    'founder.background_content': 'Mzungumzaji wa asili wa Kifuliiru na mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, Jamhuri ya Kidemokrasia ya Kongo. Anaunganishwa sana na mila za kitamaduni na lugha zinazounda msingi wa kazi hii ya kuhifadhi.',
+    'founder.expertise': 'Ujuzi wa Kiufundi',
+    'founder.expertise_content': 'Mkurugenzi wa Utafiti, Mkurugenzi wa Kiufundi, na mtaalamu wa Sayansi ya Data mwenye ujuzi wa isimu ya hesabu, uzalishaji wa maudhui wa kiolezo, na uundaji wa mbinu zinazoweza kupanuka kwa kuhifadhi lugha.',
+    'founder.vision': 'Maono & Dhamira',
+    'founder.vision_content': 'Anaongoza uundaji wa mbinu zinazoweza kupanuka ambazo zinaweza kurudiwa katika lugha zingine zilizo hatarini, kuunda mfumo wa kuhifadhi lugha unaozingatia jamii kupitia Wekify LLC.',
+    'founder.achievements': 'Mafanikio Muhimu',
+    'founder.achievements_content': 'Amebadilisha kwa mafanikio Kifuliiru kutoka kwa hati kidogo hadi mfumo wa kidijitali kamili na mifumo 12+, vifaa vya elimu 141,000+ vilivyopangwa, na maudhui yaliyothibitishwa na jamii.',
     
     // Contact
     'contact.title': 'Mawasiliano & Ushirikiano',
@@ -364,135 +396,124 @@ const translations: Record<Language, Translations> = {
   },
   
   flr: {
-    // Kifuliiru translations (keeping in English for now as requested)
+    // Kifuliiru translations (with some Kifuliiru language content)
     'header.title': 'KIFULIIRU LAB',
     'header.tagline': 'Kifuliiru Language Laboratory - Kifuliiru Language Preservation Through Computational Methods and Community Engagement',
     
     // Navigation
-    'nav.about': 'About',
-    'nav.cultural': 'Language & People',
-    'nav.vision': 'Wekify Vision',
-    'nav.research': 'Research',
-    'nav.projects': 'Projects',
-    'nav.publications': 'Publications',
-    'nav.team': 'Team',
-    'nav.contact': 'Contact',
+    'nav.about': 'Kuhusu', // About
+    'nav.cultural': 'Lugha na Watu', // Language & People
+    'nav.vision': 'Maono ya Wekify', // Wekify Vision
+    'nav.research': 'Utafiti', // Research
+    'nav.projects': 'Miradi', // Projects
+    'nav.publications': 'Machapisho', // Publications
+    'nav.founder': 'Mwanzilishi', // Founder
+    'nav.team': 'Timu', // Team
+    'nav.contact': 'Mawasiliano', // Contact
     
     // About
-    'about.title': 'About Kifuliiru Lab',
-    'about.description1': 'Kifuliiru Lab is a specialized Kifuliiru language preservation laboratory under Wekify LLC, dedicated to preserving and revitalizing the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Through computational linguistics and template-based generation methods, our lab works directly with the Bafuliiru community to create comprehensive educational resources in their native language.',
-    'about.description2': 'Our lab\'s work demonstrates that systematic content generation, when paired with native speaker validation from the Bafuliiru community, can produce educational materials at unprecedented scale—transforming the Kifuliiru language from minimal documentation to a comprehensive digital language ecosystem including websites, web applications, mobile apps, voice recordings, and connected resources. This Kifuliiru Lab methodology will be replicated across other language laboratories as Wekify expands to serve additional endangered languages and their communities.',
+    'about.title': 'Kuhusu Laboratori ya Kifuliiru', // About Kifuliiru Lab
+    'about.description1': 'Laboratori ya Kifuliiru ni maabara maalum ya kuhifadhi lugha ya Kifuliiru chini ya Wekify LLC, inayojitolea kuhifadhi na kuirejesha lugha ya Kifuliiru inayozungumzwa na watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, Jamhuri ya Kidemokrasia ya Kongo. Kupitia isimu ya hesabu na mbinu za uzalishaji wa kiolezo, maabara yetu inafanya kazi moja kwa moja na jamii ya Bafuliiru kuunda rasilimali za elimu kamili katika lugha yao ya asili.',
+    'about.description2': 'Kazi ya maabara yetu inaonyesha kwamba uzalishaji wa maudhui wa kimfumo, unapounganishwa na uthibitisho wa wazungumzaji wa asili kutoka jamii ya Bafuliiru, unaweza kutoa vifaa vya elimu kwa kiwango cha juu zaidi—kubadilisha lugha ya Kifuliiru kutoka kwa hati kidogo hadi mfumo wa lugha wa kidijitali unaojumuisha tovuti, programu za wavuti, programu za simu, rekodi za sauti, na rasilimali zilizounganishwa. Mbinu hii ya Laboratori ya Kifuliiru itarudiwa katika maabara zingine za lugha Wekify inapopanua kuhudumia lugha zingine zilizo hatarini na jamii zao.',
     
     // Stats
-    'stats.books': 'Books Generated',
-    'stats.data': 'Training Data',
-    'stats.validated': 'Community Validated',
-    'stats.platforms': 'Digital Platforms',
-    'stats.voice': 'Recordings Available',
-    'stats.founded': 'Founded',
+    'stats.books': 'Vitabu Vilizozalishwa', // Books Generated
+    'stats.data': 'Data ya Mafunzo', // Training Data
+    'stats.validated': 'Imethibitishwa na Jamii', // Community Validated
+    'stats.platforms': 'Jukwaa za Kidijitali', // Digital Platforms
+    'stats.voice': 'Rekodi Zinazopatikana', // Recordings Available
+    'stats.founded': 'Iliundwa', // Founded
     
     // Cultural Context
-    'cultural.title': 'Kifuliiru Language & Bafuliiru People',
-    'cultural.language_people': 'Language & People',
-    'cultural.geographical': 'Geographical & Political Hierarchy',
-    'cultural.situation': 'Current Situation of Kifuliiru',
-    'cultural.significance': 'Cultural Significance',
-    'cultural.saying': '"Kifuliiru kigayamaho" — "Kifuliiru will shine" — This traditional saying reflects the Bafuliiru people\'s hope and determination to preserve their language and cultural identity for future generations.',
+    'cultural.title': 'Lugha ya Kifuliiru na Watu wa Bafuliiru', // Kifuliiru Language & Bafuliiru People
+    'cultural.language_people': 'Lugha na Watu', // Language & People
+    'cultural.geographical': 'Mpangilio wa Kijiografia na Kisiasa', // Geographical & Political Hierarchy
+    'cultural.situation': 'Hali ya Sasa ya Kifuliiru', // Current Situation of Kifuliiru
+    'cultural.significance': 'Maana ya Kitamaduni', // Cultural Significance
+    'cultural.saying': '"Kifuliiru kigayamaho" — "Kifuliiru kitang\'aa" — Mithali hii ya kitamaduni inaonyesha matumaini na azimio la watu wa Bafuliiru kuhifadhi lugha yao na utambulisho wao wa kitamaduni kwa vizazi vijavyo.', // Traditional saying
     
     // Wekify Vision
-    'vision.title': 'Wekify LLC Vision',
-    'vision.mission': 'Our Mission',
-    'vision.kifuliiru_lab': 'Kifuliiru Lab',
-    'vision.future_labs': 'Future Language Laboratories',
-    'vision.scalable': 'Scalable Framework',
+    'vision.title': 'Maono ya Wekify LLC', // Wekify LLC Vision
+    'vision.mission': 'Dhamira Yetu', // Our Mission
+    'vision.kifuliiru_lab': 'Laboratori ya Kifuliiru', // Kifuliiru Lab
+    'vision.future_labs': 'Maabara za Lugha za Baadaye', // Future Language Laboratories
+    'vision.scalable': 'Mfumo wa Kupanuka', // Scalable Framework
     
     // Research
-    'research.title': 'Research Focus',
-    'research.question': 'Primary Question',
-    'research.methodology': 'Methodology',
-    'research.validation': 'Validation',
-    'research.hypothesis': 'Hypothesis',
+    'research.title': 'Lengo la Utafiti', // Research Focus
+    'research.question': 'Swali la Msingi', // Primary Question
+    'research.methodology': 'Mbinu', // Methodology
+    'research.validation': 'Uthibitisho', // Validation
+    'research.hypothesis': 'Nadharia', // Hypothesis
     
     // Projects
-    'projects.title': 'Active Projects',
-    'projects.web_apps': 'Web Applications Suite',
-    'projects.mobile_app': 'Mobile Application',
-    'projects.voice_recording': 'Voice Recording System',
-    'projects.connected': 'Connected Resource Network',
-    'projects.template_generation': 'Template-Based Content Generation',
-    'projects.community_platform': 'Community Validation Platform',
-    'projects.quality_assurance': 'Quality Assurance System',
-    'projects.scalability': 'Scalability Framework',
+    'projects.title': 'Miradi ya Kufanya', // Active Projects
+    'projects.web_apps': 'Seti ya Programu za Wavuti', // Web Applications Suite
+    'projects.mobile_app': 'Programu ya Simu', // Mobile Application
+    'projects.voice_recording': 'Mfumo wa Kurekodi Sauti', // Voice Recording System
+    'projects.connected': 'Mtandao wa Rasilimali Zilizounganishwa', // Connected Resource Network
+    'projects.template_generation': 'Uzalishaji wa Maudhui wa Kiolezo', // Template-Based Content Generation
+    'projects.community_platform': 'Jukwaa la Uthibitisho wa Jamii', // Community Validation Platform
+    'projects.quality_assurance': 'Mfumo wa Hakikisho la Ubora', // Quality Assurance System
+    'projects.scalability': 'Mfumo wa Kupanuka', // Scalability Framework
     
     // Publications
-    'publications.title': 'Publications',
-    'publications.template_methodology': 'Template-Based Generation for Under-Resourced Languages: A Case Study of Kifuliiru',
-    'publications.meta': 'Technical Report • October 2025 • Kifuliiru Lab',
+    'publications.title': 'Machapisho', // Publications
+    'publications.template_methodology': 'Uzalishaji wa Kiolezo kwa Lugha Zisizo na Rasilimali: Uchunguzi wa Kifuliiru', // Template-Based Generation for Under-Resourced Languages: A Case Study of Kifuliiru
+    'publications.meta': 'Ripoti ya Kiufundi • Oktoba 2025 • Laboratori ya Kifuliiru', // Technical Report • October 2025 • Kifuliiru Lab
     
     // Team
-    'team.title': 'Team',
-    'team.lead': 'Director & Founder',
-    'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, leading the development of scalable methodologies for future language laboratories under Wekify LLC.',
-    'team.community_advisors': 'Community Advisors',
-    'team.community_role': 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation',
-    'team.future_directors': 'Future Language Lab Directors',
-    'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
-    'team.technical_teams': 'Technical & Research Teams',
-    'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
-    'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
-    'team.community_contributors': 'Community Contributors',
-    'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
-    'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
-    'founder.title': 'Founder & Director',
-    'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
-    'founder.background': 'Cultural Background',
-    'founder.background_content': 'Native speaker of Kifuliiru and member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Deeply connected to the cultural and linguistic traditions that form the foundation of this preservation work.',
-    'founder.expertise': 'Technical Expertise',
-    'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
-    'founder.vision': 'Vision & Mission',
-    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
-    'founder.achievements': 'Key Achievements',
-    'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
-    'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
-    'team.community_contributors': 'Community Contributors',
-    'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
-    'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
-    'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories as Wekify LLC expands globally.',
-    'team.technical_description': 'Dedicated technical professionals who develop and maintain the digital infrastructure, platforms, and research tools that power each language laboratory.',
-    'team.research_partners': 'Research Partners',
-    'team.research_role': 'Academic Collaborations\nResearch Institutions\nLanguage Documentation Experts\nComputational Linguistics Research',
-    'team.research_description': 'Academic researchers and institutions that collaborate on methodology development, research validation, and the advancement of computational linguistics for endangered languages.',
-    'founder.title': 'Founder & Director',
-    'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
-    'founder.background': 'Cultural Background',
-    'founder.background_content': 'Native speaker of Kifuliiru and member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Deeply connected to the cultural and linguistic traditions that form the foundation of this preservation work.',
-    'founder.expertise': 'Technical Expertise',
-    'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
-    'founder.vision': 'Vision & Mission',
-    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
-    'founder.achievements': 'Key Achievements',
-    'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
+    'team.title': 'Timu', // Team
+    'team.lead': 'Mkurugenzi na Mwanzilishi', // Director & Founder
+    'team.role': 'Mzungumzaji wa Asili wa Kifuliiru, Mkurugenzi wa Utafiti, Mkurugenzi wa Kiufundi, Sayansi ya Data, Mshirika wa Jamii, na Uundaji wa Mbinu katika Laboratori ya Kifuliiru. Mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, anayoongoza uundaji wa mbinu zinazoweza kupanuka kwa maabara za lugha za baadaye chini ya Wekify LLC.', // Native Speaker description
+    'team.community_advisors': 'Washauri wa Jamii', // Community Advisors
+    'team.community_role': 'Baraza la Wazee\nUthibitisho wa Kitamaduni, Uhakiki wa Maudhui\nUhifadhi wa Maarifa ya Kitamaduni', // Elder Council, Cultural Validation, etc.
+    'team.future_directors': 'Wakurugenzi wa Baadaye wa Maabara za Lugha', // Future Language Lab Directors
+    'team.future_role': 'Uongozi wa Maabara za Lugha Maalum\nWazungumzaji wa Asili wa Lugha Zingine Zilizo Hatari\nWawakilishi wa Jamii za Kitamaduni\n(Kadiri Wekify LLC Inapanuka)', // Specialized Language Laboratory Leadership
+    'team.technical_teams': 'Timu za Kiufundi na Utafiti', // Technical & Research Teams
+    'team.technical_role': 'Uhandisi wa Programu\nUundaji wa Mfumo\nUshirikiano wa Kielelezo\nIsimu ya Hesabu\n(Kwa Maabara ya Lugha)', // Software Engineering, Platform Development, etc.
+    'team.community_description': 'Wazee wa jamii wanaostahili na wataalamu wa kitamaduni ambao hutoa mwongozo muhimu na uthibitisho wa maudhui yote, kuhakikisha uwakilishi wa kitamaduni wa kweli na usahihi wa lugha.', // Community elders description
+    'team.community_contributors': 'Wachangiaji wa Jamii', // Community Contributors
+    'team.contributors_role': 'Waundaji wa Maudhui\nWazungumzaji wa Lugha\nWalinzi wa Maarifa ya Kitamaduni\nUshiriki wa Jamii', // Content Creators, Language Speakers, etc.
+    'team.contributors_description': 'Wanachama wa jamii wanaohusika ambao huchangia maudhui, kushiriki maarifa ya kitamaduni, na kushiriki katika shughuli za kuhifadhi lugha, kuhakikisha uwakilishi wa kweli wa lugha na tamaduni ya Kifuliiru.', // Community contributors description
+    'team.future_description': 'Wazungumzaji wa asili na wawakilishi wa kitamaduni kutoka jamii za lugha zingine zilizo hatarini ambao wataongoza maabara maalum kadiri Wekify LLC inapanuka duniani.', // Future directors description
+    'team.technical_description': 'Wataalamu wa kiufundi wanaojitolea ambao huunda na kudumisha miundombinu ya kidijitali, mifumo, na vifaa vya utafiti vinavyotumika katika kila maabara ya lugha.', // Technical teams description
+    'team.research_partners': 'Washirika wa Utafiti', // Research Partners
+    'team.research_role': 'Ushirikiano wa Kielelezo\nTaasisi za Utafiti\nWataalamu wa Uthibitisho wa Lugha\nUtafiti wa Isimu ya Hesabu', // Academic Collaborations, etc.
+    'team.research_description': 'Watafiti wa kielelezo na taasisi ambao hushirikiana katika uundaji wa mbinu, uthibitisho wa utafiti, na maendeleo ya isimu ya hesabu kwa lugha zilizo hatarini.', // Research partners description
+    
+    // Founder
+    'founder.title': 'Mwanzilishi na Mkurugenzi', // Founder & Director
+    'founder.intro': 'Ayivugwe Kabemba Mukome anaongoza Laboratori ya Kifuliiru kama mwanzilishi na mkurugenzi, akileta pamoja ujuzi wa lugha ya asili, ubunifu wa kiufundi, na utafiti unaozingatia jamii ili kuhifadhi lugha ya Kifuliiru.', // Founder introduction
+    'founder.background': 'Mazingira ya Kitamaduni', // Cultural Background
+    'founder.background_content': 'Mzungumzaji wa asili wa Kifuliiru na mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, Jamhuri ya Kidemokrasia ya Kongo. Anaunganishwa sana na mila za kitamaduni na lugha zinazounda msingi wa kazi hii ya kuhifadhi.', // Cultural background content
+    'founder.expertise': 'Ujuzi wa Kiufundi', // Technical Expertise
+    'founder.expertise_content': 'Mkurugenzi wa Utafiti, Mkurugenzi wa Kiufundi, na mtaalamu wa Sayansi ya Data mwenye ujuzi wa isimu ya hesabu, uzalishaji wa maudhui wa kiolezo, na uundaji wa mbinu zinazoweza kupanuka kwa kuhifadhi lugha.', // Technical expertise content
+    'founder.vision': 'Maono na Dhamira', // Vision & Mission
+    'founder.vision_content': 'Anaongoza uundaji wa mbinu zinazoweza kupanuka ambazo zinaweza kurudiwa katika lugha zingine zilizo hatarini, kuunda mfumo wa kuhifadhi lugha unaozingatia jamii kupitia Wekify LLC.', // Vision content
+    'founder.achievements': 'Mafanikio Muhimu', // Key Achievements
+    'founder.achievements_content': 'Amebadilisha kwa mafanikio Kifuliiru kutoka kwa hati kidogo hadi mfumo wa kidijitali kamili na mifumo 12+, vifaa vya elimu 141,000+ vilivyopangwa, na maudhui yaliyothibitishwa na jamii.', // Achievements content
     
     // Contact
-    'contact.title': 'Contact & Collaboration',
-    'contact.description': 'We welcome collaboration with researchers, institutions, and language communities interested in establishing their own language laboratories under the Wekify LLC framework. Our proven Kifuliiru Lab methodology can be adapted for any endangered language.',
-    'contact.website': 'Website',
-    'contact.email': 'Email',
-    'contact.partnerships': 'New Language Labs',
-    'contact.parent': 'Parent Company',
-    'contact.research_interests': 'Research Interests',
+    'contact.title': 'Mawasiliano na Ushirikiano', // Contact & Collaboration
+    'contact.description': 'Tunakaribisha ushirikiano na watafiti, taasisi, na jamii za lugha zinazopenda kuanzisha maabara zao za lugha chini ya mfumo wa Wekify LLC. Mbinu yetu ya kuthibitishwa ya Laboratori ya Kifuliiru inaweza kubadilishwa kwa lugha yoyote iliyo hatarini.', // Contact description
+    'contact.website': 'Tovuti', // Website
+    'contact.email': 'Barua pepe', // Email
+    'contact.partnerships': 'Maabara Mpya za Lugha', // New Language Labs
+    'contact.parent': 'Kampuni ya Mzazi', // Parent Company
+    'contact.research_interests': 'Maslahi ya Utafiti', // Research Interests
     
     // Footer
-    'footer.text': 'KIFULIIRU LAB • A Kifuliiru language specialized laboratory of Wekify LLC',
+    'footer.text': 'KIFULIIRU LAB • Maabara maalum ya lugha ya Wekify LLC', // Footer text
     
     // 404 Page
-    '404.title': 'Page Not Found',
-    '404.message': '"Kifuliiru kigayamaho" — This page has wandered away',
-    '404.description': 'The page you\'re looking for doesn\'t exist in our digital language laboratory. Let\'s get you back to exploring Kifuliiru language preservation.',
-    '404.home': '🏠 Home',
-    '404.about': '🔬 About Lab',
-    '404.footer1': 'Kifuliiru Lab • A specialized language laboratory of Wekify LLC',
-    '404.footer2': 'Preserving the Kifuliiru language through computational methods',
+    '404.title': 'Ukurasa Haupatikani', // Page Not Found
+    '404.message': '"Kifuliiru kigayamaho" — Ukurasa huu umepotea', // This page has wandered away
+    '404.description': 'Ukurasa unaoutafuta haupo katika maabara yetu ya lugha ya kidijitali. Turudi kuchunguza kuhifadhi lugha ya Kifuliiru.', // 404 description
+    '404.home': '🏠 Nyumbani', // Home
+    '404.about': '🔬 Kuhusu Lab', // About Lab
+    '404.footer1': 'Laboratori ya Kifuliiru • Maabara maalum ya lugha ya Wekify LLC', // Footer 1
+    '404.footer2': 'Kuhifadhi lugha ya Kifuliiru kupitia mbinu za hesabu', // Footer 2
   }
 }
 

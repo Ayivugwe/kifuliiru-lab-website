@@ -2,24 +2,24 @@ export default function About() {
   return (
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Kifuliiru Lab</h2>
-      <p>
-        <strong>Kifuliiru Lab</strong> is a specialized <strong>Kifuliiru language preservation</strong> 
-        research laboratory under <strong>Wekify LLC</strong>, dedicated to preserving and 
-        revitalizing the <strong>Kifuliiru language</strong> spoken by the <strong>Bafuliiru people</strong> 
-        of <strong>Ibufuliiru in Uvira, South Kivu</strong>, Democratic Republic of Congo. Through <strong>computational linguistics</strong> 
-        and <strong>template-based generation</strong> methods, we work directly with the Bafuliiru community 
-        to create comprehensive educational resources in their native language.
-      </p>
-      <p>
-        Our work demonstrates that <strong>systematic content generation</strong>, when paired with 
-        <strong>native speaker validation</strong> from the Bafuliiru community, can produce 
-        <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
-        from minimal documentation to a comprehensive <strong>digital language ecosystem</strong> including 
-        <strong>websites, web applications, mobile apps, voice recordings, and connected resources</strong>. 
-        This <strong>Kifuliiru language preservation methodology</strong> will be replicated across other 
-        <strong>language laboratories</strong> as Wekify expands to serve additional 
-        <strong>endangered languages</strong> and their communities.
-      </p>
+          <p>
+            <strong>Kifuliiru Lab</strong> is a specialized <strong>Kifuliiru language preservation laboratory</strong> 
+            under <strong>Wekify LLC</strong>, dedicated to preserving and 
+            revitalizing the <strong>Kifuliiru language</strong> spoken by the <strong>Bafuliiru people</strong> 
+            of <strong>Ibufuliiru in Uvira, South Kivu</strong>, Democratic Republic of Congo. Through <strong>computational linguistics</strong> 
+            and <strong>template-based generation</strong> methods, our laboratory works directly with the Bafuliiru community 
+            to create comprehensive educational resources in their native language.
+          </p>
+          <p>
+            Our laboratory's work demonstrates that <strong>systematic content generation</strong>, when paired with 
+            <strong>native speaker validation</strong> from the Bafuliiru community, can produce 
+            <strong>educational materials</strong> at unprecedented scale—transforming the Kifuliiru language 
+            from minimal documentation to a comprehensive <strong>digital language ecosystem</strong> including 
+            <strong>websites, web applications, mobile apps, voice recordings, and connected resources</strong>. 
+            This <strong>Kifuliiru language preservation laboratory methodology</strong> will be replicated across other 
+            <strong>language laboratories</strong> as Wekify expands to serve additional 
+            <strong>endangered languages</strong> and their communities.
+          </p>
 
       {/* Stats */}
       <div className="stats">

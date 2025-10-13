@@ -5,7 +5,7 @@ import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
   title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
-  description: 'Kifuliiru Lab preserves the Kifuliiru language through a comprehensive digital ecosystem including websites, web apps, mobile apps, voice recordings, and 141,000+ educational materials for the Bafuliiru people of Uvira, South Kivu, DRC.',
+        description: 'Kifuliiru Language Laboratory preserves the Kifuliiru language through a comprehensive digital ecosystem including websites, web apps, mobile apps, voice recordings, and 141,000+ educational materials for the Bafuliiru people of Uvira, South Kivu, DRC.',
   keywords: [
     'Kifuliiru language preservation',
     'computational linguistics',
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     'community-centered technology',
     'cultural knowledge documentation',
     'Kifuliiru language preservation laboratory',
+    'Kifuliiru Language Laboratory',
+    'language laboratory methodology',
     'Wekify LLC',
     'African languages',
     'traditional languages',
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
-    description: 'Specialized research laboratory preserving the Kifuliiru language through computational methods. Part of Wekify LLC\'s global mission to revitalize endangered languages.',
+    description: 'Kifuliiru Language Laboratory - Specialized research laboratory preserving the Kifuliiru language through computational methods. Part of Wekify LLC\'s global mission to revitalize endangered languages.',
     url: 'https://kifuliiru.org',
     siteName: 'Kifuliiru Lab',
     images: [
@@ -78,7 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kifuliiru Lab | Kifuliiru Language Preservation Research',
-    description: 'Preserving the Kifuliiru language through computational linguistics and community engagement. Part of Wekify LLC\'s global language preservation mission.',
+    description: 'Kifuliiru Language Laboratory - Preserving the Kifuliiru language through computational linguistics and community engagement. Part of Wekify LLC\'s global language preservation mission.',
     images: ['/og-image.jpg'],
     creator: '@kifuliirulab',
     site: '@wekifyllc',

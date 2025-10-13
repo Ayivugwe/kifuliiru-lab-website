@@ -7,24 +7,20 @@ export default function Team() {
 
   const teamMembers = [
     {
+      name: t('founder.title'),
+      role: t('founder.intro'),
+      description: t('founder.background_content'),
+      isFounder: true
+    },
+    {
       name: t('team.community_advisors'),
       role: t('team.community_role'),
       description: t('team.community_description')
     },
     {
-      name: t('team.future_directors'),
-      role: t('team.future_role'),
-      description: t('team.future_description')
-    },
-    {
-      name: t('team.technical_teams'),
-      role: t('team.technical_role'),
-      description: t('team.technical_description')
-    },
-    {
-      name: t('team.research_partners'),
-      role: t('team.research_role'),
-      description: t('team.research_description')
+      name: t('team.community_contributors'),
+      role: t('team.contributors_role'),
+      description: t('team.contributors_description')
     }
   ]
 
@@ -33,7 +29,7 @@ export default function Team() {
       <h2>{t('team.title')}</h2>
       <div className="team-grid">
         {teamMembers.map((member, index) => (
-          <div key={index} className="team-member">
+          <div key={index} className={`team-member ${member.isFounder ? 'founder-card' : ''}`}>
             <div className="team-name">{member.name}</div>
             <div className="team-role">
               {member.role.split('\n').map((line, i) => (

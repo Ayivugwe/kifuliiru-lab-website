@@ -15,7 +15,7 @@ type TranslationKey =
   | 'projects.title' | 'projects.web_apps' | 'projects.mobile_app' | 'projects.voice_recording' | 'projects.connected' | 'projects.template_generation' | 'projects.community_platform' | 'projects.quality_assurance' | 'projects.scalability'
   | 'publications.title' | 'publications.template_methodology' | 'publications.meta'
   | 'founder.title' | 'founder.intro' | 'founder.background' | 'founder.background_content' | 'founder.expertise' | 'founder.expertise_content' | 'founder.vision' | 'founder.vision_content' | 'founder.achievements' | 'founder.achievements_content'
-  | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.community_description' | 'team.future_directors' | 'team.future_role' | 'team.future_description' | 'team.technical_teams' | 'team.technical_role' | 'team.technical_description' | 'team.research_partners' | 'team.research_role' | 'team.research_description'
+  | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.community_description' | 'team.community_contributors' | 'team.contributors_role' | 'team.contributors_description' | 'team.future_directors' | 'team.future_role' | 'team.future_description' | 'team.technical_teams' | 'team.technical_role' | 'team.technical_description' | 'team.research_partners' | 'team.research_role' | 'team.research_description'
   | 'contact.title' | 'contact.description' | 'contact.website' | 'contact.email' | 'contact.partnerships' | 'contact.parent' | 'contact.research_interests'
   | 'footer.text'
   | '404.title' | '404.message' | '404.description' | '404.home' | '404.about' | '404.footer1' | '404.footer2'
@@ -109,6 +109,25 @@ const translations: Record<Language, Translations> = {
     'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
     'team.technical_teams': 'Technical & Research Teams',
     'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
+    'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
+    'team.community_contributors': 'Community Contributors',
+    'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
+    'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
+    'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories as Wekify LLC expands globally.',
+    'team.technical_description': 'Dedicated technical professionals who develop and maintain the digital infrastructure, platforms, and research tools that power each language laboratory.',
+    'team.research_partners': 'Research Partners',
+    'team.research_role': 'Academic Collaborations\nResearch Institutions\nLanguage Documentation Experts\nComputational Linguistics Research',
+    'team.research_description': 'Academic researchers and institutions that collaborate on methodology development, research validation, and the advancement of computational linguistics for endangered languages.',
+    'founder.title': 'Founder & Director',
+    'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
+    'founder.background': 'Cultural Background',
+    'founder.background_content': 'Native speaker of Kifuliiru and member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Deeply connected to the cultural and linguistic traditions that form the foundation of this preservation work.',
+    'founder.expertise': 'Technical Expertise',
+    'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
+    'founder.vision': 'Vision & Mission',
+    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
+    'founder.achievements': 'Key Achievements',
+    'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -406,6 +425,25 @@ const translations: Record<Language, Translations> = {
     'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
     'team.technical_teams': 'Technical & Research Teams',
     'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
+    'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
+    'team.community_contributors': 'Community Contributors',
+    'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
+    'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
+    'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories as Wekify LLC expands globally.',
+    'team.technical_description': 'Dedicated technical professionals who develop and maintain the digital infrastructure, platforms, and research tools that power each language laboratory.',
+    'team.research_partners': 'Research Partners',
+    'team.research_role': 'Academic Collaborations\nResearch Institutions\nLanguage Documentation Experts\nComputational Linguistics Research',
+    'team.research_description': 'Academic researchers and institutions that collaborate on methodology development, research validation, and the advancement of computational linguistics for endangered languages.',
+    'founder.title': 'Founder & Director',
+    'founder.intro': 'Ayivugwe Kabemba Mukome leads Kifuliiru Lab as both founder and director, bringing together native language expertise, technical innovation, and community-centered research to preserve the Kifuliiru language.',
+    'founder.background': 'Cultural Background',
+    'founder.background_content': 'Native speaker of Kifuliiru and member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Deeply connected to the cultural and linguistic traditions that form the foundation of this preservation work.',
+    'founder.expertise': 'Technical Expertise',
+    'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
+    'founder.vision': 'Vision & Mission',
+    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
+    'founder.achievements': 'Key Achievements',
+    'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',

@@ -1,31 +1,32 @@
-interface TeamMember {
-  name: string
-  role: string
-}
+'use client'
 
-const teamMembers: TeamMember[] = [
-  {
-    name: 'Ayivugwe Kabemba Mukome',
-    role: 'Director & Founder\nNative Speaker, Research Lead\nTechnical Lead, Data Science\nCommunity Liaison, Cultural Validation\nMethodology Development'
-  },
-  {
-    name: 'Community Advisors',
-    role: 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation'
-  },
-  {
-    name: 'Future Language Lab Directors',
-    role: 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)'
-  },
-  {
-    name: 'Technical & Research Teams',
-    role: 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)'
-  }
-]
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Team() {
+  const { t } = useLanguage()
+
+  const teamMembers = [
+    {
+      name: 'Ayivugwe Kabemba Mukome',
+      role: t('team.role')
+    },
+    {
+      name: t('team.community_advisors'),
+      role: t('team.community_role')
+    },
+    {
+      name: t('team.future_directors'),
+      role: t('team.future_role')
+    },
+    {
+      name: t('team.technical_teams'),
+      role: t('team.technical_role')
+    }
+  ]
+
   return (
     <section id="team">
-      <h2>Team</h2>
+      <h2>{t('team.title')}</h2>
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">

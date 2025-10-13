@@ -14,7 +14,7 @@ type TranslationKey =
   | 'research.title' | 'research.question' | 'research.methodology' | 'research.validation' | 'research.hypothesis'
   | 'projects.title' | 'projects.web_apps' | 'projects.mobile_app' | 'projects.voice_recording' | 'projects.connected' | 'projects.template_generation' | 'projects.community_platform' | 'projects.quality_assurance' | 'projects.scalability'
   | 'publications.title' | 'publications.template_methodology' | 'publications.meta'
-  | 'team.title' | 'team.lead' | 'team.role'
+  | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.future_directors' | 'team.future_role' | 'team.technical_teams' | 'team.technical_role'
   | 'contact.title' | 'contact.description' | 'contact.website' | 'contact.email' | 'contact.partnerships' | 'contact.parent' | 'contact.research_interests'
   | 'footer.text'
   | '404.title' | '404.message' | '404.description' | '404.home' | '404.about' | '404.footer1' | '404.footer2'
@@ -101,6 +101,12 @@ const translations: Record<Language, Translations> = {
     'team.title': 'Team',
     'team.lead': 'Director & Founder',
     'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, leading the development of scalable methodologies for future language laboratories under Wekify LLC.',
+    'team.community_advisors': 'Community Advisors',
+    'team.community_role': 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation',
+    'team.future_directors': 'Future Language Lab Directors',
+    'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
+    'team.technical_teams': 'Technical & Research Teams',
+    'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -194,6 +200,12 @@ const translations: Record<Language, Translations> = {
     'team.title': 'Équipe',
     'team.lead': 'Directeur & Fondateur',
     'team.role': 'Locuteur Natif du Kifuliiru, Chef de Recherche, Chef Technique, Science des Données, Liaison Communautaire et Développement de Méthodologie au Laboratoire Kifuliiru. Membre du peuple Bafuliiru d\'Ibufuliiru à Uvira, Sud-Kivu, dirigeant le développement de méthodologies évolutives pour les futurs laboratoires linguistiques sous Wekify LLC.',
+    'team.community_advisors': 'Conseillers Communautaires',
+    'team.community_role': 'Conseil des Anciens\nValidation Culturelle, Révision du Contenu\nPréservation du Savoir Culturel',
+    'team.future_directors': 'Futurs Directeurs de Laboratoires Linguistiques',
+    'team.future_role': 'Direction de Laboratoires Linguistiques Spécialisés\nLocuteurs Natifs d\'Autres Langues Menacées\nReprésentants des Communautés Culturelles\n(Au Fur et à Mesure de l\'Expansion de Wekify LLC)',
+    'team.technical_teams': 'Équipes Techniques & de Recherche',
+    'team.technical_role': 'Ingénierie Logicielle\nDéveloppement de Plateformes\nPartenariats Académiques\nLinguistique Computationnelle\n(Par Laboratoire Linguistique)',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -287,6 +299,12 @@ const translations: Record<Language, Translations> = {
     'team.title': 'Timu',
     'team.lead': 'Mkurugenzi & Mwanzilishi',
     'team.role': 'Mzungumzaji wa Asili wa Kifuliiru, Mkurugenzi wa Utafiti, Mkurugenzi wa Kiufundi, Sayansi ya Data, Mshirika wa Jamii, na Uundaji wa Mbinu katika Laboratori ya Kifuliiru. Mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, anayoongoza uundaji wa mbinu zinazoweza kupanuka kwa maabara za lugha za baadaye chini ya Wekify LLC.',
+    'team.community_advisors': 'Washauri wa Jamii',
+    'team.community_role': 'Baraza la Wazee\nUthibitisho wa Kitamaduni, Uhakiki wa Maudhui\nUhifadhi wa Maarifa ya Kitamaduni',
+    'team.future_directors': 'Wakurugenzi wa Baadaye wa Maabara za Lugha',
+    'team.future_role': 'Uongozi wa Maabara za Lugha Maalum\nWazungumzaji wa Asili wa Lugha Zingine Zilizo Hatari\nWawakilishi wa Jamii za Kitamaduni\n(Kadiri Wekify LLC Inapanuka)',
+    'team.technical_teams': 'Timu za Kiufundi & Utafiti',
+    'team.technical_role': 'Uhandisi wa Programu\nUundaji wa Mfumo\nUshirikiano wa Kielelezo\nIsimu ya Hesabu\n(Kwa Maabara ya Lugha)',
     
     // Contact
     'contact.title': 'Mawasiliano & Ushirikiano',
@@ -380,6 +398,12 @@ const translations: Record<Language, Translations> = {
     'team.title': 'Team',
     'team.lead': 'Director & Founder',
     'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, leading the development of scalable methodologies for future language laboratories under Wekify LLC.',
+    'team.community_advisors': 'Community Advisors',
+    'team.community_role': 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation',
+    'team.future_directors': 'Future Language Lab Directors',
+    'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
+    'team.technical_teams': 'Technical & Research Teams',
+    'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
     
     // Contact
     'contact.title': 'Contact & Collaboration',

@@ -99,8 +99,8 @@ const translations: Record<Language, Translations> = {
     
     // Team
     'team.title': 'Team',
-    'team.lead': 'Research Lead',
-    'team.role': 'Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, specializing in Kifuliiru language preservation',
+    'team.lead': 'Director & Founder',
+    'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, currently occupying most team roles as the laboratory expands.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -192,8 +192,8 @@ const translations: Record<Language, Translations> = {
     
     // Team
     'team.title': 'Équipe',
-    'team.lead': 'Chef de Recherche',
-    'team.role': 'Locuteur Natif du Kifuliiru et Chef de Recherche au Laboratoire Kifuliiru, membre du peuple Bafuliiru d\'Ibufuliiru à Uvira, Sud-Kivu, spécialisé dans la préservation de la langue Kifuliiru',
+    'team.lead': 'Directeur & Fondateur',
+    'team.role': 'Locuteur Natif du Kifuliiru, Chef de Recherche, Chef Technique, Science des Données, Liaison Communautaire et Développement de Méthodologie au Laboratoire Kifuliiru. Membre du peuple Bafuliiru d\'Ibufuliiru à Uvira, Sud-Kivu, occupant actuellement la plupart des rôles d\'équipe pendant l\'expansion du laboratoire.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
@@ -285,8 +285,8 @@ const translations: Record<Language, Translations> = {
     
     // Team
     'team.title': 'Timu',
-    'team.lead': 'Mkurugenzi wa Utafiti',
-    'team.role': 'Mzungumzaji wa Asili wa Kifuliiru na Mkurugenzi wa Utafiti katika Laboratori ya Kifuliiru, mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, mtaalamu wa kuhifadhi lugha ya Kifuliiru',
+    'team.lead': 'Mkurugenzi & Mwanzilishi',
+    'team.role': 'Mzungumzaji wa Asili wa Kifuliiru, Mkurugenzi wa Utafiti, Mkurugenzi wa Kiufundi, Sayansi ya Data, Mshirika wa Jamii, na Uundaji wa Mbinu katika Laboratori ya Kifuliiru. Mwanachama wa watu wa Bafuliiru wa Ibufuliiru huko Uvira, Kivu Kusini, anayeshika majukumu mengi ya timu wakati laboratori inapanuka.',
     
     // Contact
     'contact.title': 'Mawasiliano & Ushirikiano',
@@ -378,8 +378,8 @@ const translations: Record<Language, Translations> = {
     
     // Team
     'team.title': 'Team',
-    'team.lead': 'Research Lead',
-    'team.role': 'Native Speaker of Kifuliiru and Research Lead at Kifuliiru Lab, member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, specializing in Kifuliiru language preservation',
+    'team.lead': 'Director & Founder',
+    'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, currently occupying most team roles as the laboratory expands.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',

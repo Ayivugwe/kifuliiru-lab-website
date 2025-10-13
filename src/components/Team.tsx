@@ -6,19 +6,15 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Ayivugwe Kabemba Mukome',
-    role: 'Director & Founder\nNative Speaker, Research Lead'
-  },
-  {
-    name: 'Technical Team',
-    role: 'Software Engineering\nData Science, Platform Development'
+    role: 'Director & Founder\nNative Speaker, Research Lead\nTechnical Lead, Data Science\nCommunity Liaison, Cultural Validation\nMethodology Development'
   },
   {
     name: 'Community Advisors',
-    role: 'Elder Council\nCultural Validation, Content Review'
+    role: 'Elder Council\nCultural Validation, Content Review\n(Expanding)'
   },
   {
-    name: 'Linguistic Researchers',
-    role: 'Methodology Development\nAcademic Partnerships'
+    name: 'Future Team Members',
+    role: 'Software Engineering\nPlatform Development\nAcademic Partnerships\n(Recruiting)'
   }
 ]
 

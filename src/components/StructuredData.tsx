@@ -41,7 +41,7 @@ export default function StructuredData() {
             "@type": "ContactPoint",
             "telephone": "+1-XXX-XXX-XXXX",
             "contactType": "general",
-            "email": "lab@kifuliiru.org"
+            "email": "kifuliiru@gmail.com"
           },
           {
             "@type": "ContactPoint",

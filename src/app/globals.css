@@ -569,3 +569,59 @@ a:hover {
   content: '> ';
   color: var(--accent-color);
 }
+
+/* Cultural Context Styling */
+.hierarchy-container {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-left: 3px solid var(--accent-color);
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.hierarchy-tree {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.hierarchy-level-1 {
+  margin-left: 20px;
+}
+
+.hierarchy-level-2 {
+  margin-left: 40px;
+}
+
+.hierarchy-level-3 {
+  margin-left: 60px;
+}
+
+.hierarchy-level-4 {
+  margin-left: 80px;
+}
+
+.hierarchy-level-5 {
+  margin-left: 100px;
+}
+
+.cultural-significance {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cultural-significance-title {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.cultural-significance-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}

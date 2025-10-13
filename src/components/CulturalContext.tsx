@@ -23,19 +23,14 @@ export default function CulturalContext() {
         <h3 style={{ fontSize: '1.3rem', color: '#4a9eff', marginBottom: '15px' }}>
           Geographical & Political Hierarchy
         </h3>
-        <div style={{ 
-          background: '#111', 
-          padding: '20px', 
-          borderLeft: '3px solid #4a9eff',
-          marginBottom: '20px'
-        }}>
-          <div style={{ fontFamily: 'Courier New, monospace', fontSize: '0.9rem', lineHeight: '1.8' }}>
+        <div className="hierarchy-container">
+          <div className="hierarchy-tree">
             <div><strong>🇨🇩 Democratic Republic of Congo (DRC)</strong></div>
-            <div style={{ marginLeft: '20px' }}>└── <strong>South Kivu Province</strong></div>
-            <div style={{ marginLeft: '40px' }}>└── <strong>Uvira Territory</strong></div>
-            <div style={{ marginLeft: '60px' }}>└── <strong>Ibufuliiru</strong> (Bafuliiru Kingdom/Chiefdom)</div>
-            <div style={{ marginLeft: '80px' }}>└── <strong>Bafuliiru/Abafuliiru</strong> (The People)</div>
-            <div style={{ marginLeft: '100px' }}>└── <strong>Kifuliiru</strong> (The Language)</div>
+            <div className="hierarchy-level-1">└── <strong>South Kivu Province</strong></div>
+            <div className="hierarchy-level-2">└── <strong>Uvira Territory</strong></div>
+            <div className="hierarchy-level-3">└── <strong>Ibufuliiru</strong> (Bafuliiru Kingdom/Chiefdom)</div>
+            <div className="hierarchy-level-4">└── <strong>Bafuliiru/Abafuliiru</strong> (The People)</div>
+            <div className="hierarchy-level-5">└── <strong>Kifuliiru</strong> (The Language)</div>
           </div>
         </div>
         <p>
@@ -71,17 +66,11 @@ export default function CulturalContext() {
         </p>
       </div>
 
-      <div style={{ 
-        background: '#0a0a0a', 
-        padding: '20px', 
-        border: '1px solid #333',
-        borderRadius: '5px',
-        marginTop: '20px'
-      }}>
-        <h4 style={{ color: '#4a9eff', marginBottom: '10px', fontSize: '1.2rem' }}>
+      <div className="cultural-significance">
+        <h4 className="cultural-significance-title">
           Cultural Significance
         </h4>
-        <p style={{ fontSize: '1rem', color: '#b0b0b0', margin: 0 }}>
+        <p className="cultural-significance-text">
           "Kifuliiru kigayamaho" — "Kifuliiru will shine" — This traditional saying reflects the 
           Bafuliiru people's hope and determination to preserve their language and cultural identity 
           for future generations.

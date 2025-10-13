@@ -108,7 +108,7 @@ export default function NotFound() {
           color: '#666',
         }}>
           <p style={{ margin: '0.5rem 0' }}>
-            <strong>Kifuliiru Lab</strong> • A specialized language laboratory of <strong>Wekify LLC</strong>
+            <strong>Kifuliiru Lab</strong> • A Kifuliiru language specialized laboratory of <strong>Wekify LLC</strong>
           </p>
           <p style={{ margin: '0.5rem 0' }}>
             Preserving the Kifuliiru language through computational methods

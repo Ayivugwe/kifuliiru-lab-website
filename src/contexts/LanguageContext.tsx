@@ -112,7 +112,7 @@ const translations: Record<Language, Translations> = {
     'contact.research_interests': 'Research Interests',
     
     // Footer
-    'footer.text': 'KIFULIIRU LAB • A specialized language laboratory of Wekify LLC',
+    'footer.text': 'KIFULIIRU LAB • A Kifuliiru language specialized laboratory of Wekify LLC',
     
     // 404 Page
     '404.title': 'Page Not Found',
@@ -391,7 +391,7 @@ const translations: Record<Language, Translations> = {
     'contact.research_interests': 'Research Interests',
     
     // Footer
-    'footer.text': 'KIFULIIRU LAB • A specialized language laboratory of Wekify LLC',
+    'footer.text': 'KIFULIIRU LAB • A Kifuliiru language specialized laboratory of Wekify LLC',
     
     // 404 Page
     '404.title': 'Page Not Found',

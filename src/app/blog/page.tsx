@@ -279,61 +279,59 @@ export default function BlogPage() {
   const { t } = useLanguage()
 
   return (
-    <div className="container">
-      <section>
-        <h2>{t('blog.title')}</h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '40px' }}>
-          {t('blog.description')}
-        </p>
+    <section>
+      <h2>{t('blog.title')}</h2>
+      <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '40px' }}>
+        {t('blog.description')}
+      </p>
 
-        <div className="blog-posts">
-          {blogPosts.map((post) => (
-            <article key={post.id} className="blog-post-card">
-              <div className="blog-post-header">
-                <h3 className="blog-post-title">
-                  <Link href={`/blog/${post.id}`}>
-                    {post.title}
-                  </Link>
-                </h3>
-                <div className="blog-post-meta">
-                  <span className="blog-post-date">
-                    {t('blog.published_on')}: {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </span>
-                  <span className="blog-post-author">
-                    {t('blog.author')}: {post.author}
-                  </span>
-                  <span className="blog-post-read-time">
-                    {post.readTime}
-                  </span>
-                </div>
-              </div>
-              
-              <p className="blog-post-excerpt">
-                {post.excerpt}
-              </p>
-              
-              <div className="blog-post-tags">
-                <span className="blog-post-tags-label">{t('blog.tags')}:</span>
-                {post.tags.map((tag) => (
-                  <span key={tag} className="blog-post-tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              
-              <div className="blog-post-footer">
-                <Link href={`/blog/${post.id}`} className="blog-post-link">
-                  {t('blog.read_more')} →
+      <div className="blog-posts">
+        {blogPosts.map((post) => (
+          <article key={post.id} className="blog-post-card">
+            <div className="blog-post-header">
+              <h3 className="blog-post-title">
+                <Link href={`/blog/${post.id}`}>
+                  {post.title}
                 </Link>
+              </h3>
+              <div className="blog-post-meta">
+                <span className="blog-post-date">
+                  {t('blog.published_on')}: {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </span>
+                <span className="blog-post-author">
+                  {t('blog.author')}: {post.author}
+                </span>
+                <span className="blog-post-read-time">
+                  {post.readTime}
+                </span>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    </div>
+            </div>
+            
+            <p className="blog-post-excerpt">
+              {post.excerpt}
+            </p>
+            
+            <div className="blog-post-tags">
+              <span className="blog-post-tags-label">{t('blog.tags')}:</span>
+              {post.tags.map((tag) => (
+                <span key={tag} className="blog-post-tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            
+            <div className="blog-post-footer">
+              <Link href={`/blog/${post.id}`} className="blog-post-link">
+                {t('blog.read_more')} →
+              </Link>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }

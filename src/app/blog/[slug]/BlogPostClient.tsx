@@ -39,46 +39,44 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   }
 
   return (
-    <div className="container">
-      <div className="blog-post">
-        <div className="blog-post-header">
-          <Link href="/blog" className="blog-back-link">
-            {t('blog.back_to_blog')}
-          </Link>
-          
-          <h1 className="blog-post-title">{post.title}</h1>
-          
-          <div className="blog-post-meta">
-            <span className="blog-post-date">
-              {t('blog.published_on')}: {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </span>
-            <span className="blog-post-author">
-              {t('blog.author')}: {post.author}
-            </span>
-            <span className="blog-post-read-time">
-              {post.readTime}
-            </span>
-          </div>
-          
-          <div className="blog-post-tags">
-            <span className="blog-post-tags-label">{t('blog.tags')}:</span>
-            {post.tags.map((tag) => (
-              <span key={tag} className="blog-post-tag">
-                {tag}
-              </span>
-            ))}
-          </div>
+    <div className="blog-post">
+      <div className="blog-post-header">
+        <Link href="/blog" className="blog-back-link">
+          {t('blog.back_to_blog')}
+        </Link>
+        
+        <h1 className="blog-post-title">{post.title}</h1>
+        
+        <div className="blog-post-meta">
+          <span className="blog-post-date">
+            {t('blog.published_on')}: {new Date(post.publishedAt).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </span>
+          <span className="blog-post-author">
+            {t('blog.author')}: {post.author}
+          </span>
+          <span className="blog-post-read-time">
+            {post.readTime}
+          </span>
         </div>
         
-        <div 
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
-        />
+        <div className="blog-post-tags">
+          <span className="blog-post-tags-label">{t('blog.tags')}:</span>
+          {post.tags.map((tag) => (
+            <span key={tag} className="blog-post-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
+      
+      <div 
+        className="blog-post-content"
+        dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
+      />
     </div>
   )
 }

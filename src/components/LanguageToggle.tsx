@@ -7,7 +7,7 @@ const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
   { code: 'sw', name: 'Kiswahili', flag: '🇹🇿' },
-  { code: 'kf', name: 'Kifuliiru', flag: '🇨🇩' }, // DRC flag for Kifuliiru
+  { code: 'flr', name: 'Kifuliiru', flag: '🇨🇩' }, // DRC flag for Kifuliiru
 ] as const
 
 export default function LanguageToggle() {
@@ -16,7 +16,7 @@ export default function LanguageToggle() {
 
   const currentLanguage = languages.find(lang => lang.code === language) || languages[0]
 
-  const handleLanguageChange = (langCode: 'en' | 'fr' | 'sw' | 'kf') => {
+  const handleLanguageChange = (langCode: 'en' | 'fr' | 'sw' | 'flr') => {
     setLanguage(langCode)
     setIsOpen(false)
   }

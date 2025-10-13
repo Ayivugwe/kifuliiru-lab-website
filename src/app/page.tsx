@@ -1,7 +1,6 @@
 'use client'
 
 import Header from '@/components/Header'
-import Navigation from '@/components/Navigation'
 import About from '@/components/About'
 import CulturalContext from '@/components/CulturalContext'
 import WekifyVision from '@/components/WekifyVision'
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <div className="container">
       <Header />
-      <Navigation />
       <About />
       <CulturalContext />
       <WekifyVision />

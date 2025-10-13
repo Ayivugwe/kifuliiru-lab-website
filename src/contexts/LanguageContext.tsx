@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from 'react'
 
-export type Language = 'en' | 'fr' | 'sw' | 'kf'
+export type Language = 'en' | 'fr' | 'sw' | 'flr'
 
 type TranslationKey = 
   | 'header.title' | 'header.tagline'
@@ -310,7 +310,7 @@ const translations: Record<Language, Translations> = {
     '404.footer2': 'Kuhifadhi lugha ya Kifuliiru kupitia mbinu za hesabu',
   },
   
-  kf: {
+  flr: {
     // Kifuliiru translations (keeping in English for now as requested)
     'header.title': 'KIFULIIRU LAB',
     'header.tagline': 'Kifuliiru Language Laboratory - Kifuliiru Language Preservation Through Computational Methods and Community Engagement',

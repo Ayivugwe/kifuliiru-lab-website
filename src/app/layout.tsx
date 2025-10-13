@@ -116,6 +116,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0a0a0a" />

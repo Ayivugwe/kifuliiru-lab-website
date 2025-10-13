@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import About from '@/components/About'
 import CulturalContext from '@/components/CulturalContext'
 import WekifyVision from '@/components/WekifyVision'
+import DigitalPlatforms from '@/components/DigitalPlatforms'
 import Research from '@/components/Research'
 import Projects from '@/components/Projects'
 import Publications from '@/components/Publications'
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <CulturalContext />
       <WekifyVision />
+      <DigitalPlatforms />
       <Research />
       <Projects />
       <Publications />

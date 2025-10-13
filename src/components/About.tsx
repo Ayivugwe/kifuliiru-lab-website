@@ -30,7 +30,7 @@ export default function About() {
       <div className="stats">
         <div className="stat">
           <span className="stat-number">141,000+</span>
-          <span className="stat-label">{t('stats.books')}</span>
+          <span className="stat-label">Books (Projected)</span>
         </div>
         <div className="stat">
           <span className="stat-number">8GB</span>
@@ -41,7 +41,7 @@ export default function About() {
           <span className="stat-label">{t('stats.validated')}</span>
         </div>
         <div className="stat">
-          <span className="stat-number">4+</span>
+          <span className="stat-number">10+</span>
           <span className="stat-label">{t('stats.platforms')}</span>
         </div>
         <div className="stat">

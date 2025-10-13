@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kifuliiru Lab | Indigenous Language Preservation Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .header .tagline {
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        .nav {
+            margin-bottom: 50px;
+            font-size: 0.9rem;
+        }
+
+        .nav a {
+            color: #4a9eff;
+            text-decoration: none;
+            margin-right: 25px;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.2s;
+        }
+
+        .nav a:hover {
+            border-bottom: 1px solid #4a9eff;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-left: 3px solid #4a9eff;
+            padding-left: 15px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+
+        /* Stats Grid */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+            padding: 30px 0;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #4a9eff;
+            font-weight: 300;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Projects List */
+        .projects {
+            list-style: none;
+        }
+
+        .project {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #111;
+            border-left: 2px solid #333;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .project-name {
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .project-status {
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-complete {
+            background: #0a4d0a;
+            color: #4ade80;
+        }
+
+        .status-active {
+            background: #1e3a8a;
+            color: #60a5fa;
+        }
+
+        .status-planned {
+            background: #431407;
+            color: #fb923c;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 1px solid #333;
+        }
+
+        .publication-title {
+            color: #4a9eff;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .publication-meta {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Team */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            padding: 15px;
+            background: #111;
+            border: 1px solid #222;
+        }
+
+        .team-name {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        /* Contact */
+        .contact-links {
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: #4a9eff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #222;
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+        }
+
+        .footer a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #4a9eff;
+        }
+
+        /* Code blocks */
+        code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            color: #4a9eff;
+        }
+
+        /* Links */
+        a {
+            color: #4a9eff;
+        }
+
+        /* Terminal-like aesthetic */
+        .terminal-line {
+            font-family: 'Courier New', monospace;
+            color: #00ff00;
+            margin-bottom: 5px;
+        }
+
+        .terminal-line::before {
+            content: '> ';
+            color: #4a9eff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>KIFULIIRU LAB</h1>
+            <p class="tagline">Indigenous Language Preservation Through Computational Methods</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Kifuliiru Lab is a research subsidiary of Wekify LLC developing scalable methodologies 
+                for indigenous language documentation and preservation. We combine computational 
+                linguistics, template-based generation, and community engagement to create 
+                comprehensive educational resources for under-resourced languages.
+            </p>
+            <p>
+                Our work demonstrates that systematic content generation, when paired with native 
+                speaker validation, can produce educational materials at unprecedented scale—transforming 
+                languages from minimal documentation to comprehensive digital ecosystems.
+            </p>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">141,000+</span>
+                    <span class="stat-label">Books Generated</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">8GB</span>
+                    <span class="stat-label">Training Data</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Community Validated</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3 Years</span>
+                    <span class="stat-label">Zero to Complete</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research">
+            <h2>Research Focus</h2>
+            <p>
+                <strong>Primary Question:</strong> Can template-based computational generation produce 
+                authentic, pedagogically-sound educational content for languages with minimal existing 
+                written materials?
+            </p>
+            <p>
+                <strong>Methodology:</strong> Dual-track approach combining (1) systematic generation 
+                via mathematical formulas and linguistic templates, and (2) community-powered content 
+                creation through digital platforms.
+            </p>
+            <p>
+                <strong>Validation:</strong> All generated content undergoes multi-stage community review 
+                including native speaker verification and elder cultural validation.
+            </p>
+            <p>
+                <strong>Hypothesis:</strong> This methodology is language-agnostic and can scale to the 
+                3,000+ endangered languages globally.
+            </p>
+        </section>
+
+        <!-- Active Projects -->
+        <section id="projects">
+            <h2>Active Projects</h2>
+            <ul class="projects">
+                <li class="project">
+                    <div class="project-header">
+                        <span class="project-name">Number Generation System</span>
+                        <span class="project-status status-complete">Complete</span>
+                    </div>
+                    <p class="project-desc">
+                        Mathematical formulas encoding Kifuliiru number rules. Generates any number 
+                        (1→∞) with 100% accuracy. 8GB training data produced. Proof of concept for 
+                        template-based methodology. <code>10,000+ books</code>
+                    </p>
+                </li>
+
+                <li class="project">
+                    <div class="project-header">
+                        <span class="project-name">Mathematics Question Generator</span>
+                        <span class="project-status status-active">In Progress</span>
+                    </div>
+                    <p class="project-desc">
+                        Automated generation of culturally-contextualized math problems. All operations 
+                        (addition, subtraction, multiplication, division). Uses community-contributed 
+                        vocabulary for authentic scenarios. <code>40,000+ books targeted</code>
+                    </p>
+                </li>
+
+                <li class="project">
+                    <div class="project-header">
+                        <span class="project-name">Verb Conjugation System</span>
+                        <span class="project-status status-active">In Progress</span>
+                    </div>
+                    <p class="project-desc">
+                        Systematic documentation of 250+ verbs across all tenses and persons. 
+                        Template-based sentence generation combining verbs with community-validated 
+                        nouns and proper names. <code>30,000+ books | 119M+ possible sentences</code>
+                    </p>
+                </li>
+
+                <li class="project">
+                    <div class="project-header">
+                        <span class="project-name">Community Publishing Platforms</span>
+                        <span class="project-status status-complete">Operational</span>
+                    </div>
+                    <p class="project-desc">
+                        Digital infrastructure for native content creation: Imyazi (news), Tuyandike 
+                        (creative writing), Blog (commentary), Radio Ibufuliiru (audio). 50+ active 
+                        contributors. All content archived for book compilation. <code>11,000+ books | Growing daily</code>
+                    </p>
+                </li>
+
+                <li class="project">
+                    <div class="project-header">
+                        <span class="project-name">AI Language Model Training</span>
+                        <span class="project-status status-planned">Planned Q1 2026</span>
+                    </div>
+                    <p class="project-desc">
+                        Fine-tuning large language models on Kifuliiru corpus. Applications: 
+                        conversational chatbot, translation assistance, grammar checking, cultural 
+                        knowledge base. First comprehensive AI for Kifuliiru language.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications & Documentation</h2>
+            
+            <div class="publication">
+                <div class="publication-title">
+                    "Kifuliiru Complete Content Ecosystem: From Zero to 141,000+ Books"
+                </div>
+                <div class="publication-meta">
+                    Technical Report • October 2025 • Kifuliiru Lab
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    "Template-Based Content Generation for Indigenous Languages" (In Preparation)
+                </div>
+                <div class="publication-meta">
+                    Research Paper • Computational Linguistics • Expected 2026
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    "Dual-Track Methodology: Systematic + Community Approaches" (In Preparation)
+                </div>
+                <div class="publication-meta">
+                    Methodology Paper • Language Preservation • Expected 2026
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Open Source: Template Libraries & Generation Systems
+                </div>
+                <div class="publication-meta">
+                    GitHub Repository • Available for other language communities
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="team">
+            <h2>Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-name">Ayivugwe Kabemba Mukome</div>
+                    <div class="team-role">Director & Founder<br>Native Speaker, Research Lead</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-name">Technical Team</div>
+                    <div class="team-role">Software Engineering<br>Data Science, Platform Development</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-name">Community Advisors</div>
+                    <div class="team-role">Elder Council<br>Cultural Validation, Content Review</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-name">Linguistic Researchers</div>
+                    <div class="team-role">Methodology Development<br>Academic Partnerships</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact & Collaboration</h2>
+            <p>
+                We welcome collaboration with researchers, institutions, and language communities 
+                interested in replicating or extending our methodology.
+            </p>
+
+            <div class="contact-links">
+                <div class="terminal-line">Website: <a href="https://kifuliiru.org">kifuliiru.org</a></div>
+                <div class="terminal-line">Email: lab@kifuliiru.org</div>
+                <div class="terminal-line">Partnerships: partnerships@kifuliiru.org</div>
+                <div class="terminal-line">Parent Company: <a href="https://wekify.com">Wekify LLC</a></div>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 0.9rem; color: #666;">
+                <strong>Research Interests:</strong> Template-based generation • Computational linguistics • 
+                Indigenous language preservation • Community-centered technology • AI for under-resourced 
+                languages • Cultural knowledge documentation
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>KIFULIIRU LAB • A subsidiary of <a href="https://wekify.com">Wekify LLC</a></p>
+            <p style="margin-top: 10px; font-style: italic;">
+                "Kifuliiru kigayamaho" — Kifuliiru will shine
+            </p>
+            <p style="margin-top: 20px; font-size: 0.75rem;">
+                Spokane, WA, USA • Uvira, Democratic Republic of Congo
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

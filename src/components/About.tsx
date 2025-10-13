@@ -41,7 +41,7 @@ export default function About() {
           <span className="stat-label">{t('stats.validated')}</span>
         </div>
         <div className="stat">
-          <span className="stat-number">10+</span>
+          <span className="stat-number">12+</span>
           <span className="stat-label">{t('stats.platforms')}</span>
         </div>
         <div className="stat">

@@ -69,6 +69,12 @@ export default function DigitalPlatforms() {
       description: 'Official website for Kifuliiru Lab - this website.',
       status: 'Active',
       type: 'Lab Website'
+    },
+    {
+      name: 'Kifuliiru App',
+      description: 'Mobile application built with Flutter for Android and iOS. Currently in development and testing phase.',
+      status: 'Development',
+      type: 'Mobile App'
     }
   ]
 
@@ -76,7 +82,7 @@ export default function DigitalPlatforms() {
     <section id="digital-platforms" aria-labelledby="platforms-heading">
       <h2 id="platforms-heading">Digital Ecosystem</h2>
       <p>
-        Our comprehensive digital ecosystem spans <strong>10+ platforms</strong> across multiple domains, 
+        Our comprehensive digital ecosystem spans <strong>12 platforms</strong> across multiple domains, 
         creating a robust infrastructure for Kifuliiru language preservation and community engagement.
       </p>
       

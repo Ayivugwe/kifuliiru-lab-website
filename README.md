@@ -53,7 +53,7 @@ Simply open `index.html` in any modern web browser to view the website.
 
 - Website: [kifuliiru.org](https://kifuliiru.org)
 - Email: kifuliiru@gmail.com
-- Partnerships: partnerships@wekify.com
+- Partnerships: kifuliiru@gmail.com
 - Parent Company: [Wekify LLC](https://wekify.com)
 
 ## License

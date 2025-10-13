@@ -7,20 +7,24 @@ export default function Team() {
 
   const teamMembers = [
     {
-      name: 'Ayivugwe Kabemba Mukome',
-      role: t('team.role')
-    },
-    {
       name: t('team.community_advisors'),
-      role: t('team.community_role')
+      role: t('team.community_role'),
+      description: t('team.community_description')
     },
     {
       name: t('team.future_directors'),
-      role: t('team.future_role')
+      role: t('team.future_role'),
+      description: t('team.future_description')
     },
     {
       name: t('team.technical_teams'),
-      role: t('team.technical_role')
+      role: t('team.technical_role'),
+      description: t('team.technical_description')
+    },
+    {
+      name: t('team.research_partners'),
+      role: t('team.research_role'),
+      description: t('team.research_description')
     }
   ]
 
@@ -39,6 +43,7 @@ export default function Team() {
                 </span>
               ))}
             </div>
+            <div className="team-description">{member.description}</div>
           </div>
         ))}
       </div>

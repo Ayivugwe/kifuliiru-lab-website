@@ -6,7 +6,7 @@ export type Language = 'en' | 'fr' | 'sw' | 'flr'
 
 type TranslationKey = 
   | 'header.title' | 'header.tagline'
-  | 'nav.about' | 'nav.cultural' | 'nav.vision' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.team' | 'nav.contact'
+  | 'nav.about' | 'nav.cultural' | 'nav.vision' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.founder' | 'nav.team' | 'nav.contact'
   | 'about.title' | 'about.description1' | 'about.description2'
   | 'stats.books' | 'stats.data' | 'stats.validated' | 'stats.platforms' | 'stats.voice' | 'stats.founded'
   | 'cultural.title' | 'cultural.language_people' | 'cultural.geographical' | 'cultural.situation' | 'cultural.significance' | 'cultural.saying'
@@ -14,7 +14,8 @@ type TranslationKey =
   | 'research.title' | 'research.question' | 'research.methodology' | 'research.validation' | 'research.hypothesis'
   | 'projects.title' | 'projects.web_apps' | 'projects.mobile_app' | 'projects.voice_recording' | 'projects.connected' | 'projects.template_generation' | 'projects.community_platform' | 'projects.quality_assurance' | 'projects.scalability'
   | 'publications.title' | 'publications.template_methodology' | 'publications.meta'
-  | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.future_directors' | 'team.future_role' | 'team.technical_teams' | 'team.technical_role'
+  | 'founder.title' | 'founder.intro' | 'founder.background' | 'founder.background_content' | 'founder.expertise' | 'founder.expertise_content' | 'founder.vision' | 'founder.vision_content' | 'founder.achievements' | 'founder.achievements_content'
+  | 'team.title' | 'team.lead' | 'team.role' | 'team.community_advisors' | 'team.community_role' | 'team.community_description' | 'team.future_directors' | 'team.future_role' | 'team.future_description' | 'team.technical_teams' | 'team.technical_role' | 'team.technical_description' | 'team.research_partners' | 'team.research_role' | 'team.research_description'
   | 'contact.title' | 'contact.description' | 'contact.website' | 'contact.email' | 'contact.partnerships' | 'contact.parent' | 'contact.research_interests'
   | 'footer.text'
   | '404.title' | '404.message' | '404.description' | '404.home' | '404.about' | '404.footer1' | '404.footer2'
@@ -43,6 +44,7 @@ const translations: Record<Language, Translations> = {
     'nav.research': 'Research',
     'nav.projects': 'Projects',
     'nav.publications': 'Publications',
+    'nav.founder': 'Founder',
     'nav.team': 'Team',
     'nav.contact': 'Contact',
     

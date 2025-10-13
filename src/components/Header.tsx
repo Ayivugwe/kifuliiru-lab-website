@@ -49,7 +49,7 @@ export default function Header() {
       <div className="header-container">
         <div className="header-content">
           <div className="header-main">
-            <h1>{t('header.title')}</h1>
+            <h1 className="logo-brackets">[ KIFULIIRU LAB ]</h1>
             <p className="tagline">
               <strong>Kifuliiru Language Laboratory</strong> - 
               <strong> Language Preservation</strong> Through 
@@ -71,6 +71,7 @@ export default function Header() {
           <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
           <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
           <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+          <a href="#founder" aria-label="Founder and Director">{t('nav.founder')}</a>
           <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
           <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
         </nav>

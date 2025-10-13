@@ -8,6 +8,7 @@ import DigitalPlatforms from '@/components/DigitalPlatforms'
 import Research from '@/components/Research'
 import Projects from '@/components/Projects'
 import Publications from '@/components/Publications'
+import Founder from '@/components/Founder'
 import Team from '@/components/Team'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -23,6 +24,7 @@ export default function Home() {
       <Research />
       <Projects />
       <Publications />
+      <Founder />
       <Team />
       <Contact />
       <Footer />

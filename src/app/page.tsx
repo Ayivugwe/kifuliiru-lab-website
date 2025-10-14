@@ -17,8 +17,8 @@ export default function Home() {
       <Header />
       <About />
       <CulturalContext />
-      <DigitalPlatforms />
       <Research />
+      <DigitalPlatforms />
       <Projects />
       <Publications />
       <Team />

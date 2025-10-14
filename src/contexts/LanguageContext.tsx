@@ -6,11 +6,10 @@ export type Language = 'en' | 'fr' | 'sw' | 'flr'
 
 type TranslationKey = 
   | 'header.title' | 'header.tagline'
-  | 'nav.about' | 'nav.cultural' | 'nav.vision' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.blog' | 'nav.founder' | 'nav.team' | 'nav.contact'
+  | 'nav.about' | 'nav.cultural' | 'nav.research' | 'nav.projects' | 'nav.publications' | 'nav.blog' | 'nav.founder' | 'nav.team' | 'nav.contact'
   | 'about.title' | 'about.description1' | 'about.description2'
   | 'stats.books' | 'stats.data' | 'stats.validated' | 'stats.platforms' | 'stats.voice' | 'stats.founded'
   | 'cultural.title' | 'cultural.language_people' | 'cultural.geographical' | 'cultural.situation' | 'cultural.significance' | 'cultural.saying'
-  | 'vision.title' | 'vision.mission' | 'vision.kifuliiru_lab' | 'vision.future_labs' | 'vision.scalable'
   | 'research.title' | 'research.question' | 'research.methodology' | 'research.validation' | 'research.hypothesis'
   | 'projects.title' | 'projects.web_apps' | 'projects.mobile_app' | 'projects.voice_recording' | 'projects.connected' | 'projects.template_generation' | 'projects.community_platform' | 'projects.quality_assurance' | 'projects.scalability'
   | 'publications.title' | 'publications.template_methodology' | 'publications.meta'
@@ -41,7 +40,6 @@ const translations: Record<Language, Translations> = {
     // Navigation
     'nav.about': 'About',
     'nav.cultural': 'Language & People',
-    'nav.vision': 'Wekify Vision',
     'nav.research': 'Research',
     'nav.projects': 'Projects',
     'nav.publications': 'Publications',
@@ -52,8 +50,8 @@ const translations: Record<Language, Translations> = {
     
     // About
     'about.title': 'About Kifuliiru Lab',
-    'about.description1': 'Kifuliiru Lab is a specialized Kifuliiru language preservation laboratory under Wekify LLC, dedicated to preserving and revitalizing the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Through computational linguistics and template-based generation methods, our lab works directly with the Bafuliiru community to create comprehensive educational resources in their native language.',
-    'about.description2': 'Our lab\'s work demonstrates that systematic content generation, when paired with native speaker validation from the Bafuliiru community, can produce educational materials at unprecedented scale—transforming the Kifuliiru language from minimal documentation to a comprehensive digital language ecosystem including websites, web applications, mobile apps, voice recordings, and connected resources. This Kifuliiru Lab methodology will be replicated across other language laboratories as Wekify expands to serve additional endangered languages and their communities.',
+    'about.description1': 'Kifuliiru Lab is a specialized Kifuliiru language preservation laboratory dedicated to preserving and revitalizing the Kifuliiru language spoken by the Bafuliiru people of Ibufuliiru in Uvira, South Kivu, Democratic Republic of Congo. Through computational linguistics and template-based generation methods, our lab works directly with the Bafuliiru community to create comprehensive educational resources in their native language.',
+    'about.description2': 'Our lab\'s work demonstrates that systematic content generation, when paired with native speaker validation from the Bafuliiru community, can produce educational materials at unprecedented scale—transforming the Kifuliiru language from minimal documentation to a comprehensive digital language ecosystem including websites, web applications, mobile apps, voice recordings, and connected resources. This methodology represents a breakthrough in computational language preservation for endangered languages.',
     
     // Stats
     'stats.books': 'Books Generated',
@@ -71,12 +69,6 @@ const translations: Record<Language, Translations> = {
     'cultural.significance': 'Cultural Significance',
     'cultural.saying': '"Kifuliiru kigayamaho" — "Kifuliiru will shine" — This traditional saying reflects the Bafuliiru people\'s hope and determination to preserve their language and cultural identity for future generations.',
     
-    // Wekify Vision
-    'vision.title': 'Wekify LLC Vision',
-    'vision.mission': 'Our Mission',
-    'vision.kifuliiru_lab': 'Kifuliiru Lab',
-    'vision.future_labs': 'Future Language Laboratories',
-    'vision.scalable': 'Scalable Framework',
     
     // Research
     'research.title': 'Research Focus',
@@ -113,18 +105,18 @@ const translations: Record<Language, Translations> = {
     // Team
     'team.title': 'Team',
     'team.lead': 'Director & Founder',
-    'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, leading the development of scalable methodologies for future language laboratories under Wekify LLC.',
+    'team.role': 'Native Speaker of Kifuliiru, Research Lead, Technical Lead, Data Science, Community Liaison, and Methodology Development at Kifuliiru Lab. Member of the Bafuliiru people from Ibufuliiru in Uvira, South Kivu, leading the development of scalable methodologies for computational language preservation.',
     'team.community_advisors': 'Community Advisors',
     'team.community_role': 'Elder Council\nCultural Validation, Content Review\nCultural Knowledge Preservation',
     'team.future_directors': 'Future Language Lab Directors',
-    'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(As Wekify LLC Expands)',
+    'team.future_role': 'Specialized Language Laboratory Leadership\nNative Speakers of Other Endangered Languages\nCultural Community Representatives\n(For Future Language Preservation Projects)',
     'team.technical_teams': 'Technical & Research Teams',
     'team.technical_role': 'Software Engineering\nPlatform Development\nAcademic Partnerships\nComputational Linguistics\n(Per Language Laboratory)',
     'team.community_description': 'Respected community elders and cultural experts who provide essential guidance and validation for all content, ensuring authentic cultural representation and linguistic accuracy.',
     'team.community_contributors': 'Community Contributors',
     'team.contributors_role': 'Content Creators\nLanguage Speakers\nCultural Knowledge Keepers\nCommunity Engagement',
     'team.contributors_description': 'Active community members who contribute content, share cultural knowledge, and participate in language preservation activities, ensuring authentic representation of Kifuliiru language and culture.',
-    'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories as Wekify LLC expands globally.',
+    'team.future_description': 'Native speakers and cultural representatives from other endangered language communities who will lead specialized laboratories for future language preservation projects.',
     'team.technical_description': 'Dedicated technical professionals who develop and maintain the digital infrastructure, platforms, and research tools that power each language laboratory.',
     'team.research_partners': 'Research Partners',
     'team.research_role': 'Academic Collaborations\nResearch Institutions\nLanguage Documentation Experts\nComputational Linguistics Research',
@@ -138,13 +130,13 @@ const translations: Record<Language, Translations> = {
     'founder.expertise': 'Technical Expertise',
     'founder.expertise_content': 'Research Lead, Technical Lead, and Data Science specialist with expertise in computational linguistics, template-based content generation, and scalable methodology development for language preservation.',
     'founder.vision': 'Vision & Mission',
-    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation through Wekify LLC.',
+    'founder.vision_content': 'Leading the development of scalable methodologies that can be replicated across other endangered languages, creating a framework for community-centered language preservation.',
     'founder.achievements': 'Key Achievements',
     'founder.achievements_content': 'Successfully transformed Kifuliiru from minimal documentation to a comprehensive digital ecosystem with 12+ platforms, 141,000+ projected educational materials, and community-validated content.',
     
     // Contact
     'contact.title': 'Contact & Collaboration',
-    'contact.description': 'We welcome collaboration with researchers, institutions, and language communities interested in establishing their own language laboratories under the Wekify LLC framework. Our proven Kifuliiru Lab methodology can be adapted for any endangered language.',
+    'contact.description': 'We welcome collaboration with researchers, institutions, and language communities interested in computational language preservation. Our proven Kifuliiru Lab methodology can be adapted for any endangered language.',
     'contact.website': 'Website',
     'contact.email': 'Email',
     'contact.partnerships': 'New Language Labs',
@@ -152,7 +144,7 @@ const translations: Record<Language, Translations> = {
     'contact.research_interests': 'Research Interests',
     
     // Footer
-    'footer.text': 'KIFULIIRU LAB • A Kifuliiru language specialized laboratory of Wekify LLC',
+    'footer.text': 'KIFULIIRU LAB • A specialized laboratory for Kifuliiru language preservation',
     
     // 404 Page
     '404.title': 'Page Not Found',
@@ -172,7 +164,6 @@ const translations: Record<Language, Translations> = {
     // Navigation
     'nav.about': 'À Propos',
     'nav.cultural': 'Langue & Peuple',
-    'nav.vision': 'Vision Wekify',
     'nav.research': 'Recherche',
     'nav.projects': 'Projets',
     'nav.publications': 'Publications',
@@ -202,12 +193,6 @@ const translations: Record<Language, Translations> = {
     'cultural.significance': 'Signification Culturelle',
     'cultural.saying': '"Kifuliiru kigayamaho" — "Le Kifuliiru brillera" — Ce dicton traditionnel reflète l\'espoir et la détermination du peuple Bafuliiru de préserver leur langue et leur identité culturelle pour les générations futures.',
     
-    // Wekify Vision
-    'vision.title': 'Vision Wekify LLC',
-    'vision.mission': 'Notre Mission',
-    'vision.kifuliiru_lab': 'Laboratoire Kifuliiru',
-    'vision.future_labs': 'Futurs Laboratoires Linguistiques',
-    'vision.scalable': 'Cadre Évolutif',
     
     // Research
     'research.title': 'Focus de Recherche',
@@ -303,7 +288,6 @@ const translations: Record<Language, Translations> = {
     // Navigation
     'nav.about': 'Kuhusu',
     'nav.cultural': 'Lugha & Watu',
-    'nav.vision': 'Maono ya Wekify',
     'nav.research': 'Utafiti',
     'nav.projects': 'Miradi',
     'nav.publications': 'Machapisho',
@@ -333,12 +317,6 @@ const translations: Record<Language, Translations> = {
     'cultural.significance': 'Maana ya Kitamaduni',
     'cultural.saying': '"Kifuliiru kigayamaho" — "Kifuliiru kitang\'aa" — Mithali hii ya kitamaduni inaonyesha matumaini na azimio la watu wa Bafuliiru kuhifadhi lugha yao na utambulisho wao wa kitamaduni kwa vizazi vijavyo.',
     
-    // Wekify Vision
-    'vision.title': 'Maono ya Wekify LLC',
-    'vision.mission': 'Dhamira Yetu',
-    'vision.kifuliiru_lab': 'Laboratori ya Kifuliiru',
-    'vision.future_labs': 'Maabara za Lugha za Baadaye',
-    'vision.scalable': 'Mfumo wa Kupanuka',
     
     // Research
     'research.title': 'Lengo la Utafiti',
@@ -434,7 +412,6 @@ const translations: Record<Language, Translations> = {
     // Navigation
     'nav.about': 'Kuhusu', // About
     'nav.cultural': 'Lugha na Watu', // Language & People
-    'nav.vision': 'Maono ya Wekify', // Wekify Vision
     'nav.research': 'Utafiti', // Research
     'nav.projects': 'Miradi', // Projects
     'nav.publications': 'Machapisho', // Publications
@@ -464,12 +441,6 @@ const translations: Record<Language, Translations> = {
     'cultural.significance': 'Maana ya Kitamaduni', // Cultural Significance
     'cultural.saying': '"Kifuliiru kigayamaho" — "Kifuliiru kitang\'aa" — Mithali hii ya kitamaduni inaonyesha matumaini na azimio la watu wa Bafuliiru kuhifadhi lugha yao na utambulisho wao wa kitamaduni kwa vizazi vijavyo.', // Traditional saying
     
-    // Wekify Vision
-    'vision.title': 'Maono ya Wekify LLC', // Wekify LLC Vision
-    'vision.mission': 'Dhamira Yetu', // Our Mission
-    'vision.kifuliiru_lab': 'Laboratori ya Kifuliiru', // Kifuliiru Lab
-    'vision.future_labs': 'Maabara za Lugha za Baadaye', // Future Language Laboratories
-    'vision.scalable': 'Mfumo wa Kupanuka', // Scalable Framework
     
     // Research
     'research.title': 'Lengo la Utafiti', // Research Focus

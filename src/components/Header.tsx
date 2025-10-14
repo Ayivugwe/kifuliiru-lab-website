@@ -50,7 +50,9 @@ export default function Header() {
       <div className="header-container">
         <div className="header-content">
           <div className="header-main">
-            <h1 className="logo-brackets">[ KIFULIIRU LAB ]</h1>
+            <Link href="/" className="logo-link">
+              <h1 className="logo-brackets">[ KIFULIIRU LAB ]</h1>
+            </Link>
             <p className="tagline">
               <strong>Kifuliiru Language Laboratory</strong> - 
               <strong> Language Preservation</strong> Through 
@@ -67,7 +69,6 @@ export default function Header() {
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
           <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
-          <a href="#wekify-vision" aria-label="Wekify LLC Vision for Language Preservation">{t('nav.vision')}</a>
           <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
           <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
           <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>

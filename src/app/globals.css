@@ -350,6 +350,17 @@ body {
   color: var(--accent-color) !important;
 }
 
+/* Logo Link Styling */
+.logo-link {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.02);
+}
+
 /* Responsive logo sizing */
 @media (max-width: 768px) {
   .logo-brackets {
@@ -426,10 +437,23 @@ body {
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 25px;
-  border-bottom: 1px solid transparent;
   padding-bottom: 2px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
 }
 
 /* Mobile nav links */
@@ -445,8 +469,11 @@ body {
   }
 }
 
+.nav a:hover::before {
+  width: 100%;
+}
+
 .nav a:hover {
-  border-bottom: 1px solid var(--accent-color);
   color: var(--accent-hover);
 }
 

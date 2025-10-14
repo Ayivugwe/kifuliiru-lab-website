@@ -18,10 +18,10 @@ export default function Research() {
         including native speaker verification and elder cultural validation.
       </p>
           <p>
-            <strong>Hypothesis:</strong> This Kifuliiru Lab methodology is language-agnostic and can scale to the 
-            3,000+ endangered languages globally. Each language will have its own dedicated 
-            language laboratory under the Wekify LLC umbrella, applying our proven Kifuliiru Lab methodologies 
-            to preserve and revitalize their unique linguistic heritage.
+            <strong>Hypothesis:</strong> Our Kifuliiru Lab methodology can successfully transform the Kifuliiru language 
+            from minimal documentation to a comprehensive digital ecosystem. Through template-based generation 
+            combined with community validation, we can create authentic educational materials that preserve 
+            and revitalize the unique linguistic and cultural heritage of the Bafuliiru people.
           </p>
     </section>
   )

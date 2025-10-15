@@ -411,6 +411,7 @@ const translations: Record<Language, Translations> = {
     
     // Navigation
     'nav.about': 'Kuhusu', // About
+    
     'nav.cultural': 'Lugha na Watu', // Language & People
     'nav.research': 'Utafiti', // Research
     'nav.projects': 'Miradi', // Projects

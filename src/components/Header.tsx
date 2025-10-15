@@ -47,23 +47,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-      if (isAboutDropdownOpen && !target.closest('.nav-dropdown')) {
-        setIsAboutDropdownOpen(false)
-      }
-    }
-
-    if (isAboutDropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside)
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isAboutDropdownOpen])
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -73,13 +56,6 @@ export default function Header() {
     setIsMobileMenuOpen(false)
   }
 
-  const toggleAboutDropdown = () => {
-    setIsAboutDropdownOpen(!isAboutDropdownOpen)
-  }
-
-  const closeAboutDropdown = () => {
-    setIsAboutDropdownOpen(false)
-  }
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
@@ -97,11 +73,19 @@ export default function Header() {
           <div className="header-right">
             {/* Desktop Navigation */}
             <nav className="nav-desktop" role="navigation" aria-label="Main navigation">
+              <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
+              <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
+              <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
+              <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+              
               {/* About Us Dropdown */}
-              <div className="nav-dropdown">
+              <div 
+                className="nav-dropdown"
+                onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                onMouseLeave={() => setIsAboutDropdownOpen(false)}
+              >
                 <button 
                   className="nav-dropdown-button"
-                  onClick={toggleAboutDropdown}
                   aria-expanded={isAboutDropdownOpen}
                   aria-haspopup="true"
                 >
@@ -109,17 +93,13 @@ export default function Header() {
                   <span className={`dropdown-arrow ${isAboutDropdownOpen ? 'open' : ''}`}>▼</span>
                 </button>
                 <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
-                  <a href="#about" onClick={closeAboutDropdown} aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
-                  <a href="#cultural-context" onClick={closeAboutDropdown} aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
-                  <a href="#team" onClick={closeAboutDropdown} aria-label="Research Team and Leadership">{t('nav.team')}</a>
-                  <a href="#contact" onClick={closeAboutDropdown} aria-label="Contact and Collaboration">{t('nav.contact')}</a>
+                  <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
+                  <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
+                  <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
+                  <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
                 </div>
               </div>
               
-              <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
-              <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
-              <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
-              <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
               <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
             </nav>
 
@@ -148,19 +128,23 @@ export default function Header() {
         {/* Mobile Navigation */}
         <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">
           <div className="mobile-nav-section">
-            <h3 className="mobile-nav-section-title">About Us</h3>
-            <a href="#about" aria-label="About Kifuliiru Lab" onClick={closeMobileMenu}>{t('nav.about')}</a>
-            <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People" onClick={closeMobileMenu}>{t('nav.cultural')}</a>
-            <a href="#team" aria-label="Research Team and Leadership" onClick={closeMobileMenu}>{t('nav.team')}</a>
-            <a href="#contact" aria-label="Contact and Collaboration" onClick={closeMobileMenu}>{t('nav.contact')}</a>
-          </div>
-          
-          <div className="mobile-nav-section">
             <h3 className="mobile-nav-section-title">Research & Projects</h3>
             <a href="#research" aria-label="Research Focus and Methodology" onClick={closeMobileMenu}>{t('nav.research')}</a>
             <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms" onClick={closeMobileMenu}>Platforms</a>
             <a href="#projects" aria-label="Active Language Preservation Projects" onClick={closeMobileMenu}>{t('nav.projects')}</a>
             <a href="#publications" aria-label="Publications and Documentation" onClick={closeMobileMenu}>{t('nav.publications')}</a>
+          </div>
+          
+          <div className="mobile-nav-section">
+            <h3 className="mobile-nav-section-title">About Us</h3>
+            <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People" onClick={closeMobileMenu}>{t('nav.cultural')}</a>
+            <a href="#team" aria-label="Research Team and Leadership" onClick={closeMobileMenu}>{t('nav.team')}</a>
+            <a href="#contact" aria-label="Contact and Collaboration" onClick={closeMobileMenu}>{t('nav.contact')}</a>
+            <a href="#about" aria-label="About Kifuliiru Lab" onClick={closeMobileMenu}>{t('nav.about')}</a>
+          </div>
+          
+          <div className="mobile-nav-section">
+            <h3 className="mobile-nav-section-title">Resources</h3>
             <Link href="/blog" aria-label="Blog and Research Updates" onClick={closeMobileMenu}>{t('nav.blog')}</Link>
           </div>
         </nav>

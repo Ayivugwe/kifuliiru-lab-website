@@ -30,12 +30,9 @@ export default function LanguageToggle() {
         aria-label={`Current language: ${currentLanguage.name}. Click to change language.`}
         title={`Current language: ${currentLanguage.name}`}
       >
-        <div className="language-content">
-          <span className="language-flag">{currentLanguage.flag}</span>
-          <span className="language-name">{currentLanguage.name}</span>
-        </div>
+        <span className="language-flag">{currentLanguage.flag}</span>
         <ChevronDown 
-          size={16} 
+          size={14} 
           className={`language-arrow ${isOpen ? 'rotated' : ''}`}
         />
       </button>

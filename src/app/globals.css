@@ -135,8 +135,9 @@ body {
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 140px;
+  justify-content: center;
+  gap: 6px;
+  min-width: 60px;
   height: 44px;
   padding: 0 12px;
 }
@@ -149,19 +150,8 @@ body {
   box-shadow: 0 4px 12px var(--shadow);
 }
 
-.language-content {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .language-flag {
-  font-size: 1.1rem;
-}
-
-.language-name {
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .language-arrow {
@@ -470,14 +460,16 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .nav-dropdown-menu.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 .nav-dropdown-menu a {

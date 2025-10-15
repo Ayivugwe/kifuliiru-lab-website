@@ -165,28 +165,26 @@ body {
 
 .language-dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 8px 24px var(--shadow-lg);
   z-index: 1000;
-  margin-top: 8px;
-  overflow: hidden;
   min-width: 180px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
   transition: all 0.2s ease;
+  overflow: hidden;
   pointer-events: none;
 }
 
 .language-dropdown.open {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
 
@@ -454,7 +452,8 @@ body {
 .nav-dropdown-menu {
   position: absolute;
   top: calc(100% + 2px);
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -463,7 +462,6 @@ body {
   min-width: 180px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
   transition: all 0.2s ease;
   overflow: hidden;
   pointer-events: none;
@@ -472,7 +470,7 @@ body {
 .nav-dropdown-menu.open {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
 

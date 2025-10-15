@@ -105,17 +105,15 @@ export default function Header() {
       <div className="header-container">
         <div className="header-content">
           {/* Logo on the left */}
-          <div className="header-logo">
-            <Link href="/" className="logo-link" onClick={closeMobileMenu}>
-              <div className="logo-icon">🔬</div>
-              <h1 className="logo-text">KIFULIIRU LAB</h1>
-            </Link>
-          </div>
+          <Link href="/" className="logo-link" onClick={closeMobileMenu}>
+            <div className="logo-icon">🔬</div>
+            <h1 className="logo-text">KIFULIIRU LAB</h1>
+          </Link>
 
           {/* Desktop Navigation and Controls on the right */}
           <div className="header-right">
                   {/* Desktop Navigation */}
-                  <nav className="nav-desktop" role="navigation" aria-label="Main navigation">
+                  <nav role="navigation" aria-label="Main navigation">
                     <a 
                       href="#research" 
                       aria-label="Research Focus and Methodology"

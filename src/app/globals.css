@@ -419,6 +419,87 @@ body {
   color: var(--accent-hover);
 }
 
+/* Navigation Dropdown */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-dropdown-button:hover {
+  color: var(--accent-hover);
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px var(--shadow-lg);
+  z-index: 1000;
+  margin-top: 8px;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.9rem;
+}
+
+.nav-dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.nav-dropdown-menu a:hover {
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+  padding-left: 20px;
+}
+
 /* Mobile Menu Button */
 .mobile-menu-button {
   display: none;
@@ -517,6 +598,45 @@ body {
 .nav-mobile a:hover {
   color: var(--accent-hover);
   padding-left: 10px;
+}
+
+/* Mobile Navigation Sections */
+.mobile-nav-section {
+  margin-bottom: 30px;
+}
+
+.mobile-nav-section:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-nav-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mobile-nav-section a {
+  display: block;
+  padding: 10px 0;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.95rem;
+}
+
+.mobile-nav-section a:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-section a:hover {
+  color: var(--accent-hover);
+  padding-left: 15px;
 }
 
 /* Show mobile menu button on mobile */

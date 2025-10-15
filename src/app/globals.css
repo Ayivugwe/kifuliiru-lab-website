@@ -787,34 +787,39 @@ section h2 {
   color: var(--accent-color);
   font-weight: 300;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  line-height: 1;
 }
 
 .stat-label {
-  font-size: 0.8rem;
+  font-size: 0.9rem; /* Increased from 0.8rem */
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: block;
+  line-height: 1.2;
 }
 
 /* Mobile stat styling */
 @media (max-width: 768px) {
   .stat-number {
     font-size: 2rem;
+    margin-bottom: 6px;
   }
   
   .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.8rem; /* Increased from 0.75rem */
   }
 }
 
 @media (max-width: 480px) {
   .stat-number {
     font-size: 1.8rem;
+    margin-bottom: 5px;
   }
   
   .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.75rem; /* Increased from 0.7rem */
   }
 }
 
@@ -847,14 +852,18 @@ section h2 {
 .project-name {
   font-size: 1.3rem; /* Increased from 1.1rem */
   color: var(--text-primary);
+  display: block;
+  margin-bottom: 4px;
+  line-height: 1.2;
 }
 
 .project-status {
-  font-size: 0.75rem;
-  padding: 3px 10px;
-  border-radius: 3px;
+  font-size: 0.8rem; /* Increased from 0.75rem */
+  padding: 4px 12px; /* Increased padding */
+  border-radius: 4px; /* Increased border radius */
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 .status-complete {
@@ -1286,8 +1295,11 @@ a:hover {
 .blog-post-date,
 .blog-post-author,
 .blog-post-read-time {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9rem; /* Increased from default */
+  color: var(--text-muted);
 }
 
 .blog-post-excerpt {
@@ -1309,6 +1321,7 @@ a:hover {
   font-size: 0.9rem;
   color: var(--text-muted);
   font-weight: 500;
+  margin-right: 8px;
 }
 
 .blog-post-tag {
@@ -1316,9 +1329,10 @@ a:hover {
   color: var(--accent-color);
   padding: 4px 12px;
   border-radius: 16px;
-  font-size: 0.8rem;
+  font-size: 0.85rem; /* Increased from 0.8rem */
   font-weight: 500;
   border: 1px solid var(--border-color);
+  display: inline-block;
 }
 
 .blog-post-footer {
@@ -1625,10 +1639,12 @@ a:hover {
 .platform-status {
   padding: 4px 12px;
   border-radius: 12px;
-  font-size: 0.75rem;
+  font-size: 0.8rem; /* Increased from 0.75rem */
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .status-active {
@@ -1643,8 +1659,9 @@ a:hover {
 
 .platform-type {
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem; /* Increased from 0.85rem */
   font-style: italic;
+  display: inline-block;
 }
 
 .platform-description {

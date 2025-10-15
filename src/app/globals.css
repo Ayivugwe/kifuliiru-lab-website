@@ -68,19 +68,19 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 260px 20px 40px 20px; /* Extra top padding for fixed header */
+  padding: 20px 20px 40px 20px; /* Reduced padding for sticky header */
 }
 
 /* Mobile container adjustments */
 @media (max-width: 768px) {
   .container {
-    padding: 200px 15px 40px 15px;
+    padding: 20px 15px 40px 15px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 180px 10px 40px 10px;
+    padding: 20px 10px 40px 10px;
   }
 }
 
@@ -243,7 +243,7 @@ body {
 
 /* Header */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -412,6 +412,15 @@ body {
   color: var(--accent-hover);
 }
 
+.nav-desktop a.active {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.nav-desktop a.active::before {
+  width: 100%;
+}
+
 /* Navigation Dropdown */
 .nav-dropdown {
   position: relative;
@@ -496,6 +505,12 @@ body {
   background: var(--bg-secondary);
   color: var(--accent-color);
   padding-left: 20px;
+}
+
+.nav-dropdown-menu a.active {
+  background: var(--accent-color);
+  color: white;
+  font-weight: 600;
 }
 
 /* Mobile Menu Button */
@@ -596,6 +611,13 @@ body {
 .nav-mobile a:hover {
   color: var(--accent-hover);
   padding-left: 10px;
+}
+
+.nav-mobile a.active {
+  color: var(--accent-color);
+  font-weight: 600;
+  background: var(--bg-secondary);
+  padding-left: 15px;
 }
 
 /* Mobile Navigation Sections */

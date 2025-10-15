@@ -13,6 +13,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [aboutDropdownTimeout, setAboutDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     let ticking = false
@@ -48,6 +49,28 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
 
+  // Active section detection
+  useEffect(() => {
+    const sections = ['about', 'cultural-context', 'research', 'digital-platforms', 'projects', 'publications', 'team', 'contact']
+    
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100 // Offset for better detection
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i])
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i])
+          break
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll() // Check on mount
+    
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -72,6 +95,10 @@ export default function Header() {
     setAboutDropdownTimeout(timeout)
   }
 
+  const isActive = (sectionId: string) => {
+    return activeSection === sectionId
+  }
+
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
@@ -87,12 +114,36 @@ export default function Header() {
 
           {/* Desktop Navigation and Controls on the right */}
           <div className="header-right">
-            {/* Desktop Navigation */}
-            <nav className="nav-desktop" role="navigation" aria-label="Main navigation">
-              <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
-              <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
-              <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
-              <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+                  {/* Desktop Navigation */}
+                  <nav className="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a 
+                      href="#research" 
+                      aria-label="Research Focus and Methodology"
+                      className={isActive('research') ? 'active' : ''}
+                    >
+                      {t('nav.research')}
+                    </a>
+                    <a 
+                      href="#digital-platforms" 
+                      aria-label="Digital Ecosystem and Platforms"
+                      className={isActive('digital-platforms') ? 'active' : ''}
+                    >
+                      Platforms
+                    </a>
+                    <a 
+                      href="#projects" 
+                      aria-label="Active Language Preservation Projects"
+                      className={isActive('projects') ? 'active' : ''}
+                    >
+                      {t('nav.projects')}
+                    </a>
+                    <a 
+                      href="#publications" 
+                      aria-label="Publications and Documentation"
+                      className={isActive('publications') ? 'active' : ''}
+                    >
+                      {t('nav.publications')}
+                    </a>
               
               {/* About Us Dropdown */}
               <div 
@@ -108,12 +159,36 @@ export default function Header() {
                   About Us
                   <span className={`dropdown-arrow ${isAboutDropdownOpen ? 'open' : ''}`}>▼</span>
                 </button>
-                <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
-                  <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
-                  <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
-                  <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
-                  <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
-                </div>
+                    <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
+                      <a 
+                        href="#cultural-context" 
+                        aria-label="Kifuliiru Language and Bafuliiru People"
+                        className={isActive('cultural-context') ? 'active' : ''}
+                      >
+                        {t('nav.cultural')}
+                      </a>
+                      <a 
+                        href="#team" 
+                        aria-label="Research Team and Leadership"
+                        className={isActive('team') ? 'active' : ''}
+                      >
+                        {t('nav.team')}
+                      </a>
+                      <a 
+                        href="#contact" 
+                        aria-label="Contact and Collaboration"
+                        className={isActive('contact') ? 'active' : ''}
+                      >
+                        {t('nav.contact')}
+                      </a>
+                      <a 
+                        href="#about" 
+                        aria-label="About Kifuliiru Lab"
+                        className={isActive('about') ? 'active' : ''}
+                      >
+                        {t('nav.about')}
+                      </a>
+                    </div>
               </div>
               
               <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
@@ -143,20 +218,76 @@ export default function Header() {
         
         {/* Mobile Navigation */}
         <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">
-          <div className="mobile-nav-section">
-            <h3 className="mobile-nav-section-title">Research & Projects</h3>
-            <a href="#research" aria-label="Research Focus and Methodology" onClick={closeMobileMenu}>{t('nav.research')}</a>
-            <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms" onClick={closeMobileMenu}>Platforms</a>
-            <a href="#projects" aria-label="Active Language Preservation Projects" onClick={closeMobileMenu}>{t('nav.projects')}</a>
-            <a href="#publications" aria-label="Publications and Documentation" onClick={closeMobileMenu}>{t('nav.publications')}</a>
-          </div>
+            <div className="mobile-nav-section">
+              <h3 className="mobile-nav-section-title">Research & Projects</h3>
+              <a 
+                href="#research" 
+                aria-label="Research Focus and Methodology" 
+                onClick={closeMobileMenu}
+                className={isActive('research') ? 'active' : ''}
+              >
+                {t('nav.research')}
+              </a>
+              <a 
+                href="#digital-platforms" 
+                aria-label="Digital Ecosystem and Platforms" 
+                onClick={closeMobileMenu}
+                className={isActive('digital-platforms') ? 'active' : ''}
+              >
+                Platforms
+              </a>
+              <a 
+                href="#projects" 
+                aria-label="Active Language Preservation Projects" 
+                onClick={closeMobileMenu}
+                className={isActive('projects') ? 'active' : ''}
+              >
+                {t('nav.projects')}
+              </a>
+              <a 
+                href="#publications" 
+                aria-label="Publications and Documentation" 
+                onClick={closeMobileMenu}
+                className={isActive('publications') ? 'active' : ''}
+              >
+                {t('nav.publications')}
+              </a>
+            </div>
           
           <div className="mobile-nav-section">
             <h3 className="mobile-nav-section-title">About Us</h3>
-            <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People" onClick={closeMobileMenu}>{t('nav.cultural')}</a>
-            <a href="#team" aria-label="Research Team and Leadership" onClick={closeMobileMenu}>{t('nav.team')}</a>
-            <a href="#contact" aria-label="Contact and Collaboration" onClick={closeMobileMenu}>{t('nav.contact')}</a>
-            <a href="#about" aria-label="About Kifuliiru Lab" onClick={closeMobileMenu}>{t('nav.about')}</a>
+            <a 
+              href="#cultural-context" 
+              aria-label="Kifuliiru Language and Bafuliiru People" 
+              onClick={closeMobileMenu}
+              className={isActive('cultural-context') ? 'active' : ''}
+            >
+              {t('nav.cultural')}
+            </a>
+            <a 
+              href="#team" 
+              aria-label="Research Team and Leadership" 
+              onClick={closeMobileMenu}
+              className={isActive('team') ? 'active' : ''}
+            >
+              {t('nav.team')}
+            </a>
+            <a 
+              href="#contact" 
+              aria-label="Contact and Collaboration" 
+              onClick={closeMobileMenu}
+              className={isActive('contact') ? 'active' : ''}
+            >
+              {t('nav.contact')}
+            </a>
+            <a 
+              href="#about" 
+              aria-label="About Kifuliiru Lab" 
+              onClick={closeMobileMenu}
+              className={isActive('about') ? 'active' : ''}
+            >
+              {t('nav.about')}
+            </a>
           </div>
           
           <div className="mobile-nav-section">

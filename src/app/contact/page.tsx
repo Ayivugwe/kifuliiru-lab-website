@@ -1,13 +1,13 @@
 import Header from '@/components/Header'
-import About from '@/components/About'
+import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <>
       <Header />
       <div className="container">
-        <About />
+        <Contact />
         <Footer />
       </div>
     </>

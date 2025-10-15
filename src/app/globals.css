@@ -358,13 +358,18 @@ body {
   color: var(--accent-color);
 }
 
+/* Logo styling */
+.logo-svg {
+  border-radius: 8px;
+}
+
 /* Responsive logo sizing */
 @media (max-width: 768px) {
   .combo-horizontal {
     gap: 12px;
   }
   
-  .combo-horizontal svg {
+  .logo-svg {
     width: 50px;
     height: 50px;
   }
@@ -380,7 +385,7 @@ body {
     gap: 10px;
   }
   
-  .combo-horizontal svg {
+  .logo-svg {
     width: 40px;
     height: 40px;
   }
@@ -1035,6 +1040,14 @@ section h2 {
   letter-spacing: 0.5px;
   display: inline-block;
   margin-right: 8px;
+}
+
+/* Disabled Resource Links */
+.resource-link-disabled {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 .status-available {

@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
 import LanguageToggle from './LanguageToggle'
 import Logo from './Logo'
@@ -9,32 +10,16 @@ import Link from 'next/link'
 
 export default function Header() {
   const { t } = useLanguage()
+  const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [aboutDropdownTimeout, setAboutDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
-  const [activeSection, setActiveSection] = useState('')
 
-  // Active section detection
-  useEffect(() => {
-    const sections = ['about', 'cultural-context', 'research', 'digital-platforms', 'projects', 'publications', 'team', 'contact']
-    
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100 // Offset for better detection
-      
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i])
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i])
-          break
-        }
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // Check on mount
-    
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  // Get current active section from pathname
+  const getActiveSection = () => {
+    if (pathname === '/') return 'about'
+    return pathname.replace('/', '')
+  }
 
 
   const toggleMobileMenu = () => {
@@ -61,7 +46,7 @@ export default function Header() {
   }
 
   const isActive = (sectionId: string) => {
-    return activeSection === sectionId
+    return getActiveSection() === sectionId
   }
 
 
@@ -73,34 +58,41 @@ export default function Header() {
 
         {/* Navigation */}
         <nav role="navigation" aria-label="Main navigation">
-        <a 
-          href="#research" 
+        <Link 
+          href="/research" 
           aria-label="Research Focus and Methodology"
           className={isActive('research') ? 'active' : ''}
         >
           {t('nav.research')}
-        </a>
-        <a 
-          href="#digital-platforms" 
+        </Link>
+        <Link 
+          href="/digital-platforms" 
           aria-label="Digital Ecosystem and Platforms"
           className={isActive('digital-platforms') ? 'active' : ''}
         >
           Platforms
-        </a>
-        <a 
-          href="#projects" 
+        </Link>
+        <Link 
+          href="/projects" 
           aria-label="Active Language Preservation Projects"
           className={isActive('projects') ? 'active' : ''}
         >
           {t('nav.projects')}
-        </a>
-        <a 
-          href="#publications" 
+        </Link>
+        <Link 
+          href="/publications" 
           aria-label="Publications and Documentation"
           className={isActive('publications') ? 'active' : ''}
         >
           {t('nav.publications')}
-        </a>
+        </Link>
+        <Link 
+          href="/resources" 
+          aria-label="Resources and Documentation"
+          className={isActive('resources') ? 'active' : ''}
+        >
+          Resources
+        </Link>
         
         {/* About Us Dropdown */}
         <div 
@@ -116,36 +108,36 @@ export default function Header() {
             About Us
             <span className={`dropdown-arrow ${isAboutDropdownOpen ? 'open' : ''}`}>▼</span>
           </button>
-          <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
-            <a 
-              href="#cultural-context" 
-              aria-label="Kifuliiru Language and Bafuliiru People"
-              className={isActive('cultural-context') ? 'active' : ''}
-            >
-              {t('nav.cultural')}
-            </a>
-            <a 
-              href="#team" 
-              aria-label="Research Team and Leadership"
-              className={isActive('team') ? 'active' : ''}
-            >
-              {t('nav.team')}
-            </a>
-            <a 
-              href="#contact" 
-              aria-label="Contact and Collaboration"
-              className={isActive('contact') ? 'active' : ''}
-            >
-              {t('nav.contact')}
-            </a>
-            <a 
-              href="#about" 
-              aria-label="About Kifuliiru Lab"
-              className={isActive('about') ? 'active' : ''}
-            >
-              {t('nav.about')}
-            </a>
-          </div>
+                   <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
+                     <Link
+                       href="/cultural-context"
+                       aria-label="Kifuliiru Language and Bafuliiru People"
+                       className={isActive('cultural-context') ? 'active' : ''}
+                     >
+                       {t('nav.cultural')}
+                     </Link>
+                     <Link
+                       href="/team"
+                       aria-label="Research Team and Leadership"
+                       className={isActive('team') ? 'active' : ''}
+                     >
+                       {t('nav.team')}
+                     </Link>
+                     <Link
+                       href="/contact"
+                       aria-label="Contact and Collaboration"
+                       className={isActive('contact') ? 'active' : ''}
+                     >
+                       {t('nav.contact')}
+                     </Link>
+                     <Link
+                       href="/about"
+                       aria-label="About Kifuliiru Lab"
+                       className={isActive('about') ? 'active' : ''}
+                     >
+                       {t('nav.about')}
+                     </Link>
+                   </div>
         </div>
         
         <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
@@ -174,77 +166,85 @@ export default function Header() {
       
       {/* Mobile Navigation */}
       <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">
-        <div className="mobile-nav-section">
-          <h3 className="mobile-nav-section-title">Research & Projects</h3>
-          <a 
-            href="#research" 
-            aria-label="Research Focus and Methodology" 
-            onClick={closeMobileMenu}
-            className={isActive('research') ? 'active' : ''}
-          >
-            {t('nav.research')}
-          </a>
-          <a 
-            href="#digital-platforms" 
-            aria-label="Digital Ecosystem and Platforms" 
-            onClick={closeMobileMenu}
-            className={isActive('digital-platforms') ? 'active' : ''}
-          >
-            Platforms
-          </a>
-          <a 
-            href="#projects" 
-            aria-label="Active Language Preservation Projects" 
-            onClick={closeMobileMenu}
-            className={isActive('projects') ? 'active' : ''}
-          >
-            {t('nav.projects')}
-          </a>
-          <a 
-            href="#publications" 
-            aria-label="Publications and Documentation" 
-            onClick={closeMobileMenu}
-            className={isActive('publications') ? 'active' : ''}
-          >
-            {t('nav.publications')}
-          </a>
-        </div>
-        
-        <div className="mobile-nav-section">
-          <h3 className="mobile-nav-section-title">About Us</h3>
-          <a 
-            href="#cultural-context" 
-            aria-label="Kifuliiru Language and Bafuliiru People" 
-            onClick={closeMobileMenu}
-            className={isActive('cultural-context') ? 'active' : ''}
-          >
-            {t('nav.cultural')}
-          </a>
-          <a 
-            href="#team" 
-            aria-label="Research Team and Leadership" 
-            onClick={closeMobileMenu}
-            className={isActive('team') ? 'active' : ''}
-          >
-            {t('nav.team')}
-          </a>
-          <a 
-            href="#contact" 
-            aria-label="Contact and Collaboration" 
-            onClick={closeMobileMenu}
-            className={isActive('contact') ? 'active' : ''}
-          >
-            {t('nav.contact')}
-          </a>
-          <a 
-            href="#about" 
-            aria-label="About Kifuliiru Lab" 
-            onClick={closeMobileMenu}
-            className={isActive('about') ? 'active' : ''}
-          >
-            {t('nav.about')}
-          </a>
-        </div>
+             <div className="mobile-nav-section">
+               <h3 className="mobile-nav-section-title">Research & Projects</h3>
+               <Link
+                 href="/research"
+                 aria-label="Research Focus and Methodology"
+                 onClick={closeMobileMenu}
+                 className={isActive('research') ? 'active' : ''}
+               >
+                 {t('nav.research')}
+               </Link>
+               <Link
+                 href="/digital-platforms"
+                 aria-label="Digital Ecosystem and Platforms"
+                 onClick={closeMobileMenu}
+                 className={isActive('digital-platforms') ? 'active' : ''}
+               >
+                 Platforms
+               </Link>
+               <Link
+                 href="/projects"
+                 aria-label="Active Language Preservation Projects"
+                 onClick={closeMobileMenu}
+                 className={isActive('projects') ? 'active' : ''}
+               >
+                 {t('nav.projects')}
+               </Link>
+               <Link
+                 href="/publications"
+                 aria-label="Publications and Documentation"
+                 onClick={closeMobileMenu}
+                 className={isActive('publications') ? 'active' : ''}
+               >
+                 {t('nav.publications')}
+               </Link>
+               <Link
+                 href="/resources"
+                 aria-label="Resources and Documentation"
+                 onClick={closeMobileMenu}
+                 className={isActive('resources') ? 'active' : ''}
+               >
+                 Resources
+               </Link>
+             </div>
+
+             <div className="mobile-nav-section">
+               <h3 className="mobile-nav-section-title">About Us</h3>
+               <Link
+                 href="/cultural-context"
+                 aria-label="Kifuliiru Language and Bafuliiru People"
+                 onClick={closeMobileMenu}
+                 className={isActive('cultural-context') ? 'active' : ''}
+               >
+                 {t('nav.cultural')}
+               </Link>
+               <Link
+                 href="/team"
+                 aria-label="Research Team and Leadership"
+                 onClick={closeMobileMenu}
+                 className={isActive('team') ? 'active' : ''}
+               >
+                 {t('nav.team')}
+               </Link>
+               <Link
+                 href="/contact"
+                 aria-label="Contact and Collaboration"
+                 onClick={closeMobileMenu}
+                 className={isActive('contact') ? 'active' : ''}
+               >
+                 {t('nav.contact')}
+               </Link>
+               <Link
+                 href="/about"
+                 aria-label="About Kifuliiru Lab"
+                 onClick={closeMobileMenu}
+                 className={isActive('about') ? 'active' : ''}
+               >
+                 {t('nav.about')}
+               </Link>
+             </div>
         
         <div className="mobile-nav-section">
           <h3 className="mobile-nav-section-title">Resources</h3>

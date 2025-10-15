@@ -8,43 +8,28 @@ interface Resource {
 
 const resources: Resource[] = [
   {
-    title: 'Digital Platform Documentation',
-    description: 'Comprehensive guides for all 12+ Kifuliiru digital platforms, including user manuals, technical specifications, and integration guides.',
-    type: 'Documentation',
-    status: 'available',
-    url: 'https://docs.kifuliiru.org'
-  },
-  {
-    title: 'Template-Based Content Generation Methodology',
-    description: 'Detailed methodology for creating educational content at scale using computational linguistics and community validation.',
-    type: 'Methodology Guide',
-    status: 'available',
-    url: 'https://methodology.kifuliiru.org'
-  },
-  {
-    title: 'Community Validation Framework',
-    description: 'Process documentation for community-led content validation, ensuring cultural accuracy and linguistic authenticity.',
-    type: 'Framework',
+    title: 'Kifuliiru Language Research',
+    description: 'Research papers and studies on Kifuliiru language structure, grammar, and cultural significance.',
+    type: 'Research Paper',
     status: 'available'
   },
   {
-    title: 'Kifuliiru Language Data Repository',
-    description: 'Open access repository containing 8GB+ of validated Kifuliiru language data, including audio recordings, text corpora, and educational materials.',
-    type: 'Data Repository',
-    status: 'available',
-    url: 'https://data.kifuliiru.org'
+    title: 'Community Engagement Resources',
+    description: 'Resources for engaging with the Bafuliiru community in language preservation efforts.',
+    type: 'Community Resources',
+    status: 'available'
   },
   {
-    title: 'Platform Integration APIs',
-    description: 'Technical APIs and integration tools for connecting Kifuliiru language resources across different platforms and applications.',
-    type: 'Technical Resources',
+    title: 'Digital Platform Documentation',
+    description: 'User guides and documentation for our Kifuliiru language learning platforms.',
+    type: 'Documentation',
     status: 'in-development'
   },
   {
-    title: 'Community Engagement Toolkit',
-    description: 'Resources and tools for other language communities to implement similar preservation methodologies.',
-    type: 'Toolkit',
-    status: 'planned'
+    title: 'Language Learning Materials',
+    description: 'Educational materials and resources for learning the Kifuliiru language.',
+    type: 'Educational Resources',
+    status: 'available'
   }
 ]
 

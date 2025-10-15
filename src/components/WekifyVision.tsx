@@ -10,17 +10,17 @@ export default function WekifyVision() {
           </p>
       <p>
         <strong>Kifuliiru Lab:</strong> As our flagship laboratory, we have developed and 
-        proven our methodology with the Kifuliiru language. Our success here demonstrates 
-        the scalability and effectiveness of our approach for other endangered languages.
+        proven our approach with the Kifuliiru language. Our success here demonstrates 
+        the scalability and effectiveness of our methods for other endangered languages.
       </p>
           <p>
             <strong>Future Language Laboratories:</strong> We are actively working to establish 
             additional language laboratories for other endangered languages, each with their 
-            own dedicated team, community partnerships, and specialized language laboratory research focus.
+            own dedicated team, community partnerships, and specialized research focus.
           </p>
       <p>
-        <strong>Scalable Framework:</strong> Our proven Kifuliiru methodology—combining computational 
-        linguistics, template-based generation, and community engagement—provides a 
+        <strong>Scalable Framework:</strong> Our proven approach—combining computational 
+        linguistics, innovative methods, and community engagement—provides a 
         replicable framework that can be adapted for any language community.
       </p>
     </section>

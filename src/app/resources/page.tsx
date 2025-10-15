@@ -1,13 +1,13 @@
 import Header from '@/components/Header'
-import About from '@/components/About'
+import Resources from '@/components/Resources'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function ResourcesPage() {
   return (
     <>
       <Header />
       <div className="container">
-        <About />
+        <Resources />
         <Footer />
       </div>
     </>

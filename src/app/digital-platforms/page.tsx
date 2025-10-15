@@ -1,13 +1,13 @@
 import Header from '@/components/Header'
-import About from '@/components/About'
+import DigitalPlatforms from '@/components/DigitalPlatforms'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function DigitalPlatformsPage() {
   return (
     <>
       <Header />
       <div className="container">
-        <About />
+        <DigitalPlatforms />
         <Footer />
       </div>
     </>

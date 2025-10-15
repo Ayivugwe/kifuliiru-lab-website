@@ -20,8 +20,8 @@ export default function Contact() {
       </div>
 
       <p style={{ marginTop: '30px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-        <strong>{t('contact.research_interests')}:</strong> Template-based generation • Computational linguistics • 
-        Kifuliiru language preservation • Language laboratory methodology • Community-centered technology • AI for under-resourced 
+        <strong>{t('contact.research_interests')}:</strong> Computational linguistics • 
+        Kifuliiru language preservation • Community-centered technology • AI for under-resourced 
         languages • Cultural knowledge documentation
       </p>
     </section>

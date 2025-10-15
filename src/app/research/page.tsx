@@ -1,13 +1,13 @@
 import Header from '@/components/Header'
-import About from '@/components/About'
+import Research from '@/components/Research'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function ResearchPage() {
   return (
     <>
       <Header />
       <div className="container">
-        <About />
+        <Research />
         <Footer />
       </div>
     </>

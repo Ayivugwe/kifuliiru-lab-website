@@ -10,6 +10,7 @@ export default function Header() {
   const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     let ticking = false
@@ -45,37 +46,74 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+  }
+
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
       <div className="header-container">
         <div className="header-content">
-          <div className="header-main">
-            <Link href="/" className="logo-link">
-              <h1 className="logo-brackets">[ KIFULIIRU LAB ]</h1>
+          {/* Logo on the left */}
+          <div className="header-logo">
+            <Link href="/" className="logo-link" onClick={closeMobileMenu}>
+              <div className="logo-icon">🔬</div>
+              <h1 className="logo-text">KIFULIIRU LAB</h1>
             </Link>
-            <p className="tagline">
-              <strong>Kifuliiru Language Laboratory</strong> - 
-              <strong> Language Preservation</strong> Through 
-              <strong> Computational Methods</strong>
-            </p>
           </div>
-          <div className="header-controls">
-            <LanguageToggle />
-            <ThemeToggle />
+
+          {/* Desktop Navigation and Controls on the right */}
+          <div className="header-right">
+            {/* Desktop Navigation */}
+            <nav className="nav-desktop" role="navigation" aria-label="Main navigation">
+              <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
+              <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
+              <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
+              <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
+              <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
+              <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
+              <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
+              <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
+              <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
+            </nav>
+
+            {/* Controls */}
+            <div className="header-controls">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="mobile-menu-button"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+            >
+              <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
           </div>
         </div>
         
-        {/* Navigation inside header */}
-        <nav className="nav" role="navigation" aria-label="Main navigation">
-          <a href="#about" aria-label="About Kifuliiru Lab">{t('nav.about')}</a>
-          <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
-          <a href="#research" aria-label="Research Focus and Methodology">{t('nav.research')}</a>
-          <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms">Platforms</a>
-          <a href="#projects" aria-label="Active Language Preservation Projects">{t('nav.projects')}</a>
-          <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
-          <Link href="/blog" aria-label="Blog and Research Updates">{t('nav.blog')}</Link>
-          <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
-          <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>
+        {/* Mobile Navigation */}
+        <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">
+          <a href="#about" aria-label="About Kifuliiru Lab" onClick={closeMobileMenu}>{t('nav.about')}</a>
+          <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People" onClick={closeMobileMenu}>{t('nav.cultural')}</a>
+          <a href="#research" aria-label="Research Focus and Methodology" onClick={closeMobileMenu}>{t('nav.research')}</a>
+          <a href="#digital-platforms" aria-label="Digital Ecosystem and Platforms" onClick={closeMobileMenu}>Platforms</a>
+          <a href="#projects" aria-label="Active Language Preservation Projects" onClick={closeMobileMenu}>{t('nav.projects')}</a>
+          <a href="#publications" aria-label="Publications and Documentation" onClick={closeMobileMenu}>{t('nav.publications')}</a>
+          <Link href="/blog" aria-label="Blog and Research Updates" onClick={closeMobileMenu}>{t('nav.blog')}</Link>
+          <a href="#team" aria-label="Research Team and Leadership" onClick={closeMobileMenu}>{t('nav.team')}</a>
+          <a href="#contact" aria-label="Contact and Collaboration" onClick={closeMobileMenu}>{t('nav.contact')}</a>
         </nav>
       </div>
     </header>

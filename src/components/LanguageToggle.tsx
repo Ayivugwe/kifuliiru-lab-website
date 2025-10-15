@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useState } from 'react'
-import { ChevronDown, Check, Globe } from 'lucide-react'
+import { ChevronDown, Check } from 'lucide-react'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -39,10 +39,6 @@ export default function LanguageToggle() {
       
       {isOpen && (
         <div className="language-dropdown">
-          <div className="language-dropdown-header">
-            <Globe size={16} />
-            <span>Select Language</span>
-          </div>
           {languages.map((lang) => (
             <button
               key={lang.code}

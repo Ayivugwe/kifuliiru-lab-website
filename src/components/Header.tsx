@@ -11,7 +11,6 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
 
   useEffect(() => {
     let ticking = false
@@ -79,20 +78,15 @@ export default function Header() {
               <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
               
               {/* About Us Dropdown */}
-              <div 
-                className="nav-dropdown"
-                onMouseEnter={() => setIsAboutDropdownOpen(true)}
-                onMouseLeave={() => setIsAboutDropdownOpen(false)}
-              >
+              <div className="nav-dropdown">
                 <button 
                   className="nav-dropdown-button"
-                  aria-expanded={isAboutDropdownOpen}
                   aria-haspopup="true"
                 >
                   About Us
-                  <span className={`dropdown-arrow ${isAboutDropdownOpen ? 'open' : ''}`}>▼</span>
+                  <span className="dropdown-arrow">▼</span>
                 </button>
-                <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
+                <div className="nav-dropdown-menu">
                   <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
                   <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
                   <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>

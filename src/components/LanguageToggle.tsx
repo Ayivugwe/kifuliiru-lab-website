@@ -1,7 +1,6 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useState } from 'react'
 import { ChevronDown, Check } from 'lucide-react'
 
 const languages = [
@@ -13,21 +12,15 @@ const languages = [
 
 export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage()
-  const [isOpen, setIsOpen] = useState(false)
 
   const currentLanguage = languages.find(lang => lang.code === language) || languages[0]
 
   const handleLanguageChange = (langCode: 'en' | 'fr' | 'sw' | 'flr') => {
     setLanguage(langCode)
-    setIsOpen(false)
   }
 
   return (
-    <div 
-      className="language-toggle"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
-    >
+    <div className="language-toggle">
       <button
         className="language-toggle-button"
         aria-label={`Current language: ${currentLanguage.name}. Hover to change language.`}
@@ -36,30 +29,28 @@ export default function LanguageToggle() {
         <span className="language-flag">{currentLanguage.flag}</span>
         <ChevronDown 
           size={14} 
-          className={`language-arrow ${isOpen ? 'rotated' : ''}`}
+          className="language-arrow"
         />
       </button>
       
-      {isOpen && (
-        <div className="language-dropdown">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => handleLanguageChange(lang.code)}
-              className={`language-option ${language === lang.code ? 'active' : ''}`}
-              aria-label={`Switch to ${lang.name}`}
-            >
-              <div className="language-option-content">
-                <span className="language-flag">{lang.flag}</span>
-                <span className="language-name">{lang.name}</span>
-              </div>
-              {language === lang.code && (
-                <Check size={16} className="checkmark" />
-              )}
-            </button>
-          ))}
-        </div>
-      )}
+      <div className="language-dropdown">
+        {languages.map((lang) => (
+          <button
+            key={lang.code}
+            onClick={() => handleLanguageChange(lang.code)}
+            className={`language-option ${language === lang.code ? 'active' : ''}`}
+            aria-label={`Switch to ${lang.name}`}
+          >
+            <div className="language-option-content">
+              <span className="language-flag">{lang.flag}</span>
+              <span className="language-name">{lang.name}</span>
+            </div>
+            {language === lang.code && (
+              <Check size={16} className="checkmark" />
+            )}
+          </button>
+        ))}
+      </div>
     </div>
   )
 }

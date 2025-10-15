@@ -190,6 +190,10 @@ body {
   pointer-events: auto;
 }
 
+.language-toggle:hover .language-arrow {
+  transform: rotate(180deg);
+}
+
 
 .language-option {
   width: 100%;
@@ -466,11 +470,15 @@ body {
   pointer-events: none;
 }
 
-.nav-dropdown-menu.open {
+.nav-dropdown:hover .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
 }
 
 .nav-dropdown-menu a {

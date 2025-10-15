@@ -7,10 +7,12 @@ export default function BlogLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="container">
+    <>
       <Header />
-      {children}
-      <Footer />
-    </div>
+      <div className="container">
+        {children}
+        <Footer />
+      </div>
+    </>
   )
 }

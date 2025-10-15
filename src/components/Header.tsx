@@ -11,6 +11,8 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
+  const [aboutDropdownTimeout, setAboutDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     let ticking = false
@@ -55,6 +57,21 @@ export default function Header() {
     setIsMobileMenuOpen(false)
   }
 
+  const handleAboutDropdownMouseEnter = () => {
+    if (aboutDropdownTimeout) {
+      clearTimeout(aboutDropdownTimeout)
+      setAboutDropdownTimeout(null)
+    }
+    setIsAboutDropdownOpen(true)
+  }
+
+  const handleAboutDropdownMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsAboutDropdownOpen(false)
+    }, 300) // 300ms delay
+    setAboutDropdownTimeout(timeout)
+  }
+
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
@@ -78,15 +95,20 @@ export default function Header() {
               <a href="#publications" aria-label="Publications and Documentation">{t('nav.publications')}</a>
               
               {/* About Us Dropdown */}
-              <div className="nav-dropdown">
+              <div 
+                className="nav-dropdown"
+                onMouseEnter={handleAboutDropdownMouseEnter}
+                onMouseLeave={handleAboutDropdownMouseLeave}
+              >
                 <button 
                   className="nav-dropdown-button"
                   aria-haspopup="true"
+                  aria-expanded={isAboutDropdownOpen}
                 >
                   About Us
-                  <span className="dropdown-arrow">▼</span>
+                  <span className={`dropdown-arrow ${isAboutDropdownOpen ? 'open' : ''}`}>▼</span>
                 </button>
-                <div className="nav-dropdown-menu">
+                <div className={`nav-dropdown-menu ${isAboutDropdownOpen ? 'open' : ''}`}>
                   <a href="#cultural-context" aria-label="Kifuliiru Language and Bafuliiru People">{t('nav.cultural')}</a>
                   <a href="#team" aria-label="Research Team and Leadership">{t('nav.team')}</a>
                   <a href="#contact" aria-label="Contact and Collaboration">{t('nav.contact')}</a>

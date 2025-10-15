@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { ChevronDown, Check } from 'lucide-react'
+import { useState } from 'react'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -12,6 +13,8 @@ const languages = [
 
 export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage()
+  const [isOpen, setIsOpen] = useState(false)
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null)
 
   const currentLanguage = languages.find(lang => lang.code === language) || languages[0]
 
@@ -19,8 +22,27 @@ export default function LanguageToggle() {
     setLanguage(langCode)
   }
 
+  const handleMouseEnter = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId)
+      setTimeoutId(null)
+    }
+    setIsOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    const newTimeout = setTimeout(() => {
+      setIsOpen(false)
+    }, 300) // 300ms delay
+    setTimeoutId(newTimeout)
+  }
+
   return (
-    <div className="language-toggle">
+    <div 
+      className="language-toggle"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <button
         className="language-toggle-button"
         aria-label={`Current language: ${currentLanguage.name}. Hover to change language.`}
@@ -29,11 +51,11 @@ export default function LanguageToggle() {
         <span className="language-flag">{currentLanguage.flag}</span>
         <ChevronDown 
           size={14} 
-          className="language-arrow"
+          className={`language-arrow ${isOpen ? 'rotated' : ''}`}
         />
       </button>
       
-      <div className="language-dropdown">
+      <div className={`language-dropdown ${isOpen ? 'open' : ''}`}>
         {languages.map((lang) => (
           <button
             key={lang.code}

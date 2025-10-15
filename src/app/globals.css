@@ -399,7 +399,7 @@ nav {
   font-size: 1.1rem; /* Increased from 1rem */
 }
 
-nav a {
+.header-content nav a {
   color: var(--accent-color);
   text-decoration: none;
   padding: 8px 0;
@@ -409,7 +409,7 @@ nav a {
   font-weight: 500;
 }
 
-nav a::before {
+.header-content nav a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -421,21 +421,23 @@ nav a::before {
   transform: translateX(-50%);
 }
 
-nav a:hover::before {
+.header-content nav a:hover::before {
   width: 100%;
+  transform: translateX(-50%);
 }
 
-nav a:hover {
+.header-content nav a:hover {
   color: var(--accent-hover);
 }
 
-nav a.active {
+.header-content nav a.active {
   color: var(--accent-color);
   font-weight: 600;
 }
 
-nav a.active::before {
+.header-content nav a.active::before {
   width: 100%;
+  transform: translateX(-50%);
 }
 
 /* Navigation Dropdown */
@@ -462,8 +464,25 @@ nav a.active::before {
   gap: 5px;
 }
 
+.nav-dropdown-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
 .nav-dropdown-button:hover {
   color: var(--accent-hover);
+}
+
+.nav-dropdown-button:hover::before {
+  width: 100%;
+  transform: translateX(-50%);
 }
 
 .dropdown-arrow {

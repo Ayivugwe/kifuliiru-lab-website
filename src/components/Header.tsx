@@ -67,11 +67,16 @@ export default function Header() {
   return (
     <header className="header" role="banner">
       <div className="header-content">
-        {/* Logo */}
-        <Link href="/" className="logo-link" onClick={closeMobileMenu}>
-          <div className="logo-icon">🔬</div>
-          <h1 className="logo-text">KIFULIIRU LAB</h1>
-        </Link>
+               {/* Logo */}
+               <Link href="/" className="logo-link" onClick={closeMobileMenu}>
+                 <div className="logo-icon">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+                     <rect width="100" height="100" fill="#0a0a0a"/>
+                     <text x="50" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#4a9eff" text-anchor="middle" dominant-baseline="middle" letter-spacing="2px">FL</text>
+                   </svg>
+                 </div>
+                 <h1 className="logo-text">KIFULIIRU LAB</h1>
+               </Link>
 
         {/* Navigation */}
         <nav role="navigation" aria-label="Main navigation">

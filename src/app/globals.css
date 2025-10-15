@@ -326,6 +326,15 @@ body {
 .logo-icon {
   font-size: 2rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
 
 .logo-text {
@@ -348,6 +357,11 @@ body {
     font-size: 1.5rem;
   }
   
+  .logo-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+  
   .logo-text {
     font-size: 1.2rem;
     letter-spacing: 1.5px;
@@ -357,6 +371,11 @@ body {
 @media (max-width: 480px) {
   .logo-icon {
     font-size: 1.2rem;
+  }
+  
+  .logo-icon svg {
+    width: 28px;
+    height: 28px;
   }
   
   .logo-text {

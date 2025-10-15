@@ -51,7 +51,7 @@ body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px; /* Adjusted for monospace readability */
+  font-size: 18px; /* Increased from 16px for better readability */
 }
 
 /* Text Selection */
@@ -368,7 +368,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 25px;
-  font-size: 1rem;
+  font-size: 1.1rem; /* Increased from 1rem */
 }
 
 nav a {
@@ -698,7 +698,7 @@ section:first-child {
 }
 
 section h2 {
-  font-size: 1.5rem; /* Adjusted for monospace */
+  font-size: 1.8rem; /* Increased from 1.5rem */
   font-weight: 300;
   color: var(--text-primary);
   margin-bottom: 20px;
@@ -711,7 +711,7 @@ section h2 {
 /* Mobile section headings */
 @media (max-width: 768px) {
   section h2 {
-    font-size: 1.3rem; /* Adjusted for monospace */
+    font-size: 1.5rem; /* Increased from 1.3rem */
     letter-spacing: 1px;
     padding-left: 12px;
     margin-bottom: 15px;
@@ -720,7 +720,7 @@ section h2 {
 
 @media (max-width: 480px) {
   section h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Increased from 1.1rem */
     letter-spacing: 0.5px;
     padding-left: 10px;
     margin-bottom: 12px;
@@ -730,20 +730,20 @@ section h2 {
         section p {
             margin-bottom: 15px;
             color: var(--text-secondary);
-            font-size: 1.1rem; /* Adjusted for monospace readability */
+            font-size: 1.2rem; /* Increased from 1.1rem */
         }
 
 /* Mobile section text */
 @media (max-width: 768px) {
   section p {
-    font-size: 1rem; /* Adjusted for monospace */
+    font-size: 1.1rem; /* Increased from 1rem */
     line-height: 1.6;
   }
 }
 
 @media (max-width: 480px) {
   section p {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Increased from 0.9rem */
     line-height: 1.5;
   }
 }

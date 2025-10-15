@@ -23,11 +23,14 @@ export default function LanguageToggle() {
   }
 
   return (
-    <div className="language-toggle">
+    <div 
+      className="language-toggle"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <button
-        onClick={() => setIsOpen(!isOpen)}
         className="language-toggle-button"
-        aria-label={`Current language: ${currentLanguage.name}. Click to change language.`}
+        aria-label={`Current language: ${currentLanguage.name}. Hover to change language.`}
         title={`Current language: ${currentLanguage.name}`}
       >
         <span className="language-flag">{currentLanguage.flag}</span>

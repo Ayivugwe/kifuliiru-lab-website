@@ -176,6 +176,18 @@ body {
   margin-top: 8px;
   overflow: hidden;
   min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.language-toggle:hover .language-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 
@@ -208,11 +220,13 @@ body {
 
 .language-option.active {
   background: var(--bg-tertiary);
-  color: var(--text-primary);
+  color: var(--accent-color);
+  font-weight: 600;
   border-left: 3px solid var(--accent-color);
 }
 
 .language-option.active .language-flag {
+  font-size: 1.3rem;
   filter: brightness(1.1);
 }
 

@@ -11,8 +11,8 @@ export default function Resources() {
       
       <div className="resources-intro">
         <p>
-          Access our comprehensive collection of Kifuliiru language resources, documentation, 
-          and educational materials. All resources are community-validated and designed to 
+          We are currently developing a comprehensive collection of Kifuliiru language resources, documentation, 
+          and educational materials. All resources will be community-validated and designed to 
           support language learning and preservation.
         </p>
       </div>

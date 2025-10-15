@@ -11,13 +11,13 @@ const resources: Resource[] = [
     title: 'Kifuliiru Language Research',
     description: 'Research papers and studies on Kifuliiru language structure, grammar, and cultural significance.',
     type: 'Research Paper',
-    status: 'available'
+    status: 'in-development'
   },
   {
     title: 'Community Engagement Resources',
     description: 'Resources for engaging with the Bafuliiru community in language preservation efforts.',
     type: 'Community Resources',
-    status: 'available'
+    status: 'in-development'
   },
   {
     title: 'Digital Platform Documentation',
@@ -29,7 +29,7 @@ const resources: Resource[] = [
     title: 'Language Learning Materials',
     description: 'Educational materials and resources for learning the Kifuliiru language.',
     type: 'Educational Resources',
-    status: 'available'
+    status: 'in-development'
   }
 ]
 
@@ -38,8 +38,8 @@ export default function Publications() {
     <section id="publications">
       <h2>Resources & Documentation</h2>
       <p className="resources-intro">
-        Access comprehensive documentation, methodologies, and resources developed through our Kifuliiru language preservation work. 
-        These practical resources support both current users and future language preservation efforts.
+        We are currently developing comprehensive documentation, methodologies, and resources through our Kifuliiru language preservation work. 
+        These resources will support both current users and future language preservation efforts.
       </p>
       
       <div className="resources-grid">

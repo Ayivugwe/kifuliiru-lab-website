@@ -102,14 +102,15 @@ export default function Header() {
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
-      {/* Logo */}
-      <Link href="/" className="logo-link" onClick={closeMobileMenu}>
-        <div className="logo-icon">🔬</div>
-        <h1 className="logo-text">KIFULIIRU LAB</h1>
-      </Link>
+      <div className="header-content">
+        {/* Logo */}
+        <Link href="/" className="logo-link" onClick={closeMobileMenu}>
+          <div className="logo-icon">🔬</div>
+          <h1 className="logo-text">KIFULIIRU LAB</h1>
+        </Link>
 
-      {/* Navigation */}
-      <nav role="navigation" aria-label="Main navigation">
+        {/* Navigation */}
+        <nav role="navigation" aria-label="Main navigation">
         <a 
           href="#research" 
           aria-label="Research Focus and Methodology"
@@ -194,19 +195,20 @@ export default function Header() {
         <ThemeToggle />
       </div>
 
-      {/* Mobile Menu Button */}
-      <button 
-        className="mobile-menu-button"
-        onClick={toggleMobileMenu}
-        aria-label="Toggle mobile menu"
-        aria-expanded={isMobileMenuOpen}
-      >
-        <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
+        {/* Mobile Menu Button */}
+        <button 
+          className="mobile-menu-button"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+          <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
       
       {/* Mobile Navigation */}
       <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">

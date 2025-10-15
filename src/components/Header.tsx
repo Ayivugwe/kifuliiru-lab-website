@@ -8,46 +8,10 @@ import Link from 'next/link'
 
 export default function Header() {
   const { t } = useLanguage()
-  const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [aboutDropdownTimeout, setAboutDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
   const [activeSection, setActiveSection] = useState('')
-
-  useEffect(() => {
-    let ticking = false
-
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY
-          const scrollDifference = Math.abs(currentScrollY - lastScrollY)
-          
-          // Only update if there's significant scroll movement (prevents jittery behavior)
-          if (scrollDifference > 5) {
-            if (currentScrollY < 10) {
-              // Always show when at the top
-              setIsVisible(true)
-            } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
-              // Scrolling down and past 80px - hide header
-              setIsVisible(false)
-            } else if (currentScrollY < lastScrollY) {
-              // Scrolling up - show header
-              setIsVisible(true)
-            }
-            
-            setLastScrollY(currentScrollY)
-          }
-          ticking = false
-        })
-        ticking = true
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
 
   // Active section detection
   useEffect(() => {
@@ -101,7 +65,7 @@ export default function Header() {
 
 
   return (
-    <header className={`header ${isVisible ? 'visible' : 'hidden'}`} role="banner">
+    <header className="header" role="banner">
       <div className="header-content">
         {/* Logo */}
         <Link href="/" className="logo-link" onClick={closeMobileMenu}>

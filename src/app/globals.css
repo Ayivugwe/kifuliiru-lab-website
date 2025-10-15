@@ -242,44 +242,36 @@ body {
 }
 
 /* Header */
+
 .header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  background: var(--bg-primary);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-color);
-  padding: 20px 0 0 0;
-  margin-bottom: 40px;
   transition: all 0.3s ease;
   transform: translateY(0);
   opacity: 1;
-  box-shadow: 0 2px 8px var(--shadow);
-  width: 100%;
 }
 
-.header.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-  pointer-events: none;
+/* Dark theme glassmorphism */
+[data-theme="dark"] .header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.header.visible {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.header {
-  width: 100%;
-  background: var(--bg-primary);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 2px 8px var(--shadow);
+/* Light theme glassmorphism */
+[data-theme="light"] .header {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {

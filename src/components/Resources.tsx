@@ -52,14 +52,15 @@ export default function Resources() {
         <div className="resource-card">
           <div className="resource-icon">🎵</div>
           <h3>Audio Resources</h3>
-          <p>Voice recordings, pronunciation guides, and audio learning materials.</p>
+          <p>Voice recordings, pronunciation guides, and audio learning materials from native speakers.</p>
           <div className="resource-stats">
             <span className="resource-stat">8GB+ Audio</span>
             <span className="resource-stat">Native Speakers</span>
             <span className="resource-stat">High Quality</span>
           </div>
           <div className="resource-links">
-            <span className="resource-link-disabled">Coming Soon</span>
+            <a href="https://kifuliiru.com/audio" target="_blank" rel="noopener noreferrer" className="resource-link">Listen to Audio →</a>
+            <a href="https://kifuliiru.com/numbers" target="_blank" rel="noopener noreferrer" className="resource-link">Numbers Audio →</a>
           </div>
         </div>
 

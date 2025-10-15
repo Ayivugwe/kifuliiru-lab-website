@@ -69,13 +69,21 @@ export default function Header() {
       <div className="header-content">
                {/* Logo */}
                <Link href="/" className="logo-link" onClick={closeMobileMenu}>
-                 <div className="logo-icon">
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
-                     <rect width="100" height="100" fill="#0a0a0a"/>
-                     <text x="50" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#4a9eff" text-anchor="middle" dominant-baseline="middle" letter-spacing="2px">FL</text>
-                   </svg>
+                 <div className="logo-display">
+                   <div className="combo-horizontal">
+                     <svg width="70" height="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                       <rect width="100" height="100" rx="12" fill="#1a365d"/>
+                       <path d="M 15 50 Q 25 30, 35 50 T 55 50 T 75 50 L 85 50" 
+                             fill="none" stroke="#3182ce" stroke-width="3" stroke-linecap="round"/>
+                       <path d="M 15 50 Q 25 70, 35 50 T 55 50 T 75 50 L 85 50" 
+                             fill="none" stroke="#ed8936" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+                       <circle cx="50" cy="50" r="6" fill="white"/>
+                     </svg>
+                     <div>
+                       <div className="combo-text combo-text-large">KIFULIIRU <span className="lab-text">LAB</span></div>
+                     </div>
+                   </div>
                  </div>
-                 <h1 className="logo-text">KIFULIIRU LAB</h1>
                </Link>
 
         {/* Navigation */}

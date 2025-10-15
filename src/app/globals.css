@@ -323,62 +323,69 @@ body {
   transform: scale(1.02);
 }
 
-.logo-icon {
-  font-size: 2rem;
-  line-height: 1;
+/* Logo Display */
+.logo-display {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.logo-icon svg {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+.combo-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.logo-text {
-  font-size: 1.4rem;
+.combo-text {
+  font-family: 'Courier New', monospace;
   font-weight: 300;
-  letter-spacing: 2px;
   color: var(--text-primary);
   margin: 0;
-  line-height: 1;
+}
+
+.combo-text-large {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
   transition: color 0.3s ease;
 }
 
-.logo-link:hover .logo-text {
+.lab-text {
+  color: #ed8936;
+  font-weight: 400;
+}
+
+.logo-link:hover .combo-text-large {
   color: var(--accent-color);
 }
 
 /* Responsive logo sizing */
 @media (max-width: 768px) {
-  .logo-icon {
-    font-size: 1.5rem;
+  .combo-horizontal {
+    gap: 12px;
   }
   
-  .logo-icon svg {
-    width: 32px;
-    height: 32px;
+  .combo-horizontal svg {
+    width: 50px;
+    height: 50px;
   }
   
-  .logo-text {
+  .combo-text-large {
     font-size: 1.2rem;
     letter-spacing: 1.5px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-icon {
-    font-size: 1.2rem;
+  .combo-horizontal {
+    gap: 10px;
   }
   
-  .logo-icon svg {
-    width: 28px;
-    height: 28px;
+  .combo-horizontal svg {
+    width: 40px;
+    height: 40px;
   }
   
-  .logo-text {
+  .combo-text-large {
     font-size: 1rem;
     letter-spacing: 1px;
   }

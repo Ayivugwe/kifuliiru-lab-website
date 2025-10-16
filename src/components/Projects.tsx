@@ -9,7 +9,7 @@ interface Project {
 const projects: Project[] = [
   {
     name: 'Educational Content Development',
-    status: 'complete',
+    status: 'active',
     description: 'Creating comprehensive educational materials for Kifuliiru language learning, including numbers, mathematics, and basic vocabulary.',
     code: '10,000+ books',
     url: 'https://kifuliiru.com/bookstore'

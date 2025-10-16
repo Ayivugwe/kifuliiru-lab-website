@@ -80,13 +80,6 @@ export default function Header() {
           {t('nav.projects')}
         </Link>
         <Link 
-          href="/publications" 
-          aria-label="Publications and Documentation"
-          className={isActive('publications') ? 'active' : ''}
-        >
-          {t('nav.publications')}
-        </Link>
-        <Link 
           href="/resources" 
           aria-label="Resources and Documentation"
           className={isActive('resources') ? 'active' : ''}
@@ -191,14 +184,6 @@ export default function Header() {
                  className={isActive('projects') ? 'active' : ''}
                >
                  {t('nav.projects')}
-               </Link>
-               <Link
-                 href="/publications"
-                 aria-label="Publications and Documentation"
-                 onClick={closeMobileMenu}
-                 className={isActive('publications') ? 'active' : ''}
-               >
-                 {t('nav.publications')}
                </Link>
                <Link
                  href="/resources"

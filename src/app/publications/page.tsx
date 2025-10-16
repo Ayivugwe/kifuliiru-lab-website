@@ -1,15 +1,6 @@
-import Header from '@/components/Header'
-import Publications from '@/components/Publications'
-import Footer from '@/components/Footer'
+import { redirect } from 'next/navigation'
 
 export default function PublicationsPage() {
-  return (
-    <>
-      <Header />
-      <div className="container">
-        <Publications />
-        <Footer />
-      </div>
-    </>
-  )
+  // Redirect to the combined resources page
+  redirect('/resources')
 }

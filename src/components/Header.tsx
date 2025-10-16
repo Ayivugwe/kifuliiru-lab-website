@@ -59,6 +59,13 @@ export default function Header() {
         {/* Navigation */}
         <nav role="navigation" aria-label="Main navigation">
         <Link 
+          href="/" 
+          aria-label="Home"
+          className={isActive('') ? 'active' : ''}
+        >
+          Home
+        </Link>
+        <Link 
           href="/research" 
           aria-label="Research Focus and Methodology"
           className={isActive('research') ? 'active' : ''}
@@ -167,7 +174,15 @@ export default function Header() {
       {/* Mobile Navigation */}
       <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`} role="navigation" aria-label="Mobile navigation">
              <div className="mobile-nav-section">
-               <h3 className="mobile-nav-section-title">Research & Projects</h3>
+               <h3 className="mobile-nav-section-title">Navigation</h3>
+               <Link
+                 href="/"
+                 aria-label="Home"
+                 onClick={closeMobileMenu}
+                 className={isActive('') ? 'active' : ''}
+               >
+                 Home
+               </Link>
                <Link
                  href="/research"
                  aria-label="Research Focus and Methodology"

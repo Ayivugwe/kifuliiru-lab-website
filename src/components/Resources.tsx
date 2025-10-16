@@ -22,14 +22,14 @@ export default function Resources() {
         <div className="resource-card">
           <div className="resource-icon">📚</div>
           <h3>Educational Materials</h3>
-          <p>Comprehensive learning resources including textbooks, workbooks, and interactive materials.</p>
+          <p>Comprehensive learning resources including textbooks, workbooks, and interactive materials available as PDFs.</p>
           <div className="resource-stats">
             <span className="resource-stat">141,000+ Books</span>
             <span className="resource-stat">Multiple Levels</span>
             <span className="resource-stat">Community Validated</span>
           </div>
           <div className="resource-links">
-            <span className="resource-link-disabled">Coming Soon</span>
+            <a href="https://kifuliiru.com/bookstore" target="_blank" rel="noopener noreferrer" className="resource-link">Browse PDFs →</a>
           </div>
         </div>
 

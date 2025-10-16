@@ -1147,6 +1147,29 @@ section h2 {
   text-decoration: underline;
 }
 
+/* Project Access Links */
+.project-link {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.project-access-link {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-access-link:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
 /* Mobile responsiveness for coming soon */
 @media (max-width: 768px) {
   .coming-soon-content h3 {
@@ -1172,6 +1195,10 @@ section h2 {
   
   .publication-timeline {
     padding: 25px;
+  }
+  
+  .project-link {
+    text-align: left;
   }
 }
 

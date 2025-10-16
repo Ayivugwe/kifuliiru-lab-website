@@ -3,6 +3,7 @@ interface Project {
   status: 'complete' | 'active' | 'planned'
   description: string
   code?: string
+  url?: string
 }
 
 const projects: Project[] = [
@@ -10,7 +11,8 @@ const projects: Project[] = [
     name: 'Educational Content Development',
     status: 'complete',
     description: 'Creating comprehensive educational materials for Kifuliiru language learning, including numbers, mathematics, and basic vocabulary.',
-    code: '10,000+ books'
+    code: '10,000+ books',
+    url: 'https://kifuliiru.com/bookstore'
   },
   {
     name: 'Mathematics Learning Resources',
@@ -91,6 +93,13 @@ export default function Projects() {
               {project.description}
               {project.code && <><br /><code>{project.code}</code></>}
             </p>
+            {project.url && (
+              <div className="project-link">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-access-link">
+                  Access Project →
+                </a>
+              </div>
+            )}
           </li>
         ))}
       </ul>

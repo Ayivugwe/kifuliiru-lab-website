@@ -482,10 +482,21 @@ nav {
 }
 
 .nav-dropdown-button:hover {
-  color: var(--accent-hover);
+  color: var(--accent-color);
+  opacity: 0.8;
 }
 
 .nav-dropdown-button:hover::before {
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.nav-dropdown-button.active {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.nav-dropdown-button.active::before {
   width: 100%;
   transform: translateX(-50%);
 }
@@ -1167,6 +1178,7 @@ section h2 {
 
 .project-access-link:hover {
   background: var(--accent-hover);
+  color: white;
   transform: translateY(-2px);
 }
 

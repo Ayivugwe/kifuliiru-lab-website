@@ -29,7 +29,7 @@ export default function Resources() {
             <span className="resource-stat">Community Validated</span>
           </div>
           <div className="resource-links">
-            <a href="https://kifuliiru.com/bookstore" target="_blank" rel="noopener noreferrer" className="resource-link">Browse PDFs →</a>
+            <a href="https://kifuliiru.com/bookstore" target="_blank" rel="noopener noreferrer" className="resource-link">Browse our Available books →</a>
           </div>
         </div>
 

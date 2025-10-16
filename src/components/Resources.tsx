@@ -83,15 +83,15 @@ export default function Resources() {
         <div className="resource-card">
           <div className="resource-icon">👥</div>
           <h3>Community Resources</h3>
-          <p>Community engagement tools, cultural context, and collaborative materials.</p>
+          <p>Community engagement tools, collaborative platforms, and social media for interaction and contribution.</p>
           <div className="resource-stats">
             <span className="resource-stat">Community Driven</span>
-            <span className="resource-stat">Cultural Context</span>
+            <span className="resource-stat">Interactive Platforms</span>
             <span className="resource-stat">Collaborative</span>
           </div>
           <div className="resource-links">
-            <a href="/cultural-context" className="resource-link">Cultural Context</a>
-            <a href="/contact" className="resource-link">Get Involved</a>
+            <a href="https://tabula.kifuliiru.com" target="_blank" rel="noopener noreferrer" className="resource-link">Tabula Platform →</a>
+            <a href="https://lola.kifuliiru.com" target="_blank" rel="noopener noreferrer" className="resource-link">Lola Social →</a>
           </div>
         </div>
 

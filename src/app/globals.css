@@ -549,10 +549,22 @@ nav {
   transition: all 0.3s ease;
   border-bottom: 1px solid var(--border-light);
   font-size: 0.9rem;
+  position: relative;
 }
 
 .nav-dropdown-menu a:last-child {
   border-bottom: none;
+}
+
+.nav-dropdown-menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: all 0.3s ease;
 }
 
 .nav-dropdown-menu a:hover {
@@ -561,10 +573,18 @@ nav {
   padding-left: 20px;
 }
 
+.nav-dropdown-menu a:hover::before {
+  width: 100%;
+}
+
 .nav-dropdown-menu a.active {
-  background: var(--accent-color);
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--accent-color);
   font-weight: 600;
+}
+
+.nav-dropdown-menu a.active::before {
+  width: 100%;
 }
 
 /* Mobile Menu Button */

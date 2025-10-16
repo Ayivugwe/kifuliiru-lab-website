@@ -115,9 +115,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/Kifuliiru-Lab-Logo.png" type="image/png" />
-        <link rel="alternate icon" href="/Kifuliiru-Lab-Logo.png" />
         <link rel="apple-touch-icon" href="/Kifuliiru-Lab-Logo.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0a0a0a" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

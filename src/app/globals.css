@@ -249,11 +249,9 @@ body {
 
 .header {
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow);
   position: sticky;
   top: 0;
   left: 0;
@@ -264,19 +262,6 @@ body {
   opacity: 1;
 }
 
-/* Dark theme glassmorphism */
-[data-theme="dark"] .header {
-  background: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-}
-
-/* Light theme glassmorphism */
-[data-theme="light"] .header {
-  background: rgba(255, 255, 255, 0.35);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
 
 .header-content {
   display: flex;
